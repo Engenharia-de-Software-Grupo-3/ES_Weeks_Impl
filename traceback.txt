@@ -1,34 +1,65 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 18, in script call
-    call expression semana
-  File "game/weeks/week_1/week_one.rpy", line 6, in script call
-    call expression dia
-  File "game/script.rpy", line 18, in script call
-    call expression semana
-  File "game/weeks/week_1/week_one.rpy", line 6, in script call
-    call expression dia
-ScriptError: could not find label 'semana1_dia2'.
+  File "renpy/common/00action_file.rpy", line 397, in __call__
+    renpy.save(fn, extra_info=save_name)
+PicklingError: Can't pickle <function backstab at 0x0000000005224700>: it's not the same object as store.backstab
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 18, in script call
-    call expression semana
-  File "game/weeks/week_1/week_one.rpy", line 6, in script call
-    call expression dia
-  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1725, in execute
-    rv = renpy.game.context().call(label, return_site=self.next.name)
-  File "game/script.rpy", line 18, in script call
-    call expression semana
-  File "game/weeks/week_1/week_one.rpy", line 6, in script call
-    call expression dia
-  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'semana1_dia2'.
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
+    $ ui.interact()
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
+    $ ui.interact()
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 3579, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 4540, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\screen.py", line 770, in event
+    rv = self.child.event(ev, x, y, st)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 1401, in event
+    rv = super(Window, self).event(ev, x, y, st)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 279, in event
+    rv = d.event(ev, x - xo, y - yo, st)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\layout.py", line 1177, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\behavior.py", line 1138, in event
+    return handle_click(self.clicked)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\behavior.py", line 1071, in handle_click
+    rv = run(action)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\behavior.py", line 368, in run
+    new_rv = run(i, *args, **kwargs)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\behavior.py", line 375, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 397, in __call__
+    renpy.save(fn, extra_info=save_name)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\loadsave.py", line 427, in save
+    reraise(t, e, tb)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\loadsave.py", line 413, in save
+    dump((roots, renpy.game.log), logf)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\compat\pickle.py", line 103, in dump
+    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
+PicklingError: Can't pickle <function backstab at 0x0000000005224700>: it's not the same object as store.backstab
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.1.1.23060707
 ES_Weeks_Impl 1.0
-Sat Oct 21 15:41:44 2023
+Sun Oct 22 20:17:39 2023

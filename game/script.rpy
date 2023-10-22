@@ -15,7 +15,7 @@ label start:
         if w == 4: 
             return
         $ semana = 'semana_' + str(w)
-        call expression semana
+        call expression semana from _call_expression
         $ w = w + 1
 
     # This ends the game.
