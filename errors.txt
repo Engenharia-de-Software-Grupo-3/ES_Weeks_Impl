@@ -2,41 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/weeks/week_0/images.rpy", line 7: expected 'image_name_component' not found.
-    image python = "images/Sprites Python/python 31.png"
-         ^
+File "game/script.rpy", line 23: Indentation mismatch.
 
-File "game/weeks/week_1/week_one.rpy", line 50: expected 'image_name_component' not found.
-    show python
-        ^
-
-File "game/weeks/week_1/week_one.rpy", line 83: expected 'image_name_component' not found.
-    hide python
-        ^
-
-File "game/weeks/week_1/week_one.rpy", line 86: expected 'image_name_component' not found.
-    show python
-        ^
-
-File "game/weeks/week_1/week_one.rpy", line 88: expected 'image_name_component' not found.
-    hide python
-        ^
-
-File "game/weeks/week_1/week_one.rpy", line 93: expected 'image_name_component' not found.
-    show python
-        ^
-
-File "game/weeks/week_1/week_one.rpy", line 114: expected 'image_name_component' not found.
-    hide python
-        ^
-
-File "game/weeks/week_1/week_one.rpy", line 120: expected 'image_name_component' not found.
-    show python
-        ^
-
-File "game/weeks/week_1/week_one.rpy", line 124: expected 'image_name_component' not found.
-    hide python
-        ^
-
-Ren'Py Version: Ren'Py 8.1.1.23060707
-Mon Oct 16 01:24:49 2023
+Ren'Py Version: Ren'Py 8.1.2.23090503
+Mon Oct 23 19:48:45 2023
