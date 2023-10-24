@@ -2,28 +2,273 @@
 errors listed below, and try again.
 
 
-<<<<<<< HEAD
-File "game/script.rpy", line 23: Indentation mismatch.
+File "game/iteracoes/python4.rpy", line 3: expected 'image_name_component' not found.
+    image python aflita = "images/Sprites Python/python 6.png"
+         ^
+
+File "game/iteracoes/python4.rpy", line 5: expected 'image_name_component' not found.
+    image python falando1 = "images/Sprites Python/python 7.png"
+         ^
+
+File "game/iteracoes/python4.rpy", line 7: expected 'image_name_component' not found.
+    image python falando2 = "images/Sprites Python/python 17.png"
+         ^
+
+File "game/iteracoes/python4.rpy", line 9: expected 'image_name_component' not found.
+    image python falando3 = "images/Sprites Python/python 36.png"
+         ^
+
+File "game/iteracoes/python4.rpy", line 11: expected 'image_name_component' not found.
+    image python falando4 = "images/Sprites Python/python 35.png"
+         ^
+
+File "game/iteracoes/python4.rpy", line 13: expected 'image_name_component' not found.
+    image python escutando = "images/Sprites Python/python 8.png"
+         ^
+
+File "game/iteracoes/python4.rpy", line 15: expected 'image_name_component' not found.
+    image python irritada = "images/Sprites Python/python 18.png"
+         ^
+
+File "game/iteracoes/python4.rpy", line 17: expected 'image_name_component' not found.
+    image python rindo1 = "images/Sprites Python/python 31.png"
+         ^
+
+File "game/iteracoes/python4.rpy", line 19: expected 'image_name_component' not found.
+    image python rindo2 = "images/Sprites Python/python 32.png"
+         ^
+
+File "game/iteracoes/python4.rpy", line 21: expected 'image_name_component' not found.
+    image python timida =  "images/Sprites Python/python 37.png"
+         ^
+
+File "game/iteracoes/python4.rpy", line 27: expected 'image_name_component' not found.
+    show python aflita
+        ^
+
+File "game/iteracoes/python4.rpy", line 33: expected 'image_name_component' not found.
+    show python falando1
+        ^
+
+File "game/iteracoes/python4.rpy", line 37: expected 'image_name_component' not found.
+    show python falando2
+        ^
+
+File "game/iteracoes/python4.rpy", line 41: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 47: expected 'image_name_component' not found.
+    show python falando3
+        ^
+
+File "game/iteracoes/python4.rpy", line 51: expected 'image_name_component' not found.
+    show python falando2
+        ^
+
+File "game/iteracoes/python4.rpy", line 55: expected 'image_name_component' not found.
+    show python falando1
+        ^
+
+File "game/iteracoes/python4.rpy", line 59: expected 'image_name_component' not found.
+    show python falando2
+        ^
+
+File "game/iteracoes/python4.rpy", line 63: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 67: expected 'image_name_component' not found.
+    show python irritada
+        ^
+
+File "game/iteracoes/python4.rpy", line 71: expected 'image_name_component' not found.
+    show python falando1
+        ^
+
+File "game/iteracoes/python4.rpy", line 75: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 79: expected 'image_name_component' not found.
+    show python falando1
+        ^
+
+File "game/iteracoes/python4.rpy", line 83: expected 'image_name_component' not found.
+    show python falando2
+        ^
+
+File "game/iteracoes/python4.rpy", line 87: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 93: expected 'image_name_component' not found.
+    show python falando1
+        ^
+
+File "game/iteracoes/python4.rpy", line 97: expected 'image_name_component' not found.
+    show python falando2
+        ^
+
+File "game/iteracoes/python4.rpy", line 101: expected 'image_name_component' not found.
+    show python falando3
+        ^
+
+File "game/iteracoes/python4.rpy", line 105: expected 'image_name_component' not found.
+    show python falando2
+        ^
+
+File "game/iteracoes/python4.rpy", line 109: expected 'image_name_component' not found.
+    show python escutando 
+        ^
+
+File "game/iteracoes/python4.rpy", line 113: expected 'image_name_component' not found.
+    show python falando1
+        ^
+
+File "game/iteracoes/python4.rpy", line 117: expected 'image_name_component' not found.
+    show python falando2
+        ^
+
+File "game/iteracoes/python4.rpy", line 121: expected 'image_name_component' not found.
+    show python falando3
+        ^
+
+File "game/iteracoes/python4.rpy", line 135: expected 'image_name_component' not found.
+    show python falando1
+        ^
+
+File "game/iteracoes/python4.rpy", line 139: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 151: expected 'image_name_component' not found.
+    show python falando1
+        ^
+
+File "game/iteracoes/python4.rpy", line 155: expected 'image_name_component' not found.
+    show python falando2
+        ^
+
+File "game/iteracoes/python4.rpy", line 159: expected 'image_name_component' not found.
+    show python falando3
+        ^
+
+File "game/iteracoes/python4.rpy", line 163: expected 'image_name_component' not found.
+    show python falando2
+        ^
+
+File "game/iteracoes/python4.rpy", line 167: expected 'image_name_component' not found.
+    show python falando1
+        ^
+
+File "game/iteracoes/python4.rpy", line 171: expected 'image_name_component' not found.
+    show python falando 2
+        ^
+
+File "game/iteracoes/python4.rpy", line 175: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 184: expected 'image_name_component' not found.
+    show python rindo1
+        ^
+
+File "game/iteracoes/python4.rpy", line 188: expected 'image_name_component' not found.
+    show python rindo2
+        ^
+
+File "game/iteracoes/python4.rpy", line 194: expected 'image_name_component' not found.
+    show python rindo1
+        ^
+
+File "game/iteracoes/python4.rpy", line 198: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 206: expected 'image_name_component' not found.
+    show python falando3
+        ^
+
+File "game/iteracoes/python4.rpy", line 210: expected 'image_name_component' not found.
+    show python timida
+        ^
+
+File "game/iteracoes/python4.rpy", line 214: expected 'image_name_component' not found.
+    show python rindo1
+        ^
+
+File "game/iteracoes/python4.rpy", line 220: expected 'image_name_component' not found.
+    show python falando1
+        ^
+
+File "game/iteracoes/python4.rpy", line 224: expected 'image_name_component' not found.
+    show python rindo2
+        ^
+
+File "game/iteracoes/python4.rpy", line 228: expected 'image_name_component' not found.
+    show python rindo1
+        ^
+
+File "game/iteracoes/python4.rpy", line 244: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 248: expected 'image_name_component' not found.
+    show python falando1
+        ^
+
+File "game/iteracoes/python4.rpy", line 252: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 256: expected 'image_name_component' not found.
+    show python surpresa
+        ^
+
+File "game/iteracoes/python4.rpy", line 266: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 270: expected 'image_name_component' not found.
+    show python falando3
+        ^
+
+File "game/iteracoes/python4.rpy", line 274: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 280: expected 'image_name_component' not found.
+    show python falando3
+        ^
+
+File "game/iteracoes/python4.rpy", line 284: expected 'image_name_component' not found.
+    show python escutando
+        ^
+
+File "game/iteracoes/python4.rpy", line 290: expected 'image_name_component' not found.
+    show python rindo1
+        ^
+
+File "game/iteracoes/python4.rpy", line 294: expected 'image_name_component' not found.
+    show python rindo2
+        ^
+
+File "game/iteracoes/python4.rpy", line 298: expected 'image_name_component' not found.
+    show python rindo1
+        ^
+
+File "game/iteracoes/python4.rpy", line 304: expected 'image_name_component' not found.
+    show python rindo2
+        ^
+
+File "game/iteracoes/python4.rpy", line 308: expected 'image_name_component' not found.
+    show python rindo1
+        ^
+
+File "game/iteracoes/python4.rpy", line 312: expected 'image_name_component' not found.
+    hide python with moveoutright
+        ^
 
 Ren'Py Version: Ren'Py 8.1.2.23090503
-Mon Oct 23 19:48:45 2023
-=======
-File "game/battlesys/classes/class_battle_state.rpy", line 95: invalid syntax
-            retun saida
-                   ^
-
-File "game/weeks/week_0/images.rpy", line 92: expected 'image_name_component' not found.
-    image python battle = "images/Batalha pngs/python 1.png"
-         ^
-
-File "game/weeks/week_0/images.rpy", line 93: expected 'image_name_component' not found.
-    image python battle atk = "images/Batalha pngs/python 2.png"
-         ^
-
-File "game/weeks/week_0/images.rpy", line 94: expected 'image_name_component' not found.
-    image python battle dmg = "images/Batalha pngs/python 2.png"
-         ^
-
-Ren'Py Version: Ren'Py 8.1.1.23060707
-Sun Oct 22 19:18:37 2023
->>>>>>> c4a95157e31857606c4d66b480cc1e91d22fc660
+Mon Oct 23 23:22:59 2023
