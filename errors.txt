@@ -2,7 +2,28 @@
 errors listed below, and try again.
 
 
+<<<<<<< HEAD
 File "game/script.rpy", line 23: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.1.2.23090503
 Mon Oct 23 19:48:45 2023
+=======
+File "game/battlesys/classes/class_battle_state.rpy", line 95: invalid syntax
+            retun saida
+                   ^
+
+File "game/weeks/week_0/images.rpy", line 92: expected 'image_name_component' not found.
+    image python battle = "images/Batalha pngs/python 1.png"
+         ^
+
+File "game/weeks/week_0/images.rpy", line 93: expected 'image_name_component' not found.
+    image python battle atk = "images/Batalha pngs/python 2.png"
+         ^
+
+File "game/weeks/week_0/images.rpy", line 94: expected 'image_name_component' not found.
+    image python battle dmg = "images/Batalha pngs/python 2.png"
+         ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Sun Oct 22 19:18:37 2023
+>>>>>>> c4a95157e31857606c4d66b480cc1e91d22fc660

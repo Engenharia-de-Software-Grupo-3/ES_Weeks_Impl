@@ -1,20 +1,9 @@
 label semana1_dia1:
-    # INTRO
-    show intro
-    mc "A gigantesca academia se eleva sobre todos os outros prédios na barulhenta área urbana."
-    mc "É como se ela existisse no centro do mundo inteiro."
-    mc "A Academia [school_name] recolhe estudantes de todas as áreas que pode encontrar" 
-    mc "Funcionais, Orientados a Objetos, Lógicos; qualquer paradigma de linguagem, se mostrar potencial o suficiente, tem seu lugar aqui." 
-    mc "É uma instituição do mais alto prestígio que o país pode oferecer" 
-    mc "Seu esplendor é rivalizado apenas pelos boatos e mistérios que circulam-a todo semestre." 
-    mc "E, por isso, Linguagens de Programação ao redor do globo lutam pela oportunidade de estudarem nesses corredores." 
-    mc "Os estudantes que saem são vistos como figuras excepcionais, quase míticas aos olhos de alguns" 
-    mc "Como nobres e realeza de tempos de outrora, imortalizados nos anais da história e fóruns do StackOverflow…" 
-    mc "Então como foi que eu vim parar aqui?"
-    hide intro
+    scene black
+    show text "Dia 1" at truecenter
     # Chegada
-    play music "audio/music.mp3" volume 0.5
-    show escola with zoomin
+    play music "audio/music (2).mp3" volume 0.5
+    scene escola with dissolve
     mc "Rapaz, eu estou nervoso." 
     mc "Vamos, você ensaiou isso dezenas de vezes com a sua mãe…"
     mc "“Olá, meu nome é...”"
@@ -22,10 +11,17 @@ label semana1_dia1:
     $ mc = Character("[player_name]", who_color = "#0004ff")
     $ mcN = Character("[player_name]", who_color = "#0004ff", what_color = "#6d6d6d", what_prefix = "(", what_suffix = ")")
     mc "“Eu sou uma linguagem de programação…”"
-    call screen player_type_menu
-    mc "“E espero que tenhamos um bom semestre juntos…”" 
-    mc "." 
-    mc ".." 
+    menu:
+        mc "“Eu sou uma linguagem de programação…”"
+        "Procedural":
+            $ player_type = "Procedural"
+        "Orientada a Objetos":
+            $ player_type = "Orientada a Objetos"
+        "Funcional":
+            $ player_type = "Funcional"
+        "Lógica":
+            $ player_type = "Lógica"
+    mc "“E espero que tenhamos um bom semestre juntos…”"
     mc "..." 
     mc "Eu soo como um idiota"
     "Smack!" with vpunch 
@@ -33,7 +29,7 @@ label semana1_dia1:
     mc "Se componha! Você foi selecionado assim como qualquer outro estudante aqui!" 
     mc "Eu ainda me lembro como se fosse ontem…"
     # Flashback
-    call dia1_flashback
+    call dia1_flashback from _call_dia1_flashback
     # Python Intro
     mc "Ok, talvez isso não me encha de confiança como achei que faria"
     mc "Não importa! Respire, relaxe, não tem do quê tem medo"
@@ -45,6 +41,7 @@ label semana1_dia1:
     "Rápido, você tem que se apresentar." 
     "Não há mais tempo para pensar, diz a primeira coisa que vier à sua mente."
     menu:
+        "Não há mais tempo para pensar, diz a primeira coisa que vier à sua mente."
         "Introdução descolada":
             mc "Y-yo-yo! Se liga, mano-bro, aqui é P-kun na área!"
             pyt 34 "..."
@@ -57,8 +54,11 @@ label semana1_dia1:
         "Introdução comum":
             mc "Olá, meu nome é [player_name]"
             pyt "Muito prazer, [player_name]. Eu me chamo Python e vim aqui pra te receber na academia."
+            mc '...'
         "Introdução em Haiku":
-            mc "Aluno novo cujo nome restrito depois te digo."
+            mc "Aluno novo" 
+            mc "cujo nome restrito" 
+            mc "depois te digo."
             pyt 34 "..."
             mc "..."
             mcN "Eu devo ter algum problema"
@@ -77,7 +77,7 @@ label semana1_dia1:
     hide pyth i
     "Vocês começam a andar enquanto Python lhe apresenta as instalações do local"
     #Biblioteca
-    show biblioteca with dissolve
+    scene biblioteca with dissolve
     show pyth i
     pyt "Aqui é a biblioteca."
     hide pyth i
@@ -92,6 +92,7 @@ label semana1_dia1:
     pyt "Estudar em conjunto é uma ótima forma de ficar mais próximo a um colega, além de te preparar para provas adquirindo estratégias."
     pyt "Durante as batalhas de término da semana, você e um parceiro podem usar suas estratégias para enfrentar questões."
     menu:
+        pyt "Durante as batalhas de término da semana, você e um parceiro podem usar suas estratégias para enfrentar questões."
         "Batalhas?":
             pyt 12 "Soa estranho não é. Não sei como começou, mas o pessoal por aqui chama as provas de 'batalha'."
             pyt 14 "Nas batalhas, Existem 3 tipos de questões, assim como tipos de estratégias: teórica, algébrica e analítica"
@@ -102,15 +103,24 @@ label semana1_dia1:
     show pyth i
     pyt "Que tal praticar comigo? Eu sou bem esperta, sabia?"
     menu:
+        pyt "Que tal praticar comigo? Eu sou bem esperta, sabia?"
         "Participar da batalha":
-            "MORTAL KOMBAT!!!"
+            pyt 32 "Fight on!"
+            call prepare_tutorial_battle from _call_prepare_tutorial_battle
+            scene biblioteca with dissolve
+            play music "audio/music (2).mp3"
+            show pyth i
+            pyt "Isso ai! Terminamos."
+            pyt "Como derrotamos [teste0_Acertos] questões, conseguimos nota [teste0_Nota] nesse teste."
+            pyt 32 "Boa luta. Se quiser estudar comigo novamente, pode me chamar."
         "Recusar a proposta":
-            pyt i 35 "É uma pena, mas não se preocupe, se quiser estudar comigo em algum outro momento, pode me chamar."
-    pyt -35 "Acho que chega de biblioteca."
+            pyt i 35 "É uma pena. Se quiser estudar comigo em algum outro momento, pode me chamar."
+    show pyth i
+    pyt "Acho que chega de biblioteca."
     pyt "Vamos, ainda tenho muito pra te mostrar!"
     hide pyth
-    hide biblioteca with dissolve
     # Encerrar
+    scene corredor with dissolve
     "Assim, vocês continuam o passeio pela Academia" 
     "O qual não pôde durar muito tempo, já que vocês foram interrompidos por um aviso que vinha dos alto-falantes no corredor"
     alan "Python, perdão interromper o seu serviço, mas vocês vão ter que sair."
@@ -120,7 +130,7 @@ label semana1_dia1:
     show pyth i
     pyt "Então te vejo amanhã, [player_name]. Espero que possamos ser amigos"
     hide pyth
-    hide escola with dissolve
+    scene black with dissolve
     "E assim terminou seu primeiro dia na Academia antes do seu primeiro dia na Academia" 
     "Você estava imaginando que as coisas seriam bem mais caóticas do que de fato foram, e, sinceramente, aquilo te dá um certo alívio" 
     "A maior parte do seu nervosismo sumiu por causa da recepção recebida. Agora você mal pode esperar para seu segundo dia"
@@ -129,7 +139,7 @@ label semana1_dia1:
 label dia1_flashback:
     play sound "audio/FlashbackSoundEffect.mp3" fadein 1.0
     pause 1.0
-    show rua with dissolve
+    scene rua with dissolve
     "Dia de ontem..."
     mc "R$93,75 da conta d’água…" 
     mc "R$50,00 vai ter que ir para a troca do botijão de gás…"
@@ -171,6 +181,7 @@ label dia1_flashback:
     mcN "O homem me tirou de cima do capô e me pôs deitado na calçada enquanto calmamente ligava para uma ambulância"
     alan "Qual é mesmo seu nome?"
     menu:
+        alan "Qual é mesmo seu nome?"
         "Dizer seu nome":
             alan "Então é você?..."
             mcN "Ele parecia um pouco reflexivo depois de ouvir meu nome."
@@ -185,6 +196,7 @@ label dia1_flashback:
     alan "Nós só podemos ver um pouco do futuro, não é mesmo?"
     alan "Se eu não estiver enganado, você parece estar numa situação preocupante."
     menu:
+        alan "Se eu não estiver enganado, você parece estar numa situação preocupante."
         "Estou. Acabo de ser atropelado":
             alan "Você é do tipo que guarda mágoas, ao que parece."
             alan "Águas passadas não movem moinhos, assim como um rio nunca é o mesmo."
@@ -216,18 +228,6 @@ label dia1_flashback:
     mcN "Fui posto dentro da ambulância e levado para o hospital, e durante o tempo todo eu só conseguia pensar: “o que acabou de acontecer?”"
     play sound "audio/FlashbackSoundEffect.mp3" fadein 1.0
     pause 0.4
-    hide rua with dissolve
+    scene escola with dissolve
     "Dia de hoje..." 
     return
-
-
-screen player_type_menu:
-    vbox:
-        spacing 20
-        xalign 0.5
-        yalign 0.5
-        text "Eu sou uma linguagem de programação…"
-        textbutton "Procedural" action [SetVariable('player_type', "Procedural"), Return()]
-        textbutton "Orientada a Objetos" action [SetVariable('player_type', "Orientada a Objetos"), Return()]
-        textbutton "Funcional" action [SetVariable('player_type', "Funcional"), Return()]
-        textbutton "Lógica" action [SetVariable('player_type', "Lógica"), Return()]
