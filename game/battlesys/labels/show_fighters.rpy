@@ -2,7 +2,7 @@ label enemy_change:
     $ renpy.hide(esi_name)
     $ fala = battleState.enemy_team_name + " sent out " + (battleState.enemy_team_current_stats[0]).enemy_name + '!'
     $ renpy.say('', fala)
-    call show_fighters from _call_show_fighters_1
+    call show_fighters
     return
 
 label define_sprite_info:
@@ -19,15 +19,16 @@ label define_sprite_info:
     return
 
 label show_fighters:
-    call define_sprite_info from _call_define_sprite_info
+    call define_sprite_info
     python:
         renpy.show(psi_name, at_list=[Position(xpos=psi_x, ypos=psi_y)])
         renpy.show(esi_name, at_list=[Position(xpos=esi_x, ypos=esi_y)], behind = ['player_box'])
-
+    $ battleState.current_stage = 'Show_fighters'
+    call check_passive_time_beforeBP
     return
 
 label show_player_atk:
-    call define_sprite_info from _call_define_sprite_info_1
+    call define_sprite_info
     python:
         psi_atk = psi.atk_sprite
         esi_dmg = esi.dmg_sprite
@@ -50,7 +51,7 @@ label hide_player_atk:
     return
 
 label show_enemy_atk:
-    call define_sprite_info from _call_define_sprite_info_2
+    call define_sprite_info
     python:
         psi_dmg = psi.dmg_sprite
         esi_atk = esi.atk_sprite

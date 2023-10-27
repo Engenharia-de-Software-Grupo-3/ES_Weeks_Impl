@@ -64,7 +64,7 @@ label semana1_dia1:
             mcN "Eu devo ter algum problema"
             pyt -34 "Seja bem-vindo NameError Exception nessa Academia. Me chamo Python"
             mcN "Ela devolveu!"
-    $ pyt.name = "Python"
+    $ pyt = Character('Python', who_color = '#fffb00', image = "pyth")
     show pyth i 32
     "Ela manteve a pose por alguns segundos, antes de rir de forma animada"
     show pyth i
@@ -211,7 +211,7 @@ label dia1_flashback:
     alan "Eu acredito que às vezes são as pessoas de quem ninguém espera nada que fazem as coisas que ninguém consegue imaginar."
     mcN "E o que isso deveria significar?"
     alan "Meu nome é Alan Turing. Eu sou diretor de uma certa Academia Prestigiada: a Academia [school_name]."
-    $ alan.name = "Alan Turing"
+    $ alan = Character('Alan Turing', who_color = '#494848')
     alan "E eu gostaria de lhe convidar à vir participar dela."
     mcN "Do que diabos ele está falando?"
     alan "Você deve estar se perguntando o motivo de eu estar lhe convidando assim de repente"

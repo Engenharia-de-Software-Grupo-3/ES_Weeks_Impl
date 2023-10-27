@@ -1,3 +1,6 @@
 label semana_2:
-    $ renpy.say('', semana)
+    call semana2_dia1
+    call semana2_dia2
+    call semana2_dia3
+    # ...
     return

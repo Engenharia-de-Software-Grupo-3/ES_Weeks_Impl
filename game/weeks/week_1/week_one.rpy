@@ -5,7 +5,6 @@ label semana_1:
         $ dia = 'semana1_dia' + str(d)
         call expression dia from _call_expression_1
         $ d = d + 1
-    call .continua from _call_semana_1_continua
     return
 label .intro:
     show black
@@ -21,7 +20,3 @@ label .intro:
     mc "Como nobres e realeza de tempos de outrora, imortalizados nos anais da história e fóruns do StackOverflow…" 
     mc "Então como foi que eu vim parar aqui?"
     return
-label .continua:
-    scene black
-    "Continua no próximo episódio"
-    $ renpy.quit()

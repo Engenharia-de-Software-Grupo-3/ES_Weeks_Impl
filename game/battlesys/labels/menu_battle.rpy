@@ -6,14 +6,14 @@ label battle_menu:
         hide battle_menu_box
         if battle_choice == 'Fight':
             $ battlePhase = Battle_phase()
-            call battle_skill_menu from _call_battle_skill_menu
+            call battle_skill_menu
             if (skill_i != -1):
-                call start_battle_phase from _call_start_battle_phase
+                call start_battle_phase
                 return
         elif battle_choice == 'Item':
             narrator 'You dont have any items.'
         elif battle_choice == 'Enemies':
-            call battle_change_menu from _call_battle_change_menu
+            call battle_change_menu
         else:
             narrator "No! There's no running from a battle!"
 
@@ -44,9 +44,9 @@ label start_battle_phase:
         battlePhase.attack_order(player_speed, player_skill_choice, enemy_speed, enemy_skill_choice)
     # call battle_turn_1st_attack
     if (battlePhase.fst_attacker.upper() == 'PLAYER'):
-        call bp_player_turn from _call_bp_player_turn_1
+        call bp_player_turn
     else:
-        call bp_enemy_turn from _call_bp_enemy_turn
+        call bp_enemy_turn
     $ eHead_hp = (battleState.enemy_team_current_stats[0]).enemy_hp
     if eHead_hp == 0:
         $ enemy_name = ((battleState.enemy_team_current_stats)[0]).enemy_name
@@ -83,5 +83,5 @@ label battle_change_menu:
     if not i == -1: 
         $ esi_name = (battleState.enemy_team_current_stats[0]).enemy_sprite_info.name
         $ battleState.swap_enemy_head(i)
-        call enemy_change from _call_enemy_change
+        call enemy_change
     return

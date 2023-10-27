@@ -89,9 +89,6 @@ image pyth i 35 = "images/Sprites Python/python 35.png"
 image pyth ii = "images/Sprites Python/python 42.png"
 image pyth ii 53 = "images/Sprites Python/python 53.png"
 
-image pyth battle = "images/Batalha pngs/python 1.png"
-image pyth battle atk = "images/Batalha pngs/python 2.png"
-image pyth battle dmg = "images/Batalha pngs/python 3.png"
 # RUBY
 image ruby = "images/Sprites Ruby/ruby 1.png"
 image ruby 2 = "images/Sprites Ruby/ruby 2.png"
@@ -124,18 +121,53 @@ image battle_change_menu_box = "images/botoes, caixas e etc/2_2.png"
 image player_box = "images/botoes, caixas e etc/player_box.png"
 image enemy_box = "images/botoes, caixas e etc/enemy_box.png"
 
+# BATTLE PCs
+image pyth battle = "images/Batalha pngs/python 1.png"
+image pyth battle atk = "images/Batalha pngs/python 2.png"
+image pyth battle dmg = "images/Batalha pngs/python 3.png"
+
+image java battle = "images/Batalha pngs/java 1.png"
+image java battle atk = "images/Batalha pngs/java 2.png"
+image java battle dmg = "images/Batalha pngs/java 4.png"
+
+image lua battle = "images/Batalha pngs/lua 1.png"
+image lua battle atk = "images/Batalha pngs/lua 2.png"
+image lua battle dmg = "images/Batalha pngs/lua 3.png"
+
+image ruby battle = "images/Batalha pngs/ruby 1.png"
+image ruby battle atk = "images/Batalha pngs/ruby 2.png"
+image ruby battle dmg = "images/Batalha pngs/ruby 4.png"
+
 # BATTLE ENEMYS
-image mathEnemy = "images/Batalha pngs/I1 parado 1.png"
-image mathEnemy atk = "images/Batalha pngs/I1 atacando.png"
-image mathEnemy dmg = "images/Batalha pngs/I1 tomando dano.png"
+image mathEnemy:
+    "images/Batalha pngs/I1 parado 1.png"
+    zoom 0.7
+image mathEnemy atk:
+    "images/Batalha pngs/I1 atacando.png"
+    zoom 0.7
+image mathEnemy dmg:
+    "images/Batalha pngs/I1 tomando dano.png"
+    zoom 0.7
 
-image analyticEnemy = "images/Batalha pngs/I2 parado 1.png"
-image analyticEnemy atk = "images/Batalha pngs/I2 atacando.png"
-image analyticEnemy dmg = "images/Batalha pngs/I2 tomando dano.png"
+image analyticEnemy:
+    "images/Batalha pngs/I2 parado 1.png"
+    zoom 0.6
+image analyticEnemy atk:
+    "images/Batalha pngs/I2 atacando.png"
+    zoom 0.6
+image analyticEnemy dmg:
+    "images/Batalha pngs/I2 tomando dano.png"
+    zoom 0.6
 
-image teoricoEnemy = "images/Batalha pngs/I3 parado 1.png"
-image teoricoEnemy atk = "images/Batalha pngs/I3 atacando.png"
-image teoricoEnemy dmg = "images/Batalha pngs/I3 tomando dano.png"
+image teoricoEnemy:
+    "images/Batalha pngs/I3 parado 1.png"
+    zoom 0.7
+image teoricoEnemy atk:
+    "images/Batalha pngs/I3 atacando.png"
+    zoom 0.7
+image teoricoEnemy dmg:
+    "images/Batalha pngs/I3 tomando dano.png"
+    zoom 0.7
 
 # ETC
 image alan = "images/alan.png"

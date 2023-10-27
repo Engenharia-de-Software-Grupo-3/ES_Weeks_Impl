@@ -10,7 +10,7 @@ init python:
             self.enemy_skill = None
 
             #Field
-                # Battle_Start | Turn_start | Effect_calculate | Effect_hit 
+                # Battle_Start | Turn_start | Effect_calculate | Effect_hit | Battle_end
             self.current_stage = "Battle_start"
                 # 0 | 1 | 2
             self.phase = 0
@@ -18,9 +18,11 @@ init python:
             #Abilities_info
             self.player_attack_hit = False
             self.player_attack_blocked = False
+            self.player_attack_blockedMsg = ""
             
             self.enemy_attack_hit = False
             self.enemy_attack_blocked = False
+            self.enemy_attack_blockedMsg = ""
 
             #Battle_info
             self.player_last_effect_used = None
@@ -60,13 +62,13 @@ init python:
                     saida.append(s)
             return saida
 
-        def is_player_turn():
-            return ((fst_attacker is not None and fst_attacker == 'player' and phase == 1)
-                    or (snd_attacker is not None and snd_attacker == 'player' and phase == 2))
+        def is_player_turn(self):
+            return ((self.fst_attacker is not None and self.fst_attacker == 'player' and self.phase == 1)
+                    or (self.snd_attacker is not None and self.snd_attacker == 'player' and self.phase == 2))
 
-        def is_enemy_turn():
-            return ((fst_attacker is not None and fst_attacker == 'enemy' and phase == 1)
-                    or (snd_attacker is not None and snd_attacker == 'enemy' and phase == 2))
+        def is_enemy_turn(self):
+            return ((self.fst_attacker is not None and self.fst_attacker == 'enemy' and self.phase == 1)
+                    or (self.snd_attacker is not None and self.snd_attacker == 'enemy' and self.phase == 2))
                 
 
 

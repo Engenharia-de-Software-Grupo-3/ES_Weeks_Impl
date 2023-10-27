@@ -1,6 +1,7 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   File "game/script.rpy", line 47, in script
     pyt "Ei, [P-name], você tem algo que goste de fazer no seu tempo livre?"
@@ -10,10 +11,36 @@ KeyError: 'P-name'
     renpy.save(fn, extra_info=save_name)
 PicklingError: Can't pickle <function backstab at 0x0000000005224700>: it's not the same object as store.backstab
 >>>>>>> c4a95157e31857606c4d66b480cc1e91d22fc660
+=======
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_1/week_one.rpy", line 6, in script call
+    call expression dia from _call_expression_1
+  File "game/weeks/week_1/day_1.rpy", line 109, in script call
+    call prepare_tutorial_battle from _call_prepare_tutorial_battle
+  File "game/battlesys/labels/prepare_battle.rpy", line 14, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 6, in script call
+    call check_passive_time
+  File "game/battlesys/labels/player_turn.rpy", line 136, in script
+    $ battleState.player_passive.effect(battleState, battlePhase)
+  File "game/battlesys/labels/player_turn.rpy", line 136, in <module>
+    $ battleState.player_passive.effect(battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 85, in rubyPassiveF_
+    saida = 'Enemy ' + ((battleState.enemy_team_current_stats)[0]).enemy_name + " used " + battlePhase.enemy_skill_choice.name + "."
+AttributeError: 'Battle_phase' object has no attribute 'enemy_skill_choice'
+>>>>>>> Stashed changes
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
+<<<<<<< Updated upstream
 <<<<<<< HEAD
   File "game/script.rpy", line 47, in script
     pyt "Ei, [P-name], você tem algo que goste de fazer no seu tempo livre?"
@@ -39,10 +66,31 @@ KeyError: 'P-name'
 =======
   File "renpy/common/_layout/screen_load_save.rpym", line 35, in script
     $ ui.interact()
+=======
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_1/week_one.rpy", line 6, in script call
+    call expression dia from _call_expression_1
+  File "game/weeks/week_1/day_1.rpy", line 109, in script call
+    call prepare_tutorial_battle from _call_prepare_tutorial_battle
+  File "game/battlesys/labels/prepare_battle.rpy", line 14, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 6, in script call
+    call check_passive_time
+  File "game/battlesys/labels/player_turn.rpy", line 136, in script
+    $ battleState.player_passive.effect(battleState, battlePhase)
+>>>>>>> Stashed changes
   File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
     exec(bytecode, globals, locals)
+<<<<<<< Updated upstream
   File "renpy/common/_layout/screen_load_save.rpym", line 35, in <module>
     $ ui.interact()
   File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ui.py", line 299, in interact
@@ -88,12 +136,23 @@ KeyError: 'P-name'
     pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
 PicklingError: Can't pickle <function backstab at 0x0000000005224700>: it's not the same object as store.backstab
 >>>>>>> c4a95157e31857606c4d66b480cc1e91d22fc660
+=======
+  File "game/battlesys/labels/player_turn.rpy", line 136, in <module>
+    $ battleState.player_passive.effect(battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 85, in rubyPassiveF_
+    saida = 'Enemy ' + ((battleState.enemy_team_current_stats)[0]).enemy_name + " used " + battlePhase.enemy_skill_choice.name + "."
+AttributeError: 'Battle_phase' object has no attribute 'enemy_skill_choice'
+>>>>>>> Stashed changes
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.1.2.23090503
 ES_Weeks_Impl 1.0
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 Mon Oct 23 19:35:23 2023
 =======
 Sun Oct 22 20:17:39 2023
 >>>>>>> c4a95157e31857606c4d66b480cc1e91d22fc660
+=======
+Fri Oct 27 02:05:21 2023
+>>>>>>> Stashed changes

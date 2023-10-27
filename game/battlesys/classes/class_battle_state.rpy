@@ -1,5 +1,4 @@
 init python:
-
     class Enemy_current_stats(object):
         def __init__(self, enemy) :
             self.original_enemy = enemy
@@ -27,13 +26,14 @@ init python:
                 saida.append(Enemy_current_stats(e))
         return saida
 
-
+    """current_stage = Battle_begin | Before_menu | Battle_phase | Show_fighters """
     # Battle State Class
     class Battle_state(object):
         
         def __init__(self, player, enemy_team) :
             # Field
             self.turn = 0
+            self.current_stage = "Battle_begin"
 
             # Player current stats
             self.original_player = player
@@ -86,6 +86,10 @@ init python:
                 saida = player_name + " is no longer affected by " + venom.name
                 self.player_status_condition_dictionare.pop(venom)
                 renpy.say('', saida)
+
+        def check_passive_time(self, passive):
+            return (passive.activation_time.upper() == 'ALWAYS' 
+                    or passive.activation_time.upper() == self.current_stage.upper())
 
         def getEnemysDefeated(self):
             saida = 0

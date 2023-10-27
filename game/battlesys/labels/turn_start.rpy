@@ -1,12 +1,14 @@
 label turn_start:
     while (True):
-        call victory_check from _call_victory_check
-        call defeat_check from _call_defeat_check
+        call victory_check
+        call defeat_check
         if (victory or defeat):
             return
-        call check_enemy_change from _call_check_enemy_change
+        call check_enemy_change
         $ battleState.turn = battleState.turn + 1
-        call battle_menu from _call_battle_menu
+        $ battleState.current_stage = 'Before_menu'
+        call check_passive_time_beforeBP
+        call battle_menu
 
 label victory_check:
     python:
@@ -31,7 +33,14 @@ label check_enemy_change:
                     break
 
     if (enemy_change):
-        call enemy_change from _call_enemy_change_1
+        call enemy_change
 
     return
 
+label check_passive_time_beforeBP:
+    $ enemy = (battleState.enemy_team_current_stats)[0]
+    if (battleState.check_passive_time(battleState.player_passive)):
+        $ battleState.player_passive.effect(battleState, _)
+    if (battleState.check_passive_time(battleState.enemy_team_passive)):
+        $ battleState.enemy_team_passive.effect(battleState, _)
+    return

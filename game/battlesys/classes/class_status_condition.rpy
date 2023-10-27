@@ -5,7 +5,7 @@ init python:
                     Name
                     Activation_time {
                         1. Battle_Start | Turn_start | Effect_calculate | Effect_hit | Battle_End 
-                        2. Item usage
+                        2. Start
                         3. Enemy change
                         4. Always
                     }

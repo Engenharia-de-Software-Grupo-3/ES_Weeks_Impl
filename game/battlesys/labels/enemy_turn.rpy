@@ -3,53 +3,61 @@ label bp_enemy_turn:
     $ battlePhase.current_stage = 'Turn_start'
     $ battlePhase.phase += 1
     # CHECK PASSIVES, HP = 0, ENEMY_HP = 0
-    call check_passive_time from _call_check_passive_time
+    call check_passive_time
     if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
         return
     # CHECK NEG_STATS 
-    call check_status_condition from _call_check_status_condition
+    call check_status_condition
     if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
         return
     # Effect_calculator
-    python:
-        player_type = battleState.player_type
-        # Get skill info
-        skill = battlePhase.enemy_skill
-        superEffective = 1
-        if skill.type in player_type.disadvantages:
-            superEffective = superEffective * 2
-        if skill.type in enemy.enemy_type.advantages:
-            superEffective = superEffective * 0.5
-        effect_list = skill.effect_list
-        effect_list_size = len(effect_list)
-        is_sequential = (skill.effect_sequence.upper() == 'SEQUENTIAL')
-        i = 0
-        inLoop = True
-        enemy_name = ((battleState.enemy_team_current_stats)[0]).enemy_name
-    narrator 'Enemy [enemy_name] used [skill.name].'
+    $ skill = battlePhase.enemy_skill
+    $ enemy_name = ((battleState.enemy_team_current_stats)[0]).enemy_name
+    if battlePhase.enemy_attack_blocked:
+        $ inLoop = False
+        if not (battlePhase.enemy_attack_blockedMsg is None or battlePhase.enemy_attack_blockedMsg == ""):
+            "[battlePhase.enemy_attack_blockedMsg]"
+    else:
+        python:
+            player_type = battleState.player_type
+            # Get skill info
+            superEffective = 1
+            if skill.type in player_type.disadvantages:
+                superEffective = superEffective * 2
+            if skill.type in player_type.advantages:
+                superEffective = superEffective * 0.5
+            effect_list = skill.effect_list
+            effect_list_size = len(effect_list)
+            is_sequential = (skill.effect_sequence.upper() == 'SEQUENTIAL')
+            i = 0
+            if (i == effect_list_size):
+                inLoop = False
+            else:
+                inLoop = True
+        'Enemy [enemy_name] used [skill.name].'
     while (inLoop):
         $ effect = effect_list[i]
         $ battlePhase.enemy_attack_hit = False
         # Effect_calculate------------------------------------------------------------
         $ battlePhase.current_stage = 'Effect_calculate'
-        call enemy_calculate_manager from _call_enemy_calculate_manager
+        call enemy_calculate_manager
         # CHECK PASSIVES, HP = 0, ENEMY_HP = 0
-        call check_passive_time from _call_check_passive_time_1
+        call check_passive_time
         if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
             return
         # CHECK NEG_STATS
-        call check_status_condition from _call_check_status_condition_1
+        call check_status_condition
         if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
             return
         # Effect_hit-----------------------------------------------------------------
         $ battlePhase.current_stage = 'Effect_hit'
-        call enemy_hit_manager from _call_enemy_hit_manager
+        call enemy_hit_manager
         # CHECK PASSIVES, HP = 0, ENEMY_HP = 0
-        call check_passive_time from _call_check_passive_time_2
+        call check_passive_time
         if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
             return
         # CHECK NEG_STATS
-        call check_status_condition from _call_check_status_condition_2
+        call check_status_condition
         if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
             return
         # Check in loop
@@ -64,12 +72,12 @@ label bp_enemy_turn:
     if battlePhase.phase == 2:
         $ battlePhase.current_stage = 'Battle_end'
         # CHECK PASSIVES
-        call check_passive_time from _call_check_passive_time_3
+        call check_passive_time
         # CHECK NEG_STATS
-        call check_status_condition from _call_check_status_condition_3
+        call check_status_condition
         return
     else:
-        call bp_player_turn from _call_bp_player_turn
+        call bp_player_turn
 
     return
         

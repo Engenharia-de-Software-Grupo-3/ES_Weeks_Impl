@@ -16,7 +16,7 @@ label semana1_dia2:
     ada "E seu corpo descesse ao mar"
     "De repente o silêncio"
     ada "Saibam disso: diante de você está Ada Lovelace, a membro mais notável desta infame instalação!"
-    $ ada.name = 'Ada Lovelace'
+    $ ada = Character('Ada Lovelace', who_color = '#494848', image = 'ada')
     play music "audio/music (2).mp3"
     "Nas caras dos alunos estava estampado um tédio de que espera na fila do banco."
     "Aparentemente aquilo era só mais uma quarta normal na semana dos que frequentam essa academia"
@@ -44,7 +44,7 @@ label semana1_dia2:
     ada "Java"
     # java 6
     show java 6 at right
-    $ jav.name = 'Java'
+    $ jav = Character('Java', who_color = '#ff7300', image = "java")
     jav 'Zzzzz…'
     ada 'Como um suco de lágrimas pungidas, está velho, morto e cansado'
     ada '...'

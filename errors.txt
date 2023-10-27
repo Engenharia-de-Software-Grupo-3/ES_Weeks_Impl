@@ -2,6 +2,7 @@
 errors listed below, and try again.
 
 
+<<<<<<< Updated upstream
 File "game/iteracoes/python4.rpy", line 3: expected 'image_name_component' not found.
     image python aflita = "images/Sprites Python/python 6.png"
          ^
@@ -272,3 +273,11 @@ File "game/iteracoes/python4.rpy", line 312: expected 'image_name_component' not
 
 Ren'Py Version: Ren'Py 8.1.2.23090503
 Mon Oct 23 23:22:59 2023
+=======
+File "game/weeks/week_0/week_zero.rpy", line 72: invalid syntax
+            saida = 'Enemy ' + ((battleState.enemy_team_current_stats)[0]).enemy_name " used " + battlePhase.enemy_skill_choice.name + "."
+                                                                                       ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Fri Oct 27 02:03:16 2023
+>>>>>>> Stashed changes
