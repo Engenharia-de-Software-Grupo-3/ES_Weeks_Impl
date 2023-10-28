@@ -102,21 +102,29 @@ label semana2_dia8:
     #Definição dos sprites dos parceiros
     if parceiro1[0].name == "Python":
         $ imagem_parceiro1 = "python_parca"
+        $ grupoPythonRuby = True
     elif parceiro1[0].name == "Java":
         $ imagem_parceiro1 = "java_parca"
+        $ grupoJavaLua = True
     elif parceiro1[0].name == "Ruby":
         $ imagem_parceiro1 = "ruby_parca"
+        $ grupoPythonRuby = True
     else:
         $ imagem_parceiro1 = "lua_parca"
+        $ grupoJavaLua = True
     
     if parceiro2[0].name == "Python":
         $ imagem_parceiro2 = "python_parca"
+        $ grupoPythonRuby = True
     elif parceiro2[0].name == "Java":
         $ imagem_parceiro2 = "java_parca"
+        $ grupoJavaLua = True
     elif parceiro2[0].name == "Ruby":
         $ imagem_parceiro2 = "ruby_parca"
+        $ grupoPythonRuby = True
     else:
         $ imagem_parceiro2 = "lua_parca"
+        $ grupoJavaLua = True
     
     $ nome_parceiro1 = parceiro1[0]
     $ nome_parceiro2 = parceiro2[0]
