@@ -17,10 +17,12 @@ init python:
 
             #Abilities_info
             self.player_attack_hit = False
+            self.player_attack_hitOnce = False
             self.player_attack_blocked = False
             self.player_attack_blockedMsg = ""
             
             self.enemy_attack_hit = False
+            self.enemy_attack_hitOnce = False
             self.enemy_attack_blocked = False
             self.enemy_attack_blockedMsg = ""
 

@@ -82,7 +82,7 @@ init python:
     
     # Battle Passives Functions
     def pythonPassiveF_(battleState, battlePhase):
-        if battlePhase.phase == 2 and battlePhase.is_enemy_turn() and not battlePhase.player_attack_hit:
+        if battlePhase.phase == 2 and battlePhase.is_enemy_turn() and not battlePhase.player_attack_hitOnce:
             battlePhase.enemy_attack_blocked = True
             renpy.say("", "IndentationError: expected an indented block")
             saida = 'Enemy ' + ((battleState.enemy_team_current_stats)[0]).enemy_name + " used " + battlePhase.enemy_skill.name + "."

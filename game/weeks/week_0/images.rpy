@@ -20,6 +20,9 @@ image rua:
 image biblioteca: 
     "images/Fotos/library.jpg"
     zoom 0.38
+image book: 
+    "images/Fotos/book.jpg"
+    zoom 0.60
 image corredor: 
     "images/Fotos/corredor.jpeg"
     zoom 2.9
@@ -46,6 +49,7 @@ image haskell neutral 2 = "images/Sprites Haskell/haskell neutral 2.png"
 # JAVA
 image java = "images/Sprites Java/java 1.png"
 image java 2 = "images/Sprites Java/java 2.png"
+image java 8 = "images/Sprites Java/java 8.png"
 image java 9 = "images/Sprites Java/java 9.png"
 
 image java i = "images/Sprites Java/java 18.png"
@@ -123,6 +127,7 @@ image ruby = "images/Sprites Ruby/ruby 1.png"
 image ruby 2 = "images/Sprites Ruby/ruby 2.png"
 image ruby 3 = "images/Sprites Ruby/ruby 3.png"
 image ruby 4 = "images/Sprites Ruby/ruby 4.png"
+image ruby 5 = "images/Sprites Ruby/ruby 5.png"
 image ruby 8 = "images/Sprites Ruby/ruby 8.png"
 image ruby 16 = "images/Sprites Ruby/ruby 16.png"
 image ruby 26 = "images/Sprites Ruby/ruby 26.png"
@@ -148,12 +153,14 @@ image java_winner = "image/CG/3.PNG"
 image lua_miku = "image/CG/2 V2.PNG"
 image ruby_winner = "image/CG/4.PNG"
 
-# BATTLE BOX
+# BOXs
 image battle_menu_box = "images/botoes, caixas e etc/2.png"
 image battle_change_menu_box = "images/botoes, caixas e etc/2_2.png"
 
 image player_box = "images/botoes, caixas e etc/player_box.png"
 image enemy_box = "images/botoes, caixas e etc/enemy_box.png"
+
+image freeDay_menu_box = "images/botoes, caixas e etc/2meio.png"
 
 # BATTLE PCs
 image pyth battle = "images/Batalha pngs/python 1.png"
@@ -213,3 +220,4 @@ image ada ballin:
     zoom 1.3
 image pro_owl = "images/prolog  bird.png"
 image bola = "images/basketball.png"
+image curriculo = "images/curriculo.png"

@@ -12,9 +12,10 @@ init python:
              Effect_list
              Class                         
         """
-        def __init__(self, name, effect_sequence, type, effect_list, speed = 0) :
+        def __init__(self, name, effect_sequence, type, effect_list, speed = 0, text = "") :
             self.name = name
             self.type = type
             self.effect_list = effect_list
             self.effect_sequence = effect_sequence
             self.speed = speed
+            self.text = text

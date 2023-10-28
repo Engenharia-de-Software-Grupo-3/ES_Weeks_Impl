@@ -7,12 +7,12 @@ default num_itens = -1
 default nenhuma_compra = True
 
 label shop:
+    scene black
 
     show haskell at left
 
     if nenhuma_compra:
-        "Saudações! O que deseja?"
-    
+        "Saudações! O que deseja?"   
     else:
         "Mais alguma coisa?"
 
