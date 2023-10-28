@@ -63,14 +63,18 @@ image java i = "images/Sprites Java/java 18.png"
 image lua = "images/Sprites Lua/lua 1.png"
 image lua 2 = "images/Sprites Lua/lua 2.png"
 image lua 3 = "images/Sprites Lua/lua 3.png"
+image lua 4 = "images/Sprites Lua/lua 4.png"
 image lua 5 = "images/Sprites Lua/lua 5.png"
 image lua 6 = "images/Sprites Lua/lua 6.png"
 image lua 7 = "images/Sprites Lua/lua 7.png"
+image lua 8 = "images/Sprites Lua/lua 8.png"
 image lua 9 = "images/Sprites Lua/lua 9.png"
 image lua 10 = "images/Sprites Lua/lua 10.png"
 image lua 11 = "images/Sprites Lua/lua 11.png"
+image lua 12 = "images/Sprites Lua/lua 12.png"
 image lua 13 = "images/Sprites Lua/lua 13.png"
 image lua 14 = "images/Sprites Lua/lua 14.png"
+image lua 15 = "images/Sprites Lua/lua 15.png"
 image lua 16 = "images/Sprites Lua/lua 16.png"
 image lua 17 = "images/Sprites Lua/lua 17.png"
 image lua 18 = "images/Sprites Lua/lua 18.png"
@@ -80,8 +84,11 @@ image lua 21 = "images/Sprites Lua/lua 21.png"
 image lua 22 = "images/Sprites Lua/lua 22.png"
 image lua 23 = "images/Sprites Lua/lua 23.png"
 image lua 24 = "images/Sprites Lua/lua 24.png"
+image lua 25 = "images/Sprites Lua/lua 25.png"
 image lua 26 = "images/Sprites Lua/lua 26.png"
+image lua 27 = "images/Sprites Lua/lua 27.png"
 image lua 28 = "images/Sprites Lua/lua 28.png"
+image lua 29 = "images/Sprites Lua/lua 29.png"
 image lua 30 = "images/Sprites Lua/lua 30.png"
 image lua 31 = "images/Sprites Lua/lua 31.png"
 
@@ -125,17 +132,32 @@ image pyth 5 = "images/Sprites Python/python 5.png"
 image pyth 6 = "images/Sprites Python/python 6.png"
 image pyth 7 = "images/Sprites Python/python 7.png"
 image pyth 8 = "images/Sprites Python/python 8.png"
+image pyth 9 = "images/Sprites Python/python 9.png"
+image pyth 10 = "images/Sprites Python/python 10.png"
+image pyth 11 = "images/Sprites Python/python 11.png"
 image pyth 12 = "images/Sprites Python/python 12.png"
 image pyth 13 = "images/Sprites Python/python 13.png"
 image pyth 14 = "images/Sprites Python/python 14.png"
 image pyth 15 = "images/Sprites Python/python 15.png"
+image pyth 16 = "images/Sprites Python/python 16.png"
+image pyth 17 = "images/Sprites Python/python 17.png"
 image pyth 18 = "images/Sprites Python/python 18.png"
+image pyth 19 = "images/Sprites Python/python 19.png"
+image pyth 20 = "images/Sprites Python/python 20.png"
+image pyth 21 = "images/Sprites Python/python 21.png"
+image pyth 22 = "images/Sprites Python/python 22.png"
 image pyth 23 = "images/Sprites Python/python 23.png"
+image pyth 24 = "images/Sprites Python/python 24.png"
+image pyth 25 = "images/Sprites Python/python 25.png"
+image pyth 26 = "images/Sprites Python/python 26.png"
+image pyth 27 = "images/Sprites Python/python 27.png"
 image pyth 28 = "images/Sprites Python/python 28.png"
 image pyth 29 = "images/Sprites Python/python 29.png"
+image pyth 30 = "images/Sprites Python/python 30.png"
 
 image pyth i = "images/Sprites Python/python 31.png"
 image pyth i 32 = "images/Sprites Python/python 32.png"
+image pyth i 33 = "images/Sprites Python/python 33.png"
 image pyth i 34 = "images/Sprites Python/python 34.png"
 image pyth i 35 = "images/Sprites Python/python 35.png"
 
@@ -251,3 +273,20 @@ image ada ballin:
     zoom 1.3
 image pro_owl = "images/prolog  bird.png"
 image bola = "images/basketball.png"
+
+# Itens loja
+image item = ConditionSwitch("item_imagem == 0", "images/Itens/item 1.png",
+    "item_imagem == 1", "images/Itens/item 2.png",
+    "item_imagem == 2", "images/Itens/item 3.png",
+    "item_imagem == 3", "images/Itens/item 4.png",
+    "item_imagem == 4", "images/Itens/item 5.png",
+    "item_imagem == 5", "images/Itens/item 6.png",
+    "item_imagem == 6", "images/Itens/item 7.png",
+    "item_imagem == 7", "images/Itens/item 8.png",
+    "item_imagem == 8", "images/Itens/item 9.png",
+    "item_imagem == 9", "images/Itens/item 10.png",
+    "item_imagem == 10", "images/Itens/item 11.png",
+    "item_imagem == 11", "images/Itens/item 12.png",
+    "item_imagem == 12", "images/Itens/item 13.png",
+    "item_imagem == 13", "images/Itens/item 14.png",
+    "item_imagem == 14", "images/Itens/item 15.png")
