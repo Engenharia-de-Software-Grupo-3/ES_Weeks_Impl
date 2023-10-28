@@ -91,6 +91,8 @@ image lua 28 = "images/Sprites Lua/lua 28.png"
 image lua 29 = "images/Sprites Lua/lua 29.png"
 image lua 30 = "images/Sprites Lua/lua 30.png"
 image lua 31 = "images/Sprites Lua/lua 31.png"
+image lua 32 = "images/Sprites Lua/lua 32.png"
+image lua 33 = "images/Sprites Lua/lua 33.png"
 
 # PROLOG
 image prolog = "images/Sprites Prolog/prolog 1.png"
@@ -160,6 +162,7 @@ image pyth i 32 = "images/Sprites Python/python 32.png"
 image pyth i 33 = "images/Sprites Python/python 33.png"
 image pyth i 34 = "images/Sprites Python/python 34.png"
 image pyth i 35 = "images/Sprites Python/python 35.png"
+image pyth i 36 = "images/Sprites Python/python 36.png"
 
 image pyth ii = "images/Sprites Python/python 42.png"
 image pyth ii 53 = "images/Sprites Python/python 53.png"
