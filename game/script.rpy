@@ -9,7 +9,7 @@
 # The game starts here.
 
 label start:
-
+    
     $ w = 0
     while True:
         if w == 4: 

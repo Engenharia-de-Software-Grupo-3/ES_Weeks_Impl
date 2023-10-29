@@ -383,20 +383,24 @@ label escolhendo_grupo:
     menu:
         "E então, quem será a primeira pessoa que estará ao seu lado através da dor e sofrimento que será a produção desse trabalho?"
         "Python":
+            $ falas_python[0] = pyt
             $ parceiro1 = falas_python
         "Lua":
             $ parceiro1 = falas_lua
         "Java":
+            $ falas_java[0] = jav
             $ parceiro1 = falas_java
         "Ruby":
             $ parceiro1 = falas_ruby
     menu:
         "E quem será a segunda?"
         "Python":
+            $ falas_python[0] = pyt
             $ parceiro2 = falas_python
         "Lua":
             $ parceiro2 = falas_lua
         "Java":
+            $ falas_java[0] = jav
             $ parceiro2 = falas_java
         "Ruby":
             $ parceiro2 = falas_ruby
