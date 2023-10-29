@@ -41,6 +41,7 @@ image cobol 11 = "images/Sprites Cobol/cobol 11.png"
 
 # HASKELL
 image haskell = "images/Sprites Haskell/haskell happy.png"
+image haskell neutral 2 = "images/Sprites Haskell/haskell neutral 2.png"
 
 # JAVA
 image java = "images/Sprites Java/java 1.png"
@@ -70,19 +71,35 @@ image lua 30 = "images/Sprites Lua/lua 30.png"
 image lua 31 = "images/Sprites Lua/lua 31.png"
 
 # PROLOG
-image prolog 1 = "images/Sprites Prolog/prolog 1.png"
+image prolog = "images/Sprites Prolog/prolog 1.png"
 image prolog 2 = "images/Sprites Prolog/prolog 2.png"
+image prolog 3 = "images/Sprites Prolog/prolog 3.png"
+image prolog 4 = "images/Sprites Prolog/prolog 4.png"
+image prolog 5 = "images/Sprites Prolog/prolog 5.png"
 image prolog 6 = "images/Sprites Prolog/prolog 6.png"
 image prolog 7 = "images/Sprites Prolog/prolog 7.png"
 image prolog 8 = "images/Sprites Prolog/prolog 8.png"
 image prolog 9 = "images/Sprites Prolog/prolog 9.png"
+image prolog 10 = "images/Sprites Prolog/prolog 10.png"
+image prolog 11 = "images/Sprites Prolog/prolog 11.png"
+image prolog 12 = "images/Sprites Prolog/prolog 12.png"
 image prolog 13 = "images/Sprites Prolog/prolog 13.png"
+image prolog 14 = "images/Sprites Prolog/prolog 14.png"
 image prolog 15 = "images/Sprites Prolog/prolog 15.png"
 image prolog 16 = "images/Sprites Prolog/prolog 16.png"
+image prolog 17 = "images/Sprites Prolog/prolog 17.png"
 image prolog 18 = "images/Sprites Prolog/prolog 18.png"
 image prolog 19 = "images/Sprites Prolog/prolog 19.png"
+image prolog 20 = "images/Sprites Prolog/prolog 20.png"
 image prolog 21 = "images/Sprites Prolog/prolog 21.png"
 image prolog 22 = "images/Sprites Prolog/prolog 22.png"
+image prolog 23 = "images/Sprites Prolog/prolog 23.png"
+image prolog 24 = "images/Sprites Prolog/prolog 24.png"
+image prolog 25 = "images/Sprites Prolog/prolog 25.png"
+image prolog 26 = "images/Sprites Prolog/prolog 26.png"
+image prolog 27 = "images/Sprites Prolog/prolog 27.png"
+image prolog 28 = "images/Sprites Prolog/prolog 28.png"
+image prolog 29 = "images/Sprites Prolog/prolog 29.png"
 
 # PYTHON
 image pyth = "images/Sprites Python/python 1.png"
@@ -125,6 +142,11 @@ image swift 19 = "images/Sprites Swift/swift 19.png"
 # CGs
 image luaXcobol = "images/CGs/6.png"
 image swiftXruby = 'images/CGs/7.png'
+image prolog_entra = "images/CGs/5.png"
+image python_hotdog = 'images/CG/1.png'
+image java_winner = "image/CG/3.PNG"
+image lua_miku = "image/CG/2 V2.PNG"
+image ruby_winner = "image/CG/4.PNG"
 
 # BATTLE BOX
 image battle_menu_box = "images/botoes, caixas e etc/2.png"

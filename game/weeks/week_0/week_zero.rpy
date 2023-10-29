@@ -24,6 +24,22 @@ init python:
     # School
     school_name = 'Sem-Nome-Definido'
 
+    #Flags
+    grupoPythonRuby = False
+    grupoJavaLua = False
+
+    #EventsCounter
+    pythonEventsCounter = 0
+    javaEventsCounter = 0
+    rubyEventsCounter = 0
+    luaEventsCounter = 0
+        
+    #LoveCounters
+    pythonLoveCounter = 0
+    javaLoveCounter = 0
+    rubyLoveCounter = 0
+    luaLoveCounter = 0
+
     # Battle Status Conditions Functions
     def poison_effect(afflicted, battleState, battlePhase):
             if afflicted == 'player':
