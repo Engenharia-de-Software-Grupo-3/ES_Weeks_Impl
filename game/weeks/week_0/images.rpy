@@ -209,13 +209,33 @@ image ruby 37 = "images/Sprites Ruby/ruby 37.png"
 
 # SWIFT
 image swift = "images/Sprites Swift/swift 1.png"
+image swift 2 = "images/Sprites Swift/swift 2.png"
 image swift 3 = "images/Sprites Swift/swift 3.png"
+
+image swift 4 = "images/Sprites Swift/swift 4.png"
+image swift 5 = "images/Sprites Swift/swift 5.png"
+
 image swift 6 = "images/Sprites Swift/swift 6.png"
+image swift 7 = "images/Sprites Swift/swift 7.png"
+
 image swift 8 = "images/Sprites Swift/swift 8.png"
+image swift 9 = "images/Sprites Swift/swift 9.png"
 image swift 10 = "images/Sprites Swift/swift 10.png"
+image swift 11 = "images/Sprites Swift/swift 11.png"
 image swift 12 = "images/Sprites Swift/swift 12.png"
+image swift 13 = "images/Sprites Swift/swift 13.png"
 image swift 14 = "images/Sprites Swift/swift 14.png"
+image swift 15 = "images/Sprites Swift/swift 15.png"
+image swift 16 = "images/Sprites Swift/swift 16.png"
+image swift 17 = "images/Sprites Swift/swift 17.png"
+image swift 18 = "images/Sprites Swift/swift 18.png"
 image swift 19 = "images/Sprites Swift/swift 19.png"
+
+image swift 20 = "images/Sprites Swift/swift 20.png"
+image swift 21 = "images/Sprites Swift/swift 21.png"
+image swift 22 = "images/Sprites Swift/swift 22.png"
+image swift 23 = "images/Sprites Swift/swift 23.png"
+image swift 24 = "images/Sprites Swift/swift 24.png"
 
 # CGs
 image luaXcobol = "images/CGs/6.png"
@@ -296,6 +316,7 @@ image bola = "images/basketball.png"
 image emptydnd = "images/DragNDrop/dragndrop_empty.jpeg"
 image futon = "images/futon.png"
 image curriculo = "images/curriculo.png"
+image pinguins = "images/pinguins.png"
 
 # Itens loja
 image item = ConditionSwitch("item_imagem == 0", "images/Itens/item 1.png",
