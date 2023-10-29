@@ -2,6 +2,7 @@ label free_day_start:
     scene black
     "Hoje é um dia livre. O que fazer?"
     python:
+        energy = 4
         toJava = False
         libraryJava = False
         toRuby = False
@@ -10,7 +11,6 @@ label free_day_start:
         libraryPython = False
         toLua = False
         libraryLua = False
-        energy = 4
     while True:
         scene intro with dissolve
         show freeDay_menu_box
@@ -37,7 +37,75 @@ label free_day_start:
                 mc "Talvez amanhã..."
             else:
                 call expression freeDChoice
-
+label .toFish:
+    scene pesca with dissolve
+    $ energy -= 1
+    "Não dê o token, ensine a pescar"
+    "."
+    ".."
+    "..."
+    "Você pegou alguma coisa!" with hpunch
+    if renpy.random.randint(1, 100) <= 5:
+        mc "Um peixe? Por que alguém pescaria um peixe?"
+        "Abaixou o peixe na água, que deslizou de volta ao lago."
+        return
+    python:
+        valor = renpy.random.randint(1, 4)
+        valorStr = str(valor)
+        token += valor
+        renpy.say("", "Você obteve [valorStr] token")
+    return
+label .toPython:
+    if (toPython == True):
+        "Talvez eu devesse passar tempo com outras pessoas também."
+        return
+    elif (pythonEventsCounter == 4):
+        "Pensando melhor, já combinamos de organizar a festa juntos."
+        return
+    else:
+        $ toPython = True
+        $ energy -= 1
+        $ evento = "pythonEvent" + str(pythonEventsCounter) 
+        call expression evento
+        return
+label .toJava:
+    if (toJava == True):
+        "Talvez eu devesse passar tempo com outras pessoas também."
+        return
+    elif (javaEventsCounter == 4):
+        "Pensando melhor, ele deve estar se preparando para a Olimpíada de Matemática Competitiva."
+        return
+    else:
+        $ toJava = True
+        $ energy -= 1
+        $ evento = "javaEvent" + str(javaEventsCounter) 
+        call expression evento
+        return
+label .toRuby:
+    if (toRuby == True):
+        "Talvez eu devesse passar tempo com outras pessoas também."
+        return
+    elif (rubyEventsCounter == 4):
+        "Pensando melhor, ele deve estar se preparando para a eleição."
+        return
+    else:
+        $ toRuby = True
+        $ evento = "rubyEvent" + str(rubyEventsCounter) 
+        call expression evento
+        return
+label .toLua:
+    if (toLua == True):
+        "Talvez eu devesse passar tempo com outras pessoas também."
+        return
+    elif (luaEventsCounter == 4):
+        "Pensando melhor, ela deve estar preparando seu cosplay."
+        return
+    else:
+        $ energy -= 1
+        $ toLua = True
+        $ evento = "luaEvent" + str(luaEventsCounter) 
+        call expression evento
+        return
 
 screen free_day_menu:
     image "images/botoes, caixas e etc/energy icon.png":
@@ -64,7 +132,7 @@ screen free_day_menu:
     frame:
         xalign 0.3
         yalign 0.2
-        textbutton "Pescar no Lago" at center action [SetVariable('freeDChoice', "toFish"), Return()]
+        textbutton "Pescar no Lago" at center action [SetVariable('freeDChoice', "free_day_start.toFish"), Return()]
     frame:
         xalign 0.8
         yalign 0.33
@@ -72,17 +140,17 @@ screen free_day_menu:
     frame:
         xalign 0.55
         yalign 0.12
-        textbutton "Visitar Python" at center action [SetVariable('freeDChoice', 'toPython'), Return()]
+        textbutton "Visitar Python" at center action [SetVariable('freeDChoice', 'free_day_start.toPython'), Return()]
     frame:
         xalign 0.63
         yalign 0.865
-        textbutton "Visitar Java" at center action [SetVariable('freeDChoice', 'toJava'), Return()]
+        textbutton "Visitar Java" at center action [SetVariable('freeDChoice', 'free_day_start.toJava'), Return()]
     frame:
         xalign 0.27
         yalign 0.8
-        textbutton "Visitar Ruby" at center action [SetVariable('freeDChoice', 'toRuby'), Return()]
+        textbutton "Visitar Ruby" at center action [SetVariable('freeDChoice', 'free_day_start.toRuby'), Return()]
     frame:
         xalign 0.2
         yalign 0.44
-        textbutton "Visitar Lua" at center action [SetVariable('freeDChoice', 'toLua'), Return()]
+        textbutton "Visitar Lua" at center action [SetVariable('freeDChoice', 'free_day_start.toLua'), Return()]
     

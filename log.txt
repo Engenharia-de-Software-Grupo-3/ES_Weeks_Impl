@@ -1,71 +1,1720 @@
-Sun Oct 29 00:10:36 2023
+Sun Oct 29 14:28:38 2023
 Windows-10-10.0.19041
-Ren'Py 8.1.2.23090503
+Ren'Py 8.1.1.23060707
  
 
-Bootstrap to the start of init.init. took 0.04s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.04s
-Loading script. took 0.28s
-Loading save slot metadata. took 0.04s
+Bootstrap to the start of init.init. took 0.32s
+Early init. took 0.01s
+Loader init. took 1.31s
+Loading error handling. took 0.31s
+Loading script. took 5.67s
+Loading save slot metadata. took 1.51s
 Loading persistent. took 0.00s
-Running init code. took 0.06s
-Loading analysis data. took 0.01s
-Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\User\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
-Dump and make backups. took 0.07s
-Cleaning cache. took 0.00s
-Making clean stores. took 0.00s
-Initial gc. took 0.04s
+
+File "game/events/javaEvents.rpy", line 79: menu statement expects a non-empty block.
+    menu:
+        ^
+
+File "game/events/javaEvents.rpy", line 81: expected statement.
+    "Xadrez": 
+            ^
+
+File "game/events/javaEvents.rpy", line 96: expected statement.
+    'Matemática Competitiva': 
+                            ^
+
+File "game/events/javaEvents.rpy", line 122: expected statement.
+    "Esgrima": 
+             ^
+
+File "game/events/javaEvents.rpy", line 146: expected ':' not found.
+    label javaEvent2
+                    ^
+
+File "game/events/javaEvents.rpy", line 199: expected ':' not found.
+    label javaEvent3
+                    ^
+
+File "game/events/luaEvents.rpy", line 114: expecting name after dot.
+    'Lua limpa o chão com você em exatamente 23 segundos'.
+                                                          ^
+
+File "game/events/rubyEvents.rpy", line 94: expected 'simple_expression' not found.
+    show ruby with 
+                   ^
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start. took 0.12s
+Interface start. took 0.77s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
 Vendor: "b'Intel'"
-Renderer: b'Intel(R) UHD Graphics 620'
-Version: b'4.6.0 - Build 27.20.100.7988'
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 182.08s
+Early init. took 0.00s
+Loader init. took 0.32s
+Loading error handling. took 0.11s
+Loading script. took 2.60s
+Loading save slot metadata. took 0.22s
+Loading persistent. took 0.00s
+
+File "game/events/javaEvents.rpy", line 146: expected ':' not found.
+    label javaEvent2
+                    ^
+
+File "game/events/javaEvents.rpy", line 199: expected ':' not found.
+    label javaEvent3
+                    ^
+
+File "game/events/luaEvents.rpy", line 114: expecting name after dot.
+    'Lua limpa o chão com você em exatamente 23 segundos'.
+                                                          ^
+
+File "game/events/rubyEvents.rpy", line 94: expected 'simple_expression' not found.
+    show ruby with 
+                   ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.41s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 301.22s
+Early init. took 0.00s
+Loader init. took 0.32s
+Loading error handling. took 0.10s
+Loading script. took 4.68s
+Loading save slot metadata. took 0.27s
+Loading persistent. took 0.00s
+ - Init at game/gui.rpy:11 took 0.25313 s.
+Running init code. took 0.56s
+Loading analysis data. took 0.13s
+Analyze and compile ATL. took 0.04s
+Reloading save slot metadata. took 0.99s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 1.49s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.25s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.80s
+Build styles took 0.14s
+Load screen analysis took 0.46s
+Analyze screens took 0.28s
+Save screen analysis took 0.21s
+Prepare screens took 1.45s
+Save pyanalysis. took 0.33s
+Save bytecode. took 0.43s
+Running _start took 0.06s
+Performance test:
+Interface start. took 0.66s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
 
 Full traceback:
-  File "game/script.rpy", line 22, in script call
-    call semana2_dia4
-  File "game/weeks/week_2/day_9.rpy", line 2, in script call
-    call conversa_com_prolog_antes_aula
-  File "game/weeks/week_2/day_9.rpy", line 15, in script
-    mcN "Mais uma vez, você estava na sala de aula, um pouco entediado."
-  File "C:\Users\User\Desktop\renpy-8.1.2-sdk\renpy\ast.py", line 890, in execute
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1725, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\script.py", line 1013, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label '.toPython'.
+
+While running game code:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+ScriptError: could not find label '.toPython'.
+Resetting cache.
+Bootstrap to the start of init.init. took 383.27s
+Early init. took 0.00s
+Loader init. took 0.37s
+Loading error handling. took 0.14s
+Loading script. took 1.53s
+Loading save slot metadata. took 0.26s
+Loading persistent. took 0.00s
+Running init code. took 0.24s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.03s
+Reloading save slot metadata. took 0.18s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.43s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.22s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.26s
+Build styles took 0.04s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.14s
+Prepare screens took 0.58s
+Save pyanalysis. took 0.10s
+Save bytecode. took 0.09s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.42s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 436.39s
+Early init. took 0.00s
+Loader init. took 0.40s
+Loading error handling. took 0.12s
+Loading script. took 1.57s
+Loading save slot metadata. took 0.22s
+Loading persistent. took 0.00s
+Running init code. took 0.25s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.03s
+Reloading save slot metadata. took 0.18s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.47s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.27s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.26s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.14s
+Prepare screens took 0.54s
+Save pyanalysis. took 0.11s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.30s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 67, in script call
+    call expression evento
+  File "game/events/python4.rpy", line 171, in script
+    show pyth falando 2
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 496, in _duplicate
+    args.extraneous()
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 359, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'pyth' does not accept attributes 'falando 2'.
+
+While running game code:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 67, in script call
+    call expression evento
+  File "game/events/python4.rpy", line 171, in script
+    show pyth falando 2
+Exception: Image 'pyth' does not accept attributes 'falando 2'.
+
+Full traceback:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 67, in script call
+    call expression evento
+  File "game/events/python4.rpy", line 171, in script
+    show pyth falando 2
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 496, in _duplicate
+    args.extraneous()
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 359, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'pyth' does not accept attributes 'falando 2'.
+
+While running game code:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 67, in script call
+    call expression evento
+  File "game/events/python4.rpy", line 171, in script
+    show pyth falando 2
+Exception: Image 'pyth' does not accept attributes 'falando 2'.
+Resetting cache.
+Bootstrap to the start of init.init. took 605.41s
+Early init. took 0.00s
+Loader init. took 0.38s
+Loading error handling. took 0.10s
+Loading script. took 1.59s
+Loading save slot metadata. took 0.23s
+Loading persistent. took 0.00s
+Running init code. took 0.26s
+Loading analysis data. took 0.10s
+Analyze and compile ATL. took 0.04s
+Reloading save slot metadata. took 0.20s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.41s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.25s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.28s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.14s
+Prepare screens took 0.58s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.32s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 67, in script call
+    call expression evento
+  File "game/events/python4.rpy", line 256, in script
+    show pyth surpresa
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1428, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1391, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 733, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 496, in _duplicate
+    args.extraneous()
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\display\core.py", line 359, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'pyth' does not accept attributes 'surpresa'.
+
+While running game code:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 67, in script call
+    call expression evento
+  File "game/events/python4.rpy", line 256, in script
+    show pyth surpresa
+Exception: Image 'pyth' does not accept attributes 'surpresa'.
+Resetting cache.
+Bootstrap to the start of init.init. took 762.47s
+Early init. took 0.00s
+Loader init. took 0.44s
+Loading error handling. took 0.14s
+Loading script. took 2.15s
+Loading save slot metadata. took 0.30s
+Loading persistent. took 0.00s
+Running init code. took 0.30s
+Loading analysis data. took 0.09s
+Analyze and compile ATL. took 0.04s
+Reloading save slot metadata. took 0.19s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.47s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.25s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.29s
+Build styles took 0.04s
+Load screen analysis took 0.00s
+Analyze screens took 0.09s
+Save screen analysis took 0.14s
+Prepare screens took 0.55s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.10s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.33s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 67, in script call
+    call expression evento
+  File "game/events/python4.rpy", line 278, in script
+    mcN "Eu interrompo a fala da garota."
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
     who = eval_who(self.who, self.who_fast)
-  File "C:\Users\User\Desktop\renpy-8.1.2-sdk\renpy\ast.py", line 783, in eval_who
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
     raise Exception("Sayer '%s' is not defined." % who)
 Exception: Sayer 'mcN' is not defined.
 
 While running game code:
-  File "game/script.rpy", line 22, in script call
-    call semana2_dia4
-  File "game/weeks/week_2/day_9.rpy", line 2, in script call
-    call conversa_com_prolog_antes_aula
-  File "game/weeks/week_2/day_9.rpy", line 15, in script
-    mcN "Mais uma vez, você estava na sala de aula, um pouco entediado."
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 67, in script call
+    call expression evento
+  File "game/events/python4.rpy", line 278, in script
+    mcN "Eu interrompo a fala da garota."
 Exception: Sayer 'mcN' is not defined.
+
+Full traceback:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 100, in script call
+    call expression evento
+  File "game/events/luaEvents.rpy", line 94, in script
+    lua 'F*%#. Bem, não completamente livre. E agora que terminamos de montar o console…. A gente joga na próxima, okay? E eu vou falar um monte de coisas na próxima vez, você nem imagina!'
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1462, in say
+    what = what % tag_quoting_dict
+ValueError: unsupported format character ' ' (0x20) at index 5
+
+While running game code:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 100, in script call
+    call expression evento
+  File "game/events/luaEvents.rpy", line 94, in script
+    lua 'F*%#. Bem, não completamente livre. E agora que terminamos de montar o console…. A gente joga na próxima, okay? E eu vou falar um monte de coisas na próxima vez, você nem imagina!'
+ValueError: unsupported format character ' ' (0x20) at index 5
+Resetting cache.
+Bootstrap to the start of init.init. took 874.95s
+Early init. took 0.00s
+Loader init. took 0.39s
+Loading error handling. took 0.13s
+Loading script. took 1.65s
+Loading save slot metadata. took 0.23s
+Loading persistent. took 0.00s
+Running init code. took 0.25s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.04s
+Reloading save slot metadata. took 0.19s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.41s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.24s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.28s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.09s
+Save screen analysis took 0.14s
+Prepare screens took 0.56s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.35s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 972.24s
+Early init. took 0.00s
+Loader init. took 0.43s
+Loading error handling. took 0.14s
+Loading script. took 1.78s
+Loading save slot metadata. took 0.49s
+Loading persistent. took 0.00s
+Running init code. took 0.81s
+Loading analysis data. took 0.13s
+Analyze and compile ATL. took 0.04s
+Reloading save slot metadata. took 0.36s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.48s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.26s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.25s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.14s
+Prepare screens took 0.57s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.33s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 89, in script call
+    call expression evento
+  File "game/events/rubyEvents.rpy", line 5, in script
+    ruby 2 '[player_name]! Como vai?'
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'ruby' is not defined.
+
+While running game code:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 89, in script call
+    call expression evento
+  File "game/events/rubyEvents.rpy", line 5, in script
+    ruby 2 '[player_name]! Como vai?'
+Exception: Sayer 'ruby' is not defined.
+Resetting cache.
+Bootstrap to the start of init.init. took 1072.42s
+Early init. took 0.00s
+Loader init. took 0.33s
+Loading error handling. took 0.11s
+Loading script. took 1.51s
+Loading save slot metadata. took 0.26s
+Loading persistent. took 0.00s
+Running init code. took 0.26s
+Loading analysis data. took 0.09s
+Analyze and compile ATL. took 0.04s
+Reloading save slot metadata. took 0.20s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.52s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.54s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.62s
+Build styles took 0.09s
+Load screen analysis took 0.00s
+Analyze screens took 0.18s
+Save screen analysis took 0.23s
+Prepare screens took 0.95s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.12s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.84s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 78, in script call
+    call expression evento
+  File "game/events/javaEvents.rpy", line 71, in script
+    mcN 'Realmente há bastante coisa. Xadrez, Teatro, Matemática
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'mcN' is not defined.
+
+While running game code:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 78, in script call
+    call expression evento
+  File "game/events/javaEvents.rpy", line 71, in script
+    mcN 'Realmente há bastante coisa. Xadrez, Teatro, Matemática
+Exception: Sayer 'mcN' is not defined.
+
+Full traceback:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 78, in script call
+    call expression evento
+  File "game/events/javaEvents.rpy", line 74, in script
+    mcN 'Equitação, Banda, Cozinha, Caça ao Yeti,
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'mcN' is not defined.
+
+While running game code:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 78, in script call
+    call expression evento
+  File "game/events/javaEvents.rpy", line 74, in script
+    mcN 'Equitação, Banda, Cozinha, Caça ao Yeti,
+Exception: Sayer 'mcN' is not defined.
+Resetting cache.
+Bootstrap to the start of init.init. took 1210.13s
+Early init. took 0.00s
+Loader init. took 0.44s
+Loading error handling. took 0.14s
+Loading script. took 1.97s
+Loading save slot metadata. took 0.23s
+Loading persistent. took 0.00s
+Running init code. took 0.26s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.03s
+Reloading save slot metadata. took 0.19s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.50s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.27s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.28s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.10s
+Save screen analysis took 0.14s
+Prepare screens took 0.53s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.07s
+Running _start took 0.01s
+Performance test:
+Interface start. took 0.34s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1229.02s
+Early init. took 0.00s
+Loader init. took 0.42s
+Loading error handling. took 0.10s
+Loading script. took 3.01s
+Loading save slot metadata. took 0.25s
+Loading persistent. took 0.00s
+Running init code. took 0.27s
+Loading analysis data. took 0.14s
+Analyze and compile ATL. took 0.15s
+Reloading save slot metadata. took 0.49s
+Index archives took 0.00s
+Dump and make backups. took 0.96s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.60s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.58s
+Build styles took 0.05s
+Load screen analysis took 0.44s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.76s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.02s
+Performance test:
+Interface start. took 0.76s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.02s
+Load screen analysis took 0.14s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.01s
+
+Full traceback:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 78, in script call
+    call expression evento
+  File "game/events/javaEvents.rpy", line 71, in script
+    mcN 'Realmente há bastante coisa. Xadrez, Teatro, Matemática
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'mcN' is not defined.
+
+While running game code:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 78, in script call
+    call expression evento
+  File "game/events/javaEvents.rpy", line 71, in script
+    mcN 'Realmente há bastante coisa. Xadrez, Teatro, Matemática
+Exception: Sayer 'mcN' is not defined.
+
+Full traceback:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 78, in script call
+    call expression evento
+  File "game/events/javaEvents.rpy", line 74, in script
+    mcN 'Equitação, Banda, Cozinha, Caça ao Yeti,
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'mcN' is not defined.
+
+While running game code:
+  File "game/script.rpy", line 12, in script call
+    call free_day_start
+  File "game/weeks/free_days/free_day.rpy", line 39, in script call
+    call expression freeDChoice
+  File "game/weeks/free_days/free_day.rpy", line 78, in script call
+    call expression evento
+  File "game/events/javaEvents.rpy", line 74, in script
+    mcN 'Equitação, Banda, Cozinha, Caça ao Yeti,
+Exception: Sayer 'mcN' is not defined.
+Resetting cache.
+Bootstrap to the start of init.init. took 1351.63s
+Early init. took 0.00s
+Loader init. took 0.37s
+Loading error handling. took 0.11s
+Loading script. took 1.64s
+Loading save slot metadata. took 0.23s
+Loading persistent. took 0.00s
+Running init code. took 0.26s
+Loading analysis data. took 0.09s
+Analyze and compile ATL. took 0.03s
+Reloading save slot metadata. took 0.19s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.41s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.33s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.27s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.08s
+Save screen analysis took 0.12s
+Prepare screens took 0.56s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.20s
+Running _start took 0.03s
+Performance test:
+Interface start. took 0.73s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 1546.53s
+Early init. took 0.00s
+Loader init. took 0.33s
+Loading error handling. took 0.11s
+Loading script. took 1.73s
+Loading save slot metadata. took 0.31s
+Loading persistent. took 0.00s
+Running init code. took 0.27s
+Loading analysis data. took 0.12s
+Analyze and compile ATL. took 0.04s
+Reloading save slot metadata. took 0.44s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.50s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.28s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.27s
+Build styles took 0.04s
+Load screen analysis took 0.01s
+Analyze screens took 0.06s
+Save screen analysis took 0.13s
+Prepare screens took 0.58s
+Save pyanalysis. took 0.12s
+Save bytecode. took 0.09s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.32s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2082.10s
+Early init. took 0.00s
+Loader init. took 0.38s
+Loading error handling. took 0.11s
+Loading script. took 2.19s
+Loading save slot metadata. took 0.38s
+Loading persistent. took 0.01s
+
+File "game/battlesys/labels/prepare_battle.rpy", line 24: expected statement.
+    "Java":
+          ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 26: expected statement.
+    "Python":
+            ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 28: expected statement.
+    "Ruby":
+          ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 30: expected statement.
+    "Lua":
+         ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 50: expected statement.
+    "Java":
+          ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 52: expected statement.
+    "Python":
+            ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 54: expected statement.
+    "Ruby":
+          ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 56: expected statement.
+    "Lua":
+         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start. took 0.78s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2172.90s
+Early init. took 0.00s
+Loader init. took 0.37s
+Loading error handling. took 0.15s
+Loading script. took 1.57s
+Loading save slot metadata. took 0.25s
+Loading persistent. took 0.00s
+Running init code. took 0.34s
+Loading analysis data. took 0.09s
+Analyze and compile ATL. took 0.09s
+Reloading save slot metadata. took 0.25s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.58s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.42s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.76s
+Build styles took 0.17s
+Load screen analysis took 0.00s
+Analyze screens took 0.20s
+Save screen analysis took 0.69s
+Prepare screens took 1.16s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.09s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.35s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2231.24s
+Early init. took 0.00s
+Loader init. took 0.46s
+Loading error handling. took 0.12s
+Loading script. took 2.24s
+Loading save slot metadata. took 0.27s
+Loading persistent. took 0.01s
+Running init code. took 0.27s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.05s
+Reloading save slot metadata. took 0.37s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.47s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.78s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.62s
+Build styles took 0.18s
+Load screen analysis took 0.00s
+Analyze screens took 0.12s
+Save screen analysis took 0.25s
+Prepare screens took 1.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.09s
+Running _start took 0.01s
+Performance test:
+Interface start. took 0.43s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2254.12s
+Early init. took 0.01s
+Loader init. took 0.39s
+Loading error handling. took 0.11s
+Loading script. took 1.57s
+Loading save slot metadata. took 0.24s
+Loading persistent. took 0.01s
+Running init code. took 0.27s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.03s
+Reloading save slot metadata. took 0.29s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.77s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.82s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.57s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.09s
+Save screen analysis took 0.14s
+Prepare screens took 0.71s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.21s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.61s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2345.46s
+Early init. took 0.01s
+Loader init. took 0.75s
+Loading error handling. took 0.65s
+Loading script. took 2.28s
+Loading save slot metadata. took 0.32s
+Loading persistent. took 0.00s
+Running init code. took 0.28s
+Loading analysis data. took 0.17s
+Analyze and compile ATL. took 0.06s
+Reloading save slot metadata. took 0.25s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.92s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.94s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.60s
+Build styles took 0.07s
+Load screen analysis took 0.00s
+Analyze screens took 0.56s
+Save screen analysis took 0.67s
+Prepare screens took 1.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.48s
+Running _start took 0.01s
+Performance test:
+Interface start. took 1.41s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init. took 2481.08s
+Early init. took 0.00s
+Loader init. took 0.35s
+Loading error handling. took 0.11s
+Loading script. took 1.76s
+Loading save slot metadata. took 0.26s
+Loading persistent. took 0.00s
+Running init code. took 0.26s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.03s
+Reloading save slot metadata. took 0.28s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.56s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.86s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.75s
+Build styles took 0.03s
+Load screen analysis took 0.00s
+Analyze screens took 0.11s
+Save screen analysis took 0.15s
+Prepare screens took 0.76s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.11s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.33s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.03s
+Load screen analysis took 0.16s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.01s
+Resetting cache.
+Bootstrap to the start of init.init. took 2576.07s
+Early init. took 0.00s
+Loader init. took 0.47s
+Loading error handling. took 0.12s
+Loading script. took 1.77s
+Loading save slot metadata. took 0.22s
+Loading persistent. took 0.00s
+Running init code. took 0.27s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.03s
+Reloading save slot metadata. took 0.18s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.41s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.29s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.31s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.06s
+Save screen analysis took 0.14s
+Prepare screens took 0.54s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.11s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.34s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 12, in script call
+    call prepare_tutorial_battle
+  File "game/battlesys/labels/prepare_battle.rpy", line 11, in script call
+    call show_fighters
+  File "game/battlesys/labels/show_fighters.rpy", line 27, in script call
+    call check_passive_time_beforeBP
+  File "game/battlesys/labels/turn_start.rpy", line 45, in script
+    $ battleState.enemy_team_passive.effect(battleState, _)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/turn_start.rpy", line 45, in <module>
+    $ battleState.enemy_team_passive.effect(battleState, _)
+  File "game/weeks/week_0/week_zero.rpy", line 121, in tcPassiveF_
+    eTypeStr = (eType.advantages)[0].name
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\revertable.py", line 217, in __getitem__
+    rv = list.__getitem__(self, index)
+IndexError: list index out of range
+
+While running game code:
+  File "game/script.rpy", line 12, in script call
+    call prepare_tutorial_battle
+  File "game/battlesys/labels/prepare_battle.rpy", line 11, in script call
+    call show_fighters
+  File "game/battlesys/labels/show_fighters.rpy", line 27, in script call
+    call check_passive_time_beforeBP
+  File "game/battlesys/labels/turn_start.rpy", line 45, in script
+    $ battleState.enemy_team_passive.effect(battleState, _)
+  File "game/battlesys/labels/turn_start.rpy", line 45, in <module>
+    $ battleState.enemy_team_passive.effect(battleState, _)
+  File "game/weeks/week_0/week_zero.rpy", line 121, in tcPassiveF_
+    eTypeStr = (eType.advantages)[0].name
+IndexError: list index out of range
+Resetting cache.
+Bootstrap to the start of init.init. took 2669.40s
+Early init. took 0.00s
+Loader init. took 0.41s
+Loading error handling. took 0.12s
+Loading script. took 1.66s
+Loading save slot metadata. took 0.23s
+Loading persistent. took 0.00s
+Running init code. took 0.25s
+Loading analysis data. took 0.09s
+Analyze and compile ATL. took 0.03s
+Reloading save slot metadata. took 0.18s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.47s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.31s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.28s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.09s
+Save screen analysis took 0.13s
+Prepare screens took 0.55s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.09s
+Running _start took 0.01s
+Performance test:
+Interface start. took 0.47s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/battlesys/labels/prepare_battle.rpy", line 11, in script call
+    call show_fighters
+  File "game/battlesys/labels/show_fighters.rpy", line 27, in script call
+    call check_passive_time_beforeBP
+  File "game/battlesys/labels/turn_start.rpy", line 45, in script
+    $ battleState.enemy_team_passive.effect(battleState, _)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/turn_start.rpy", line 45, in <module>
+    $ battleState.enemy_team_passive.effect(battleState, _)
+  File "game/weeks/week_0/week_zero.rpy", line 125, in tcPassiveF_
+    eTypeStr = (eType.advantages)[0].name
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\revertable.py", line 217, in __getitem__
+    rv = list.__getitem__(self, index)
+IndexError: list index out of range
+
+While running game code:
+  File "game/battlesys/labels/prepare_battle.rpy", line 11, in script call
+    call show_fighters
+  File "game/battlesys/labels/show_fighters.rpy", line 27, in script call
+    call check_passive_time_beforeBP
+  File "game/battlesys/labels/turn_start.rpy", line 45, in script
+    $ battleState.enemy_team_passive.effect(battleState, _)
+  File "game/battlesys/labels/turn_start.rpy", line 45, in <module>
+    $ battleState.enemy_team_passive.effect(battleState, _)
+  File "game/weeks/week_0/week_zero.rpy", line 125, in tcPassiveF_
+    eTypeStr = (eType.advantages)[0].name
+IndexError: list index out of range
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.02s
+Load screen analysis took 0.18s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.01s
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_0/week_zero.rpy", line 5, in script call
+    call prepare_battle_2
+  File "game/battlesys/labels/prepare_battle.rpy", line 66, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 10, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 66, in paralys_effect
+    renpy.say('', "[((battleState.enemy_team_current_stats)[0]).enemy_name] is shocked by the answer! It can't move!")
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1471, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "renpy/common/00library.rpy", line 321, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: '((battleState'
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_0/week_zero.rpy", line 5, in script call
+    call prepare_battle_2
+  File "game/battlesys/labels/prepare_battle.rpy", line 66, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 10, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 66, in paralys_effect
+    renpy.say('', "[((battleState.enemy_team_current_stats)[0]).enemy_name] is shocked by the answer! It can't move!")
+  File "renpy/common/00library.rpy", line 321, in say
+    who(what, interact=interact, *args, **kwargs)
+KeyError: '((battleState'
+Resetting cache.
+Bootstrap to the start of init.init. took 2848.87s
+Early init. took 0.01s
+Loader init. took 1.07s
+Loading error handling. took 0.11s
+Loading script. took 1.64s
+Loading save slot metadata. took 0.25s
+Loading persistent. took 0.00s
+Running init code. took 0.28s
+Loading analysis data. took 0.10s
+Analyze and compile ATL. took 0.04s
+Reloading save slot metadata. took 0.20s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.50s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.48s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.03s
+Cleaning stores took 0.00s
+Init translation took 0.88s
+Build styles took 0.03s
+Load screen analysis took 0.00s
+Analyze screens took 0.09s
+Save screen analysis took 0.23s
+Prepare screens took 0.80s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.12s
+Running _start took 0.02s
+Performance test:
+Interface start. took 0.50s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_0/week_zero.rpy", line 5, in script call
+    call prepare_battle_2
+  File "game/battlesys/labels/prepare_battle.rpy", line 66, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 10, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 68, in paralys_effect
+    renpy.say('', "[name] is shocked by the answer! It can't move!")
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\exports.py", line 1471, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "renpy/common/00library.rpy", line 321, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: 'name'
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_0/week_zero.rpy", line 5, in script call
+    call prepare_battle_2
+  File "game/battlesys/labels/prepare_battle.rpy", line 66, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 10, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 68, in paralys_effect
+    renpy.say('', "[name] is shocked by the answer! It can't move!")
+  File "renpy/common/00library.rpy", line 321, in say
+    who(what, interact=interact, *args, **kwargs)
+KeyError: 'name'
+Resetting cache.
+Bootstrap to the start of init.init. took 2992.45s
+Early init. took 0.01s
+Loader init. took 0.45s
+Loading error handling. took 0.11s
+Loading script. took 1.55s
+Loading save slot metadata. took 0.24s
+Loading persistent. took 0.00s
+Running init code. took 0.26s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.03s
+Reloading save slot metadata. took 0.18s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.39s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.26s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.29s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.09s
+Save screen analysis took 0.13s
+Prepare screens took 0.68s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.08s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.38s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_0/week_zero.rpy", line 6, in script call
+    call prepare_java_battle
+  File "game/battlesys/labels/prepare_battle.rpy", line 74, in script
+    $ battleState = Battle_state(java, obmEnemyTeam)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/prepare_battle.rpy", line 74, in <module>
+    $ battleState = Battle_state(java, obmEnemyTeam)
+  File "game/battlesys/classes/class_battle_state.rpy", line 41, in __init__
+    self.player_type = player.type
+AttributeError: 'ADVCharacter' object has no attribute 'type'
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_0/week_zero.rpy", line 6, in script call
+    call prepare_java_battle
+  File "game/battlesys/labels/prepare_battle.rpy", line 74, in script
+    $ battleState = Battle_state(java, obmEnemyTeam)
+  File "game/battlesys/labels/prepare_battle.rpy", line 74, in <module>
+    $ battleState = Battle_state(java, obmEnemyTeam)
+  File "game/battlesys/classes/class_battle_state.rpy", line 41, in __init__
+    self.player_type = player.type
+AttributeError: 'ADVCharacter' object has no attribute 'type'
+Resetting cache.
+Bootstrap to the start of init.init. took 3055.48s
+Early init. took 0.00s
+Loader init. took 0.32s
+Loading error handling. took 0.10s
+Loading script. took 1.54s
+Loading save slot metadata. took 0.23s
+Loading persistent. took 0.00s
+Running init code. took 0.25s
+Loading analysis data. took 0.08s
+Analyze and compile ATL. took 0.03s
+Reloading save slot metadata. took 0.20s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\evald\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.41s
+Cleaning cache. took 0.00s
+Making clean stores. took 0.00s
+Initial gc. took 0.27s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object. took 0.02s
+Cleaning stores took 0.00s
+Init translation took 0.29s
+Build styles took 0.02s
+Load screen analysis took 0.00s
+Analyze screens took 0.07s
+Save screen analysis took 0.13s
+Prepare screens took 0.55s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.09s
+Running _start took 0.00s
+Performance test:
+Interface start. took 0.37s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1366, 768)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) HD Graphics 400'
+Version: b'4.4.0 - Build 20.19.15.4531'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
+Maximum texture size: 4096x4096

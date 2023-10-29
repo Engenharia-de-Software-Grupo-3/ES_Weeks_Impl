@@ -7,7 +7,8 @@ default nenhuma_compra = True
 default confirma_compra = False
 
 label shop:
-
+    $ energy -= 1
+    scene haskellShop with dissolve
     show haskell at left
 
     if nenhuma_compra:

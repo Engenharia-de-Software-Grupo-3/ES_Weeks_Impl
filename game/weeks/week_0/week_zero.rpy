@@ -56,10 +56,14 @@ init python:
             paralysed = (renpy.random.randint(1, 100) <= 40)
             if afflicted == 'player' and paralysed and battlePhase.is_player_turn() and not battlePhase.player_attack_blocked:
                 battlePhase.player_attack_blocked = True
-                renpy.say('', "[battleState.player_name] is shocked by the question! It can't move!")
+                name = battleState.player_name
+                saida = name + " is shocked by the question! It can't move!"
+                renpy.say('', saida)
             elif afflicted == 'enemy' and paralysed and battlePhase.is_enemy_turn() and not battlePhase.enemy_attack_blocked:
                 battlePhase.enemy_attack_blocked = True
-                renpy.say('', "[((battleState.enemy_team_current_stats)[0]).enemy_name] is shocked by the answer! It can't move!")
+                name = ((battleState.enemy_team_current_stats)[0]).enemy_name
+                saida = name + " is shocked by the answer! It can't move!"
+                renpy.say('', saida)
     
     def confusion_effect(afflicted, battleState, battlePhase):
             confused = (renpy.random.randint(1, 100) <= 40)

@@ -1,24 +1,24 @@
-label python4:
+image pyth aflita = "images/Sprites Python/python 6.png"
 
-    image pyth aflita = "images/Sprites Python/python 6.png"
+image pyth falando1 = "images/Sprites Python/python 7.png"
 
-    image pyth falando1 = "images/Sprites Python/python 7.png"
+image pyth falando2 = "images/Sprites Python/python 17.png"
 
-    image pyth falando2 = "images/Sprites Python/python 17.png"
+image pyth falando3 = "images/Sprites Python/python 36.png"
 
-    image pyth falando3 = "images/Sprites Python/python 36.png"
+image pyth falando4 = "images/Sprites Python/python 35.png"
 
-    image pyth falando4 = "images/Sprites Python/python 35.png"
+image pyth escutando = "images/Sprites Python/python 8.png"
 
-    image pyth escutando = "images/Sprites Python/python 8.png"
+image pyth irritada = "images/Sprites Python/python 18.png"
 
-    image pyth irritada = "images/Sprites Python/python 18.png"
+image pyth rindo1 = "images/Sprites Python/python 31.png"
 
-    image pyth rindo1 = "images/Sprites Python/python 31.png"
+image pyth rindo2 = "images/Sprites Python/python 32.png"
 
-    image pyth rindo2 = "images/Sprites Python/python 32.png"
+image pyth timida =  "images/Sprites Python/python 37.png"
 
-    image pyth timida =  "images/Sprites Python/python 37.png"
+label pythonEvent3:
 
     play music "audio/music.mp3" volume 0.5
 
@@ -168,7 +168,7 @@ label python4:
 
     pyt "Mesmo que esteja, não importa."
 
-    show pyth falando 2
+    show pyth falando2
 
     pyt "O que ele quer que seja mostrado ele mostra, e esse pouco da personalidade dele já é o bastante pra saber que ele é um cara legal."
 
@@ -253,7 +253,7 @@ label python4:
 
     mc "Que tal uma festa?"
 
-    show pyth surpresa
+    show pyth 28
 
     pyt "Uma festa?"
 
@@ -275,7 +275,7 @@ label python4:
 
     mc "Mas talvez não sozinha."
 
-    mc "Eu interrompo a fala da garota."
+    mcN "Eu interrompo a fala da garota."
 
     show pyth falando3
 
@@ -317,4 +317,5 @@ label python4:
     
     mc "É muito bom ter alguém que confie mais em você do que você mesmo e, levado por esse sentimento quente em seu peito, você volta para a sala."
 
-return
+    $ pythonEventsCounter = 4
+    return

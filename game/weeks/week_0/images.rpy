@@ -29,6 +29,12 @@ image corredor:
 image mercado: 
     "images/Fotos/mercado.jpeg"
     zoom 2.63
+image haskellShop:
+    "images/Fotos/haskellShop.jpeg"
+    zoom 0.79
+image pesca: 
+    "images/Fotos/pesca.jpg"
+    zoom 2.71
 
 # COBOL
 image cobol = "images/Sprites Cobol/cobol 1.png"
@@ -61,6 +67,14 @@ image java 16 = "images/Sprites Java/java 16.png"
 image java 17 = "images/Sprites Java/java 17.png"
 
 image java i = "images/Sprites Java/java 18.png"
+image java i 19 = 'images/Sprites Java/java 19.png'
+image java i 20 = 'images/Sprites Java/java 20.png'
+image java i 21 = 'images/Sprites Java/java 21.png'
+image java i 22 = 'images/Sprites Java/java 22.png'
+image java i 23 = 'images/Sprites Java/java 23.png'
+image java i 24 = 'images/Sprites Java/java 24.png'
+image java i 25 = 'images/Sprites Java/java 25.png'
+image java i 26 = 'images/Sprites Java/java 26.png'
 
 # LUA
 image lua = "images/Sprites Lua/lua 1.png"

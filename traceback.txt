@@ -1,30 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 22, in script call
-    call semana2_dia4
-  File "game/weeks/week_2/day_9.rpy", line 2, in script call
-    call conversa_com_prolog_antes_aula
-  File "game/weeks/week_2/day_9.rpy", line 15, in script
-    mcN "Mais uma vez, você estava na sala de aula, um pouco entediado."
-Exception: Sayer 'mcN' is not defined.
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_0/week_zero.rpy", line 6, in script call
+    call prepare_java_battle
+  File "game/battlesys/labels/prepare_battle.rpy", line 74, in script
+    $ battleState = Battle_state(java, obmEnemyTeam)
+  File "game/battlesys/labels/prepare_battle.rpy", line 74, in <module>
+    $ battleState = Battle_state(java, obmEnemyTeam)
+  File "game/battlesys/classes/class_battle_state.rpy", line 41, in __init__
+    self.player_type = player.type
+AttributeError: 'ADVCharacter' object has no attribute 'type'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 22, in script call
-    call semana2_dia4
-  File "game/weeks/week_2/day_9.rpy", line 2, in script call
-    call conversa_com_prolog_antes_aula
-  File "game/weeks/week_2/day_9.rpy", line 15, in script
-    mcN "Mais uma vez, você estava na sala de aula, um pouco entediado."
-  File "C:\Users\User\Desktop\renpy-8.1.2-sdk\renpy\ast.py", line 890, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\User\Desktop\renpy-8.1.2-sdk\renpy\ast.py", line 783, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'mcN' is not defined.
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_0/week_zero.rpy", line 6, in script call
+    call prepare_java_battle
+  File "game/battlesys/labels/prepare_battle.rpy", line 74, in script
+    $ battleState = Battle_state(java, obmEnemyTeam)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/prepare_battle.rpy", line 74, in <module>
+    $ battleState = Battle_state(java, obmEnemyTeam)
+  File "game/battlesys/classes/class_battle_state.rpy", line 41, in __init__
+    self.player_type = player.type
+AttributeError: 'ADVCharacter' object has no attribute 'type'
 
 Windows-10-10.0.19041 AMD64
-Ren'Py 8.1.2.23090503
+Ren'Py 8.1.1.23060707
 ES_Weeks_Impl 1.0
-Sun Oct 29 00:10:40 2023
+Sun Oct 29 15:19:03 2023

@@ -9,7 +9,6 @@
 # The game starts here.
 
 label start:
-    call free_day_start
 
     $ w = 0
     while True:

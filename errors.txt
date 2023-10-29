@@ -2,9 +2,37 @@
 errors listed below, and try again.
 
 
-File "game/weeks/week_2/day_9.rpy", line 291: end of line expected.
-    mcN "Quem sou eu?" "Por que estou comendo isso?"
-                       ^
+File "game/battlesys/labels/prepare_battle.rpy", line 24: expected statement.
+    "Java":
+          ^
 
-Ren'Py Version: Ren'Py 8.1.2.23090503
-Sun Oct 29 00:03:42 2023
+File "game/battlesys/labels/prepare_battle.rpy", line 26: expected statement.
+    "Python":
+            ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 28: expected statement.
+    "Ruby":
+          ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 30: expected statement.
+    "Lua":
+         ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 50: expected statement.
+    "Java":
+          ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 52: expected statement.
+    "Python":
+            ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 54: expected statement.
+    "Ruby":
+          ^
+
+File "game/battlesys/labels/prepare_battle.rpy", line 56: expected statement.
+    "Lua":
+         ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Sun Oct 29 15:03:23 2023
