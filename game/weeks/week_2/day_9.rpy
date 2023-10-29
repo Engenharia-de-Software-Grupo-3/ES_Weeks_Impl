@@ -1,4 +1,4 @@
-label semana2_dia4:
+label semana2_dia9:
     call conversa_com_prolog_antes_aula
     if grupoPythonRuby:
         call conversa_com_prolog_depois_aula
@@ -11,32 +11,32 @@ label conversa_com_prolog_antes_aula:
     scene black
     show text "Dia 1" at truecenter
     play music "audio/music.mp3" volume 0.5
-    scene sala1 with dissolve
+    scene sala 1 with dissolve
 
-    mcN "Mais uma vez, você estava na sala de aula, um pouco entediado."
-    mcN "Você repara que nem Ruby nem Python chegaram ainda, o que não é muito do feitio de nenhum dos dois."
+    "Mais uma vez, você estava na sala de aula, um pouco entediado."
+    "Você repara que nem Ruby nem Python chegaram ainda, o que não é muito do feitio de nenhum dos dois."
     show prolog with moveinleft
     pro "Distraído, meu caro?"
-    mcN "Diz Prolog ao se esgueirar ao lado de sua mesa."
+    "Diz Prolog ao se esgueirar ao lado de sua mesa."
     mc "Ah!"
     show prolog 7
-    mcN "Você dá um grito assustado."
+    "Você dá um grito assustado."
     mc "Você me assustou!"
     show prolog 6
     pro "Não sou uma assombração nem uma criminosa."
     show prolog 2
     pro "Não há necessidade para ficar tão arisco."
-    mcN "Disse ela antes de se virar para sua coruja novamente."
+    "Disse ela antes de se virar para sua coruja novamente."
     show prolog 6
     pro "Gepeto, você já deve ter deduzido isso, mas só por garantia: [player_name] se surpreende fácil."
-    mcN "Você ainda não entende o por quê daquela garota constantemente com aquela coruja robótica, mas decide se abster de perguntar para evitar algum tipo de explicação maluco que ela provavelmente daria."
+    "Você ainda não entende o por quê daquela garota constantemente com aquela coruja robótica, mas decide se abster de perguntar para evitar algum tipo de explicação maluco que ela provavelmente daria."
     show prolog 5
     pro "..."
-    mcN "E a garota fica ali de pé lhe encarando."
-    mcN "Algum tempo se passa..."
-    mcN "... e ela permanece lhe encarando ..."
-    mcN "..., em silêncio, ..."
-    mcN "Até que você fica desconfortável e decide perguntar."
+    "E a garota fica ali de pé lhe encarando."
+    "Algum tempo se passa..."
+    "... e ela permanece lhe encarando ..."
+    "..., em silêncio, ..."
+    "Até que você fica desconfortável e decide perguntar."
     show prolog 7
     mc "Você quer alguma coisa?"
     show prolog 2
@@ -65,17 +65,17 @@ label conversa_com_prolog_antes_aula:
     show prolog 13
     pro "Vou começar a ser mais discreta!"
     mc "O ponto não é esse..."
-    mcN "A cortina de um profundo azure é levantada, dando espaço para que o holofote que chamamos de sol privilegiar seus escolhidos sob esse palco de mogno, queimando-os ao longo de suas performances."
+    "A cortina de um profundo azure é levantada, dando espaço para que o holofote que chamamos de sol privilegiar seus escolhidos sob esse palco de mogno, queimando-os ao longo de suas performances."
     hide prolog 13 with moveoutleft
     show ada with moveinleft
     ada "Com lágrimas, sangue e suor, cantem e dancem, roubando o holofote um dos outros."
-    mcN "Dizia Ada que adentrara a sala e lentamente andava ao centro do quadro"
+    "Dizia Ada que adentrara a sala e lentamente andava ao centro do quadro"
     ada "Isso é o Starlight!"
     show prolog 2 with moveinleft
     pro "Bom dia pra senhora também, professora Ada!"
     hide prolog with moveoutleft
     hide ada with moveoutright
-    mcN "E assim, o dia foi passando..."
+    "E assim, o dia foi passando..."
     scene black with dissolve
     return
     # Escurece a tela por alguns segundos pra dar a impressão de passagem de tempo.
@@ -83,37 +83,37 @@ label conversa_com_prolog_antes_aula:
     # 9 continua, caso contrário, ele acaba e vai direto para o dia 10.
     
 
-label conversa_prolog_depois_aula:
+label conversa_com_prolog_depois_aula:
     scene black
     show text "Dia 1" at truecenter
     play music "audio/music (2).mp3" volume 0.5
-    scene sala1 with dissolve
+    scene sala 1 with dissolve
 
     show prolog 9 with moveinleft
-    mcN "No intervalo das aulas, Prolog veio até você com uma expressão preocupada."
+    "No intervalo das aulas, Prolog veio até você com uma expressão preocupada."
     show prolog 6
     pro "Notícias de Python e Ruby?"
     show prolog 7
     mc "Não os vi o dia inteiro."
     show prolog 9
     pro "..."
-    mcN "Ela parecia pensativa."
+    "Ela parecia pensativa."
     show prolog 6
     pro "Vem comigo."
     hide prolog 6 with moveoutright
-    mcN "Prolog agarra seu braço e começa a te arrastar pra fora da sala."
+    "Prolog agarra seu braço e começa a te arrastar pra fora da sala."
 
     scene black with dissolve
     mc "Ei, ei, ei. O que é isso?"
 
     scene corredor with dissolve
     show prolog 7 with moveinleft
-    mcN "Você questiona, enquanto a garota ouxa o seu braço e lhe força a andar apressadamente."
+    "Você questiona, enquanto a garota ouxa o seu braço e lhe força a andar apressadamente."
     show prolog 15
     pro "Vamos logo, não temos tempo à perder!"
     show prolog 7
-    mcN "Prolog começa a correr pelo corredor."
-    mcN "Sem entender o que está acontecendo, você decide acompanhá-la."
+    "Prolog começa a correr pelo corredor."
+    "Sem entender o que está acontecendo, você decide acompanhá-la."
     mc "Você pode por favor me explicar o que estamos fazendo?"
     show prolog 6
     pro "Sala de recreação."
@@ -121,18 +121,18 @@ label conversa_prolog_depois_aula:
     mc "O que?"
 
     scene black with dissolve
-    mcN "Passando pela porta da dita sala, Prolog entra nela rapidamente e vai checar os registros de entrada e saída da sala."
+    "Passando pela porta da dita sala, Prolog entra nela rapidamente e vai checar os registros de entrada e saída da sala."
     scene sala_recreacao with dissolve
     show prolog 18 with moveinleft
     pro "Sabia!"
     show prolog 7
-    mcN "Prolog então vai até a fonte dos desejos e põe a mão na água e de lá tira..."
+    "Prolog então vai até a fonte dos desejos e põe a mão na água e de lá tira..."
     show prolog 19
     pro "Um fio elástico cortado, um balão estourado e uma argola!"
     show prolog 7
     mc "Daí já saiu coisa muito mais impressionante, não sei porque isso te chocou."
     hide prolog 7 with moveoutleft
-    mcN "Prolog começou a checar cada ar-condicionado da sala, e fechou os olhos pensativa."
+    "Prolog começou a checar cada ar-condicionado da sala, e fechou os olhos pensativa."
     mc "O que é que você tá fazendo aqui? A gente não ia procurar Ruby e Python?"
     show prolog 21 with moveinleft
     pro "Por que eu procuraria alguém que já sei onde estão?"
@@ -152,7 +152,7 @@ label conversa_prolog_depois_aula:
     pro "Eu tenho que fazer algo ainda então você poderia ir checar Python e Ruby pra mim?"
     pro "Eu não te envolveria nisso normalmente, mas como essa confusão envolve gente que tá no seu grupo pro trabalho da professora Ada, você também pode ser prejudicado."
     hide prolog with moveoutleft
-    mcN "Prolog puxa um caderno da roupa e escreve algo, arrancando a página e lhe entrega a página em seguida."
+    "Prolog puxa um caderno da roupa e escreve algo, arrancando a página e lhe entrega a página em seguida."
     show prolog 21 with moveinleft
     pro "O endereço é esse."
     show prolog 19
@@ -163,7 +163,7 @@ label conversa_prolog_depois_aula:
     show prolog 19
     pro "Pare de incerteza e vá checar os doentes, Watson!"
     hide prolog with moveoutright
-    mcN "Prolog mais uma vez sai em disparada deixando você só."
+    "Prolog mais uma vez sai em disparada deixando você só."
     mc "O que acabou de acontecer?"
     scene black with dissolve
     return
@@ -172,11 +172,11 @@ label conversa_prolog_depois_aula:
 label casa_de_ruby:
     scene black
     play music "audio/music (3).mp3" volume 0.5
-    mcN "Você chega na casa de Ruby e toca a campainha."
+    "Você chega na casa de Ruby e toca a campainha."
     scene casa_ruby with dissolve
-    mcN "Pouco tempo depois o garoto ruivo abre a porta."
+    "Pouco tempo depois o garoto ruivo abre a porta."
     show ruby 8 with moveinleft
-    mcN "Ele parecia acabado."
+    "Ele parecia acabado."
     show ruby 3
     rub "[player_name], o que você está fazendo aqui?"
     show ruby 9
@@ -188,12 +188,12 @@ label casa_de_ruby:
     show ruby 2
     rub "Oh, não precisava. Sério."
     show ruby 2
-    mcN "Ruby parecia um pouco culpado por deixar vocês preocupados."
+    "Ruby parecia um pouco culpado por deixar vocês preocupados."
     mc "Pode ficar tranquilo, amigos servem pra esse tipo de coisa."
     show ruby
     rub "...Entendi."
     show ruby 2
-    mcN "Ruby respondeu um pouco satisfeito com sua colocação."
+    "Ruby respondeu um pouco satisfeito com sua colocação."
     mc "Posso entrar?"
     show ruby 3
     rub "Claro!"
@@ -206,8 +206,8 @@ label sala_de_estar_ruby:
     scene sala_ruby
     play music "audio/music (3).mp3" volume 0.5
     show pyth ii 48 with moveinbottom
-    mcN "Python estava deitada no sofá com o cabelo desamarrado."
-    mcN "Suas duas cobras estavam ao lado dela."
+    "Python estava deitada no sofá com o cabelo desamarrado."
+    "Suas duas cobras estavam ao lado dela."
     show pyth ii 43
     pyt "Ela nota sua chegada e dá um sorrido."
     pyt "Oi, [player_name]."
@@ -222,7 +222,7 @@ label sala_de_estar_ruby:
     show pyth ii 46
     pyt "Ah, foi Prolog que mandou você ver a gente?"
     show pyth ii 43
-    mcN "Python deu uma leve risada."
+    "Python deu uma leve risada."
     pyt "Então vou deixar ela te explicar depois, afinal, a detetive que soluciona o caso deve ser quem explica ele."
     show pyth ii 45
     mc "Ah, Prolog também falou sobre adiar algum tipo de evento."
@@ -236,7 +236,7 @@ label sala_de_estar_ruby:
     show ruby 2
     rub "Certo, desculpa..."
     show ruby
-    mcN "Lamentou Ruby cabisbaixo."
+    "Lamentou Ruby cabisbaixo."
     show ruby 16
     rub "Acontece que vai haver um evento de boas vindas para os novos estudantes da Academia."
     rub "Ele normalmente é realizado pelo presidente, mas já que Java abdicou, ainda não temos um. "
@@ -271,24 +271,24 @@ label sala_de_estar_ruby:
     hide pyth with moveoutbottom
     show ruby with moveinright
     show futon with moveinright
-    mcN "Ruby traz um futon pra sala e deita nele."
+    "Ruby traz um futon pra sala e deita nele."
     hide ruby with moveoutbottom
     hide futon with moveoutbottom
-    mcN "Enquanto isso, você vai à mesa com uma caneta e papel para escrever o discurso."
+    "Enquanto isso, você vai à mesa com uma caneta e papel para escrever o discurso."
     mc "..."
     mc "..."
-    mcN "Você termina de escrever o papel do discurso e mostra a ruby, acreditando que fez um bom trabalho."
+    "Você termina de escrever o papel do discurso e mostra a ruby, acreditando que fez um bom trabalho."
     show ruby 16
     rub "Desculpa, mas tá tangente demais."
     show ruby 2
     rub "Realmente o discurso passa a energia da Academia, mas agora parece que o lado educacional dela é inexistente."
     show ruby
     mc "..."
-    mcN "Você dá um suspiro e faz uma cara de desapontado."
+    "Você dá um suspiro e faz uma cara de desapontado."
     show ruby 2
     rub "Certo, vamos refazer. Afinal de contas, Prolog adiou o evento então temos tempo."
     show ruby
-    mcN "Seu telefone então toca"
+    "Seu telefone então toca"
     hide ruby
     scene escola with dissolve
     show prolog 6
@@ -297,10 +297,10 @@ label sala_de_estar_ruby:
     pro "O evento foi adiado em 2 horas, até depois."
     hide prolog with moveoutright
     scene black with dissolve
-    mcN "E então ela desliga"
+    "E então ela desliga"
     scene sala_ruby with dissolve
     mc "..."
-    mcN "Você para por um instante"
+    "Você para por um instante"
     mc "2 HORAS!?"
     mc "Do que adianta adiar só duas horas se os apresentadores tão doentes?"
     mc "Pelo menos adiasse um dia!"
@@ -318,9 +318,9 @@ label sala_de_estar_ruby:
     show pyth ii 46 with moveinbottom
     pyt "Tá ruim até pra eu me levantar."
     hide pyth with moveoutbottom
-    mcN "Disse ela como em um gemido, enquanto Pye e Tom lançavam um olhar preocupado sob a garota."
+    "Disse ela como em um gemido, enquanto Pye e Tom lançavam um olhar preocupado sob a garota."
     mc "..."
-    mcN "Você hesita por um instante."
+    "Você hesita por um instante."
     mc "Ruby..."
     show ruby 2
     rub "O que foi?"
@@ -363,19 +363,19 @@ label sala_de_estar_ruby:
     rub "Ehhhhhh!?"
     show pyth ii 52 with moveinbottom
     pyt "E você sugerindo uma medida dessas?!"
-    mcN "Python perguntou surpreendida."
+    "Python perguntou surpreendida."
     show pyth ii 43
     pyt "Enfim está se tornando um estudante da Academia Sem Nome Definido!"
     hide pyth with moveoutbottom
-    mcN "Você pega papel e começa a escrever uma lista."
+    "Você pega papel e começa a escrever uma lista."
     mc "Limão, alho, medicamentos analgésicos de diferentes marcas, laranja, acerola, peito de frango, vitamina c efervescente, antialérgicos e a lista continua. Após termina-la, você a entrega a Ruby e o questiona:"
     mc "Tem alergia a algo daqui?"
     mc "Por mais desnecessário que pareça questionar coisas como “você  é  alérgico  a  frango?” isso ̴é super  importante  para  evitar  a ocorrência de um choque anafilático inesperado."
     show ruby 7
     rub "Ãn? N-não, não tenho."
     show ruby 2
-    mcN "Diz ̴Ruby nitidamente preocupado ao ver que “itens para bebida” incluía alho e ̴arroz."
-    mcN "Aos poucos a determinação que o garoto havia mostrado minutos atrás estava escorrendo por entre seus dedos enquanto ouvia quantos riscos estavam envolvidos nessa bomba caseira diferenciada de [player_name]."
+    "Diz ̴Ruby nitidamente preocupado ao ver que “itens para bebida” incluía alho e ̴arroz."
+    "Aos poucos a determinação que o garoto havia mostrado minutos atrás estava escorrendo por entre seus dedos enquanto ouvia quantos riscos estavam envolvidos nessa bomba caseira diferenciada de [player_name]."
     hide ruby with moveoutbottom
     mc "Muito bem, nenhum de vocês se levanta até eu voltar."
     mc "Temos 2 horas, serei rápido nas compras e cozinhar tudo demorará uma meia hora dependendo do tamanho da sua cozinha."
@@ -387,32 +387,33 @@ label sala_de_estar_ruby:
     mc "Vou indo e já volto, enquanto isso, vão dormir."
     hide pyth with moveoutbottom
     scene black with dissolve
-    mcN "Você falou antes de sair da casa, disposto a por em pratica suas habilidades provenientes do fato de você não ter dinheiro para pagar um plano de saúde."
+    "Você falou antes de sair da casa, disposto a por em pratica suas habilidades provenientes do fato de você não ter dinheiro para pagar um plano de saúde."
     scene casa_de_ruby with dissolve
-    mcN "Você nunca imaginou que as coisas malucas que você fazia com um fogão, um liquidificador e um furador de coco seriam capazes de ajudar outra pessoa."
+    "Você nunca imaginou que as coisas malucas que você fazia com um fogão, um liquidificador e um furador de coco seriam capazes de ajudar outra pessoa."
     scene sala_de_estar_ruby with dissolve
     show pyth 45 with moveinbottom
     show ruby with moveinbottom
-    mcN "Após fazer as compras, você volta para a casa de Ruby e encontra o mesmo e Python ainda deitados."
+    "Após fazer as compras, você volta para a casa de Ruby e encontra o mesmo e Python ainda deitados."
     hide pyth with moveoutbottom
     hide ruby with moveoutbottom
-    mcN "“Ótimo”, você pensa antes de se dirigir a cozinha."
+    "“Ótimo”, você pensa antes de se dirigir a cozinha."
     scene black with dissolve
     scene cozinha_ruby with dissolve
     mc "Muito bem, tá na hora de trabalhar."
-    mcN "Você tira das sacolas as compras e pega os itens necessários para o inicio de seu projeto ̴̤̈́ de ̴̤̈́ transmutação ̴̤̈́alquímica ̴̤̈́ que ̴̤̈́ carinhosamente ̴̤̈́apelidou ̴̤̈́ de ̴̤̈́“Culinária ̴̤̈́Experimental ̴̤̈́ Médica”, ̴̤̈́CEM ̴̤̈́afinal..."
+    "Você tira das sacolas as compras e pega os itens necessários para o inicio de seu projeto de transmutação alquimica que carinhosamente apelidou de Culinaria Esperimental Medicinal." 
+    "CEM, para os mais próximos"
     mc "Cem dores, cem ganhos."
-    mcN "E agora começa a parte difícil: adaptar a receita."
-    mcN "Ao longo do processo de lapidação dessa habilidade, você acabou passando mal diversas vezes."
-    mcN "Ao longo do tempo, você foi conhecendo melhor seu corpo, podendo criar a melhor receita com os efeitos colaterais menos danosos."
-    mcN "Mas agora é diferente: você tá fazendo aquilo pra outra pessoa, pra um corpo que não é o seu."
-    mcN "Para isso, um processo de análise sobre a pessoa é necessário com o intuito de não mandar ela para o hospital."
+    "E agora começa a parte difícil: adaptar a receita."
+    "Ao longo do processo de lapidação dessa habilidade, você acabou passando mal diversas vezes."
+    "Ao longo do tempo, você foi conhecendo melhor seu corpo, podendo criar a melhor receita com os efeitos colaterais menos danosos."
+    "Mas agora é diferente: você tá fazendo aquilo pra outra pessoa, pra um corpo que não é o seu."
+    "Para isso, um processo de análise sobre a pessoa é necessário com o intuito de não mandar ela para o hospital."
     scene emptydnd with dissolve
     # Começo do tutorial do puzzle de drag and drop
-    mcN "Por vezes, você encontrará situações nas quais é necessária uma análise sobre o interior de uma pessoa."
-    mcN "Nesse tipo de situação será iniciado um mini-game no qual você deve arrastar pedaços de código e organizá-los para formar um algoritmo."
-    mcN "Ao acertar o espaço de um trecho do código, o mesmo se fixará no local e, quando todas as lacunas forem preenchidas, o mini-game terá sido concluído."
-    mcN "Não se preocupe, a história só continua após o algoritmo ser formado, no então, não há um limite de tempo nem penalidade por errar a ordem, então vá em seu próximo ritmo." 
+    "Por vezes, você encontrará situações nas quais é necessária uma análise sobre o interior de uma pessoa."
+    "Nesse tipo de situação será iniciado um mini-game no qual você deve arrastar pedaços de código e organizá-los para formar um algoritmo."
+    "Ao acertar o espaço de um trecho do código, o mesmo se fixará no local e, quando todas as lacunas forem preenchidas, o mini-game terá sido concluído."
+    "Não se preocupe, a história só continua após o algoritmo ser formado, no então, não há um limite de tempo nem penalidade por errar a ordem, então vá em seu próximo ritmo." 
     # Fim do tutorial.
     # Aqui é inserido o minigame de drag and drop de Ruby, e, após ele ser concluído, a história continua.
     $setup_ruby_bs_puzzle()
@@ -421,18 +422,18 @@ label sala_de_estar_ruby:
 label ruby_bs_complete:
     scene cozinha_ruby with dissolve
     play music "audio/music (3).mp3" volume 0.5
-    mcN "Enfim a análise foi concluída."
-    mcN "Sim, uma obra prima que une estatísticas, química e biologia."
-    mcN "Uma receita capaz de ajudar a curar aquela doença de Ruby, e exclusivamente aquela doença de Ruby."
-    mcN "Se dado à qualquer outra pessoa, poderiam haver consequências imprevisíveis."
-    mcN "Com a receita em mãos você começa a travar uma guerra dentro daquela cozinha."
+    "Enfim a análise foi concluída."
+    "Sim, uma obra prima que une estatísticas, química e biologia."
+    "Uma receita capaz de ajudar a curar aquela doença de Ruby, e exclusivamente aquela doença de Ruby."
+    "Se dado à qualquer outra pessoa, poderiam haver consequências imprevisíveis."
+    "Com a receita em mãos você começa a travar uma guerra dentro daquela cozinha."
     # Escurece a tela por alguns segundos pra dar a impressão de passagem de tempo.
     mc "Finalmente."
     mc "Finalmente está pronto."
     mc "O preparo inteiro demorou mais que o planejado, mas tudo bem, ainda faltava 1 hora e 10 minutos pro evento."
 
     scene sala_de_estar_ruby with dissolve
-    mcN "Você então vai até Ruby e delicadamente o acorda, evitando assustá-lo."
+    "Você então vai até Ruby e delicadamente o acorda, evitando assustá-lo."
     mc "Ruby, tá aqui a comida."
     show ruby with moveinbottom
     mc "Eu preciso que você consuma da seguinte forma: primeiro coma esse pão, depois a canja de galinha e só aí o chá."
@@ -441,44 +442,44 @@ label ruby_bs_complete:
     show ruby 8
     rub "Ruby estava surpreso, ele esperava algo com aparência muito pior, mas aquilo parecia só comida normal que você daria pra alguém que está doente. Ele come o pão, normal."
     show ruby
-    mcN "Ruby começa a achar que estava preocupado por nada e fica mais tran-"
+    "Ruby começa a achar que estava preocupado por nada e fica mais tran-"
     show ruby 8
     mc "Agora me escute Ruby: não importa se você achar que tem algo errado com essa canja de galinha, ela é só uma canja de galinha."
     mc "Não pare de toma-la até acabar a tigela."
     show ruby 13
     rub "C-c-c-certo..."
     show ruby 8
-    mcN "Ruby estava aterrorizado."
+    "Ruby estava aterrorizado."
     show ruby 20
-    mcN "Ele pegou a colher, sua mão tremia, até que enfim a canja entrou em sua boca."
+    "Ele pegou a colher, sua mão tremia, até que enfim a canja entrou em sua boca."
     show ruby 8
-    mcN "Algo estava errado."
-    mcN "Algo estava definitivamente errado, aquilo tinha um sabor diferente do que deveria ter."
+    "Algo estava errado."
+    "Algo estava definitivamente errado, aquilo tinha um sabor diferente do que deveria ter."
     show ruby 14
-    ruby "Era doce- não..."
+    rub "Era doce- não..."
     show ruby 7
-    mcN "Agora que Ruby percebeu, na verdade era salgado. A canja estava muito fria, parecia até ter saído do frezer- não, ela na verdade estava quente."
+    "Agora que Ruby percebeu, na verdade era salgado. A canja estava muito fria, parecia até ter saído do frezer- não, ela na verdade estava quente."
     show ruby 9
-    mcN "Quente, quase pelando. A consistência era viscos- não, era liquida. Tão líquida que descia por sua garganta como água."
+    "Quente, quase pelando. A consistência era viscos- não, era liquida. Tão líquida que descia por sua garganta como água."
     show ruby 13
-    ruby  "O que era aquilo? Aquele prato diabólico de características amórficas. Qual o sabor? Qual a textura? Qual o cheiro? Qual a cor? Qual o prato?"
-    ruby "Quem sou eu?"
-    ruby "Por que estou comendo isso?"
-    ruby "O que é isso? O que é isso? Oqueéissoqueéissoqueéissoqueéissoqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéisso...!"
+    rub  "O que era aquilo? Aquele prato diabólico de características amórficas. Qual o sabor? Qual a textura? Qual o cheiro? Qual a cor? Qual o prato?"
+    rub "Quem sou eu?"
+    rub "Por que estou comendo isso?"
+    rub "O que é isso? O que é isso? Oqueéissoqueéissoqueéissoqueéissoqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéisso...!"
     mc "Ruby!"
     show ruby 8
-    mcN "Você gritou, tirando-o do transe."
+    "Você gritou, tirando-o do transe."
     mc "Não há nada de errado com a canja de galinha."
     mc "Apenas coma tudo."
     show ruby 7
-    mcN "Ruby estava soando frio."
-    mcN "Talvez ele tivesse cometido o pior erro de sua vida, mas era tarde demais."
+    "Ruby estava soando frio."
+    "Talvez ele tivesse cometido o pior erro de sua vida, mas era tarde demais."
     show ruby 9
-    mcN "Ele comeu uma colherada. E mais uma colherada. E mais uma colherada. E mais uma colherada. E mais uma colherada..."
+    "Ele comeu uma colherada. E mais uma colherada. E mais uma colherada. E mais uma colherada. E mais uma colherada..."
     mc "Ruby, acabou."
-    mcN "Você disse enquanto o garoto tentava pegar uma canja que já não mais existia na tigela."
+    "Você disse enquanto o garoto tentava pegar uma canja que já não mais existia na tigela."
     show ruby 8
-    mcN "A névoa que cobria a mente do garoto começou a se dissipar, e nesse momento ele recobrou a consciência desesperado."
+    "A névoa que cobria a mente do garoto começou a se dissipar, e nesse momento ele recobrou a consciência desesperado."
     show ruby 6
     rub "O-o-o-o-o-o-o-o que é essa canja amaldiçoada!?"
     show ruby 7
@@ -493,7 +494,7 @@ label ruby_bs_complete:
     mc "Só falta o chá e você deve toma-lo numa única golada, caso contrario será pior."
     mc "Ele já está frio o bastante."
     show ruby 7
-    mcN "O garoto olha para o chá preocupado."
+    "O garoto olha para o chá preocupado."
     show ruby 2
     rub "Depois disso acabou?"
     show ruby
@@ -505,24 +506,24 @@ label ruby_bs_complete:
     show ruby 2
     rub "Ok, então."
     show ruby
-    mcN "Num ato de coragem, Ruby segura a alça da xicara e a aproxima da boca."
-    mcN "Não havia cheiro algum emanando do chá, o que causou uma enorme estranheza no garoto."
-    mcN "Seus ancestrais japoneses gritavam da cova: aquele será pior que o anterior e a falta de cheiro é prova de que o chá está tentando ocultar sua verdadeira essência."
+    "Num ato de coragem, Ruby segura a alça da xicara e a aproxima da boca."
+    "Não havia cheiro algum emanando do chá, o que causou uma enorme estranheza no garoto."
+    "Seus ancestrais japoneses gritavam da cova: aquele será pior que o anterior e a falta de cheiro é prova de que o chá está tentando ocultar sua verdadeira essência."
     show ruby 8
-    mcN "E então a golada. Assim que ocorreu, Ruby percebeu que tinha razão."
-    mcN "Este não era como o anterior. É como se a Guerra da Cisplatina tivesse sido transformada em uma bebida."
-    mcN "O instinto natural foi cuspir, mas Ruby aguentou."
-    mcN "A medida que o chá se espalhava por sua boca, Ruby começava a sentir como se fosse parte da guerra."
-    mcN "Uma hora como pai que foi arrancado da família para segurar uma arma."
-    mcN "Uma hora como um desertor que precisa viver como vergonha da sociedade."
-    mcN "Uma hora como o próprio terreno, banhado por sangue de pessoas que choram por suas famílias e amigos."
-    mcN "O horror era incomparável."
-    mcN "Diferente do prato anterior que era a junção de antíteses de uma natureza incompreensível ao ser humano, aquele era..."
+    "E então a golada. Assim que ocorreu, Ruby percebeu que tinha razão."
+    "Este não era como o anterior. É como se a Guerra da Cisplatina tivesse sido transformada em uma bebida."
+    "O instinto natural foi cuspir, mas Ruby aguentou."
+    "A medida que o chá se espalhava por sua boca, Ruby começava a sentir como se fosse parte da guerra."
+    "Uma hora como pai que foi arrancado da família para segurar uma arma."
+    "Uma hora como um desertor que precisa viver como vergonha da sociedade."
+    "Uma hora como o próprio terreno, banhado por sangue de pessoas que choram por suas famílias e amigos."
+    "O horror era incomparável."
+    "Diferente do prato anterior que era a junção de antíteses de uma natureza incompreensível ao ser humano, aquele era..."
     show ruby 2
     rub "Um terror puramente humano"
-    mcN "Disse Ruby enquanto caia no Futon novamente."
+    "Disse Ruby enquanto caia no Futon novamente."
     hide ruby with moveoutbottom
-    mcN "Ruby desmaiou."
+    "Ruby desmaiou."
     show pyth ii 52 with moveinbottom
     pyt "Você acabou de desmaiar o garoto!"
     show pyth ii 49
@@ -530,21 +531,21 @@ label ruby_bs_complete:
     hide pyth with moveoutbottom
     mc "Tratamento concluído. Ele tem 50 minutos de descanso."
     scene black with dissolve
-    mcN "Oh, eu espero MUITO que você tenha tenha frequentado as atividades do clube “How to get away with the murder (not the show)”."
+    "Oh, eu espero MUITO que você tenha tenha frequentado as atividades do clube “How to get away with the murder (not the show)”."
     # Escurece a tela por alguns segundos pra dar a impressão de passagem de tempo
     scene sala_de_estar_ruby with dissolve
-    mcN "Ruby enfim acorda depois do seu tratamento duvidoso."
+    "Ruby enfim acorda depois do seu tratamento duvidoso."
     show ruby 6 with moveinbottom
     rub "Eu estou vivo!?"
     mc "Sim, você está vivo. Não só isso. Se levanta."
-    mcN "Ruby então se levanta do futon e percebe algo."
+    "Ruby então se levanta do futon e percebe algo."
     show ruby 21
     rub "Eu tô bem!?"
     show ruby 7
     mc "Sim, você está bem."
     mc "A receita foi um sucesso, e a cura é a recompensa por aguentar o processo infernal."
-    mcN "Ruby estava embasbacado com aquilo."
-    mcN "Ele estava sem conseguir olhar para uma luz sem que seus olhos lacrimejassem e agora todo resquício da doença havia sumido!"
+    "Ruby estava embasbacado com aquilo."
+    "Ele estava sem conseguir olhar para uma luz sem que seus olhos lacrimejassem e agora todo resquício da doença havia sumido!"
     show ruby 6
     rub "Como você fez isso!?"
     show ruby 7
@@ -558,7 +559,7 @@ label ruby_bs_complete:
     mc "Não se preocupa, qualquer um duvidaria desse tipo de coisa."
     mc "Além disso, foi uma aposta de risco alto que poderia te deixar ainda pior, só usei porque se não não daria tempo de você participar do evento."
     mc "O melhor sempre é deixar seu corpo curar por meios convencionais."
-    mcN "Com todo o barulho feito, Python também acorda."
+    "Com todo o barulho feito, Python também acorda."
     show pyth ii 49 with moveinbottom
     pyt "*Cough cough*"
     show pyth ii 47
@@ -596,7 +597,7 @@ label ruby_bs_complete:
     show pyth ii 47
     show ruby 6
     pyt "O queeeeee!?"
-    mcN "Ruby e Python perguntaram juntos, surpresos."
+    "Ruby e Python perguntaram juntos, surpresos."
     show pyth ii 45
     show ruby
     mc "A receita não pode ser compartilhada entre pessoas diferentes e só dava tempo de preparar uma única refeição."
@@ -604,7 +605,7 @@ label ruby_bs_complete:
     mc "E você não merece passar por aquela refeição amaldiçoada com uma probabilidade tão alta de ser inútil."
     show ruby 32
     rub "É! Você não quer aquilo, acredita em mim!"
-    mcN "Ruby disse isso, enquanto estremecia."
+    "Ruby disse isso, enquanto estremecia."
     show ruby 29
     show pyth ii 47
     pyt "Então você nunca planejou me deixar ir ao evento, não é?"
@@ -612,13 +613,13 @@ label ruby_bs_complete:
     mc "Isso mesmo."
     show pyth ii 52
     pyt "Você tá fazendo pouco de mim se acha que uma doença assim é o bastante pra me impedir de ajudar um amigo..."
-    mcN "Pye e Tom começam a subir pelo sofá e se entrelaçam cada uma em um dos braços da garota."
+    "Pye e Tom começam a subir pelo sofá e se entrelaçam cada uma em um dos braços da garota."
     mc "Ei, o que você tá fazendo?"
-    mcN "Você questiona confuso pela cena e de repente..."
+    "Você questiona confuso pela cena e de repente..."
     # Tem um sprite especifico pra isso (Python 53), a partir daqui é ele que deve ser usado para Python
     show pyth ii 51
     pyt "Guh!"
-    mcN "garota solta um gemido de dor quando suas cobras mordem seu pescoço e se fixam nele."
+    "garota solta um gemido de dor quando suas cobras mordem seu pescoço e se fixam nele."
     show pyth ii 53
     mc "O que é isso!?"
     show ruby 21
@@ -629,22 +630,22 @@ label ruby_bs_complete:
     rub "Isso não é um battle shonen pra você fazer esse tipo de coisa!"
     rub "Para, se não você pode se machucar!"
     show ruby 15
-    mcN "Ruby ordena mais uma vez muito preocupado."
+    "Ruby ordena mais uma vez muito preocupado."
     pyt "Está tudo bem."
-    mcN "Afirma Python mais uma vez enquanto se levanta do sofá."
+    "Afirma Python mais uma vez enquanto se levanta do sofá."
     pyt "Assim Tom e Pye podem mover meus braços e o veneno de dois serve como anestesia, permitindo que meu corpo se mova sem que eu sinta dor. Dessa forma eu vou poder subir com você no palco, Ruby."
     pyt "Ah, mas você terá que me levar até lá, eu não consigo mover minhas pernas sozinha."
     show ruby 32
     rub "Isso é só mais um motivo pra você não ir!"
     show ruby 29
-    mcN "Aquilo é uma péssima ideia, pode parecer hipocrisia vindo de você considerando sua técnica de CEM, mas um cuidado paliativo tão absurdo não pode fazer bem ao corpo."
+    "Aquilo é uma péssima ideia, pode parecer hipocrisia vindo de você considerando sua técnica de CEM, mas um cuidado paliativo tão absurdo não pode fazer bem ao corpo."
     show ruby 21
     rub "Ela pode de fato não estar sentido a dor agora por causa do veneno, mas uma hora que isso passar, seu corpo vai desabar de dor."
     rub "Você precisa impedir ela de usar essa Beserk Armor Reptiliana antes que haja consequências graves, mas usar a segurança dela não vai convencê-la; estava claro que Python é o tipo de pessoa que se machuca para ajudar os outros."
     show ruby 7
     scene emptydnd with dissolve
-    mcN "Mais uma vez, você via como necessária uma análise."
-    mcN "Vamos, entenda aquela garota e descubra seus pontos fracos para criar um argumento que irá convencê-la!"
+    "Mais uma vez, você via como necessária uma análise."
+    "Vamos, entenda aquela garota e descubra seus pontos fracos para criar um argumento que irá convencê-la!"
     # Aqui é inserido o minigame de drag and drop de Python, e, após ele ser concluído, a história continua.
     $setup_python_bs_puzzle()
     call screen python_bs_puzzle
@@ -661,46 +662,46 @@ label python_bs_complete:
     pyt "Você tem certeza que consegue, Ruby? – questionou garota."
     show ruby 20
     rub "Sim, mesmo que não tenha um discurso prévio, eu consigo!"
-    mcN "Afirmou Ruby como quem quer convencer a si mesmo."
+    "Afirmou Ruby como quem quer convencer a si mesmo."
     pyt "... – Python permanece quieta por um tempo."
     # A partir daqui volta pros sprites de Python com cabelo solto.
     
     pyt "Tudo bem..."
-    mcN "Diz a garota, desanimada."
+    "Diz a garota, desanimada."
     pyt "Desculpe por não poder ajudar."
     rub "Isso não é verdade."
     rub "Ver você se esforçando tanto assim me deixa ainda mais decidido."
     mc "Isso tudo é muito legal, mas a gente precisa ir rápido pro evento Ruby."
     rub "Verdade! Até mais Python, se cuida, tá?"
     pyt "Claro."
-    mcN "E assim lá fomos nós."
-    mcN "O evento aconteceria num local dentro da Academia e Ruby me indicou o caminho. Quando chegamos lá, faltava pouco pra ele precisar entrar em cena."
+    "E assim lá fomos nós."
+    "O evento aconteceria num local dentro da Academia e Ruby me indicou o caminho. Quando chegamos lá, faltava pouco pra ele precisar entrar em cena."
     mc "Nervoso?"
     rub "Um pouco... Mas agora não é hora pra isso."
     mc "Vai lá, você consegue – você disse dando um tapinha nas costas dele."
     rub "Obrigado – Ruby retribui com um sorriso."
     # Escurece a tela
-    mcN "Você decide ficar pra ver como as coisas vão se suceder e percebe que assim que ele começa a falar, toda o nervosismo de Ruby pareceu sumir."
-    mcN "Não só isso, na verdade você se surpreende com o garoto; ele passava uma impressão confiante e responsável, grandioso de certa forma."
-    mcN "Você enfim entendeu o que ele e Python queriam no discurso: algo que fizesse você pensar ̴“caramba, ̴ainda bem que ̴eu ̴estou ̴aqui”."
-    mcN "Certamente ̴era uma impressão diferente da de Python, mas sinceramente, talvez aquela fosse a impressão perfeita"
+    "Você decide ficar pra ver como as coisas vão se suceder e percebe que assim que ele começa a falar, toda o nervosismo de Ruby pareceu sumir."
+    "Não só isso, na verdade você se surpreende com o garoto; ele passava uma impressão confiante e responsável, grandioso de certa forma."
+    "Você enfim entendeu o que ele e Python queriam no discurso: algo que fizesse você pensar ̴“caramba, ̴ainda bem que ̴eu ̴estou ̴aqui”."
+    "Certamente ̴era uma impressão diferente da de Python, mas sinceramente, talvez aquela fosse a impressão perfeita"
     # Desescurece a tela
-    mcN "O evento enfim acaba e Ruby vem até você."
+    "O evento enfim acaba e Ruby vem até você."
     mc "Parece que deu tudo certo com o evento, você foi incrível."
     rub "Muito obrigado, mas isso foi graças a você."
     rub "O primeiro agradecimento foi por cordialidade, mas esse leva meus sinceros sentimentos: muito obrigado mesmo!"
-    mcN "Alguns estudantes parecem se aproximar de Ruby para perguntar coisas. Você acha melhor deixar ele continuar sobre holofotes, então decide ir embora pra não atrapalhar."
+    "Alguns estudantes parecem se aproximar de Ruby para perguntar coisas. Você acha melhor deixar ele continuar sobre holofotes, então decide ir embora pra não atrapalhar."
     mc "Ah, é verdade. Minhas coisas ainda estão na sala."
-    mcN "A essa altura você já havia perdido todo o resto das aulas, mas valeu a pena."
-    mcN "Você caminha até a sala para pegar suas coisas, entra nela e começa a se organizar."
-    mcN "Nesse momento, uma brisa entra pela janela, fazendo você instintivamente olhar para ela."
-    mcN "Ao retornar seu olhar para suas coisas, você percebe que..."
+    "A essa altura você já havia perdido todo o resto das aulas, mas valeu a pena."
+    "Você caminha até a sala para pegar suas coisas, entra nela e começa a se organizar."
+    "Nesse momento, uma brisa entra pela janela, fazendo você instintivamente olhar para ela."
+    "Ao retornar seu olhar para suas coisas, você percebe que..."
     mc "Sumiram!"
     pro "Sacrebleu! Quem poderia ter feito algo do tipo?"
-    mcN "Questionou Prolog de forma cínica enquanto segurava suas coisas em mãos."
+    "Questionou Prolog de forma cínica enquanto segurava suas coisas em mãos."
     mc "Desde quando você está aqui?"
     pro "Eu disse que seria mais discreta ao te observar."
-    mcN "A garota devolve a você suas coisas e continua."
+    "A garota devolve a você suas coisas e continua."
     mc "Ruby adoeceu?"
     pro "Adoeceu."
     pro "Impressionante! Não faço ideia de como ele fez pra ficar de pé no evento."
@@ -731,10 +732,10 @@ label python_bs_complete:
     mc "Então a armadilha, seja lá qual foi só atingiria um deles."
     pro "Non! Um erro amador [player_name]."
     pro "Eles iriam juntos pra sala, pois o que eles iam fazer lá envolvia ambos."
-    mcN "Você começa a se perguntar sobre o que ela estava dizendo."
-    mcN "Então, uma lembrança cruza sua mente."
-    mcN "Em pensamento, você pondera..."
-    mcN "O que é que Python e Ruby precisavam fazer para o evento hoje pela manhã que ainda não estava pronto quando você foi à casa de Ruby?"
+    "Você começa a se perguntar sobre o que ela estava dizendo."
+    "Então, uma lembrança cruza sua mente."
+    "Em pensamento, você pondera..."
+    "O que é que Python e Ruby precisavam fazer para o evento hoje pela manhã que ainda não estava pronto quando você foi à casa de Ruby?"
     mc "Preparar o discurso!"
     pro "Magnifique!"
     pro "Isso mesmo, Python e Ruby iriam terminar os preparos para o discurso do evento que aconteceria logo em seguida."
@@ -748,14 +749,14 @@ label python_bs_complete:
     pro "Pense, o que aconteceria se Ruby e Python não pudessem comparecer ao evento?"
     pro "Ele seria cancelado?"
     mc "Não, pois haveria um substit- !"
-    mcN "Você para por um segundo ao entender o que a garota queria dizer."
+    "Você para por um segundo ao entender o que a garota queria dizer."
     pro "Parece que você já percebeu."
     pro "O culpado precisava ser alguém que soubesse que Python e Ruby seriam os responsáveis para o evento."
     pro "Além disso, precisava ser alguém que ganharia algo com caso os dois não aparecessem no evento."
     pro "Então foi o substituto dos dois que fez isso, mas quem ele é?"
     pro "Eu tinha um palpite, mas a certeza só veio após ver os últimos 6 registros de entrada e saída da sala de recreação ontem."
-    mcN "Prolog lhe entregou um papel com nomes em uma ordem específica: Swift, Ruby, Python, Swift, Python e Ruby."
-    mcN "Duas das 3 pessoas foram, as vítimas o que só deixava um nome como possível culpado: "
+    "Prolog lhe entregou um papel com nomes em uma ordem específica: Swift, Ruby, Python, Swift, Python e Ruby."
+    "Duas das 3 pessoas foram, as vítimas o que só deixava um nome como possível culpado: "
     mc "Swift"
     pro "Bingo."
     pro "Você talvez não saiba, mas Swift se candidatará para o cargo de presidente que foi desocupado por Java e muito provavelmente Ruby fará o mesmo."
@@ -776,11 +777,11 @@ label python_bs_complete:
     pro "Quem é que vai se candidatar e usaria técnicas baixas para conseguir?"
     pro "Swift."
     pro "E foi assim que eu descobri o culpado."
-    mcN "Impressionante. Aquela sucessão de deduções fazia sentido, mas é surpreendente que ela conseguisse fazer isso em tão pouco tempo."
-    mcN "Mas você sentia que havia algo de errado."
-    mcN "O registro de entrada e saída da sala é de ontem."
-    mcN "Isso significa que a armadilha foi armada e ativada ontem."
-    mcN "Swift sabia que Python e Ruby iriam para a sala no dia do evento, mas como ele sabia que eles também iriam no dia anterior?"
+    "Impressionante. Aquela sucessão de deduções fazia sentido, mas é surpreendente que ela conseguisse fazer isso em tão pouco tempo."
+    "Mas você sentia que havia algo de errado."
+    "O registro de entrada e saída da sala é de ontem."
+    "Isso significa que a armadilha foi armada e ativada ontem."
+    "Swift sabia que Python e Ruby iriam para a sala no dia do evento, mas como ele sabia que eles também iriam no dia anterior?"
     pro "Ele não sabia."
     pro "O que?"
     pro "Como eu disse, ele não sabia. Provavelmente foi uma grande coincidência pro azar dele."
@@ -814,8 +815,8 @@ label python_bs_complete:
     pro "O que importa é que assim Swift poderia trancar as duas vítimas ensopadas dentro da sala fria, o que fez elas adoecerem."
     pro "Provavelmente eles conseguiram eventualmente falar com alguém fora da sala pra pegar outra chave com Alan Turing para abrir a sala, mas, até lá, o estrago já havia sido feito."
     mc "Faz sentido."
-    mcN "Isso explica as coisas estranhas que vimos na sala e a situação de Ruby e Python."
-    mcN "Swift também conseguiria ativar a armadilha depois de sair da sala caso ele levasse o controle do ar condicionado."
+    "Isso explica as coisas estranhas que vimos na sala e a situação de Ruby e Python."
+    "Swift também conseguiria ativar a armadilha depois de sair da sala caso ele levasse o controle do ar condicionado."
     mc "Mesmo assim, ir tão baixo apenas por causa de um evento pra ganhar votos é absurdo!"
     mc "É claro que o evento seria adiado quando o diretor soubesse disso."
     pro "Na verdade não."
@@ -823,7 +824,7 @@ label python_bs_complete:
     mc "Ué, por que não?"
     pro "Suborno."
     mc "Ah..."
-    mcN "Você relembra os eventos de sua primeira semana."
+    "Você relembra os eventos de sua primeira semana."
     pro "É, você consegue ver como Swift poderia se safar com um pouco de dinheiro."
     mc "Então como é que você fez com que adiassem o evento?"
     pro "Vandalismo."
@@ -832,11 +833,11 @@ label python_bs_complete:
     pro "Aproveitando que todos saíram do local, eu baguncei todo o local e escondi parte da decoração dele, então, eles não tiveram outra escolha a não ser postergar o início do evento."
     mc "Mas isso não vai por você e Lua em problemas?"
     pro "Não sou descuidada a ponto de ser descoberta por algo tão trivial."
-    mcN "Aquela garota podia ser meio estranha, mas visto o que ela fez hoje, também era extremamente confiável."
-    mcN "Os elogios de seus colegas de grupo faziam total sentido."
+    "Aquela garota podia ser meio estranha, mas visto o que ela fez hoje, também era extremamente confiável."
+    "Os elogios de seus colegas de grupo faziam total sentido."
     mc "No fim das contas, você de fato é tudo isso que as pessoas dizem não é?"
     pro "Non! Sou apenas Prolog, uma estudante da Academia-Sem-Nome-Definido! – Disse ela com um sorriso no rosto."
-    mcN "A esse ponto você não sabia se aquilo era modéstia ou só uma piada, mas decidiu não ficar mais batendo nessa tecla."
+    "A esse ponto você não sabia se aquilo era modéstia ou só uma piada, mas decidiu não ficar mais batendo nessa tecla."
     mc "Muito obrigado pela ajuda, mas agora se me der licença, vou ind-"
     pro "Espere um segundo! Você ainda não respondeu minha pergunta."
     mc "Que pergunta?"
@@ -860,10 +861,10 @@ label python_bs_complete:
     pro "Foi divertido trabalhar com você."
     mc "Você não sabe se divertido era a palavra certa, mas de fato no fim das contas, trabalhar com a jovem detetive não foi algo ruim."
     mc "Você consegue ver o porque dos estudantes serem tão grato a ela, de repente todas as histórias absurdas sobre ela parecem ter embasamento."
-    mcN "Você volta para casa e no meio do caminho percebe que esqueceu de perguntar algo."
+    "Você volta para casa e no meio do caminho percebe que esqueceu de perguntar algo."
     mc "Ah, esqueci de perguntar sobre como ela sabia que Python está na casa de Ruby."
-    mcN "Minutos depois, seu celular toca. Ao atender, você escuta uma garota nele, quase que cantarolando as palavras que dizia."
-    prolog "Alô, alô, Doutor. Doutor Daminh-"
+    "Minutos depois, seu celular toca. Ao atender, você escuta uma garota nele, quase que cantarolando as palavras que dizia."
+    pro "Alô, alô, Doutor. Doutor Daminh-"
     mc "O que você quer, Prolog?"
     pro "Que frieza! Eu vim responder sua pergunta."
     mc "Que pergunta?"
@@ -878,6 +879,6 @@ label python_bs_complete:
     pro "Você não encontrou os pais do garoto quando foi lá porque eles passam o dia trabalhando."
     pro "É claro, isso tudo é só uma suposição, mas provavelmente é o bastante para suprir sua curiosidade."
     pro "Câmbio, desligo."
-    mcN "E assim a ligação termina."
+    "E assim a ligação termina."
     pro "É, ela realmente é tudo o que dizem."
     return

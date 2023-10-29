@@ -35,6 +35,14 @@ image sala_ruby:
     "images/Fotos/sala_de_estar_ruby.jpg"
 image cozinha_ruby:
     "images/Fotos/cozinha_ruby.jpg"
+image centro:
+    "images/Fotos/centro.jpg"
+    zoom 1.5
+image casaPython:
+    "images/Fotos/casaPython.jpg"
+    zoom 1.5
+image doceria:
+    "images/Fotos/doceria.jpg"
 
 
 # COBOL
@@ -151,10 +159,16 @@ image pyth 12 = "images/Sprites Python/python 12.png"
 image pyth 13 = "images/Sprites Python/python 13.png"
 image pyth 14 = "images/Sprites Python/python 14.png"
 image pyth 15 = "images/Sprites Python/python 15.png"
+image pyth 16 = "images/Sprites Python/python 16.png"
 image pyth 17 = "images/Sprites Python/python 17.png"
 image pyth 18 = "images/Sprites Python/python 18.png"
 image pyth 20 = "images/Sprites Python/python 20.png"
+image pyth 21 = "images/Sprites Python/python 21.png"
 image pyth 23 = "images/Sprites Python/python 23.png"
+image pyth 24 = "images/Sprites Python/python 24.png"
+image pyth 25 = "images/Sprites Python/python 25.png"
+image pyth 26 = "images/Sprites Python/python 26.png"
+image pyth 27 = "images/Sprites Python/python 27.png"
 image pyth 28 = "images/Sprites Python/python 28.png"
 image pyth 29 = "images/Sprites Python/python 29.png"
 
@@ -163,15 +177,19 @@ image pyth i 32 = "images/Sprites Python/python 32.png"
 image pyth i 33 = "images/Sprites Python/python 33.png"
 image pyth i 34 = "images/Sprites Python/python 34.png"
 image pyth i 35 = "images/Sprites Python/python 35.png"
+image pyth i 36 = "images/Sprites Python/python 36.png"
 image pyth i 37 = "images/Sprites Python/python 37.png"
 image pyth i 39 = "images/Sprites Python/python 39.png"
 
 image pyth ii = "images/Sprites Python/python 42.png"
 image pyth ii 43 = "images/Sprites Python/python 43.png"
+image pyth ii 44 = "images/Sprites Python/python 44.png"
 image pyth ii 45 = "images/Sprites Python/python 45.png"
 image pyth ii 46 = "images/Sprites Python/python 46.png"
 image pyth ii 48 = "images/Sprites Python/python 48.png"
+image pyth ii 47 = "images/Sprites Python/python 47.png"
 image pyth ii 49 = "images/Sprites Python/python 49.png"
+image pyth ii 51 = "images/Sprites Python/python 51.png"
 image pyth ii 52 = "images/Sprites Python/python 52.png"
 image pyth ii 53 = "images/Sprites Python/python 53.png"
 
@@ -241,10 +259,10 @@ image swift 24 = "images/Sprites Swift/swift 24.png"
 image luaXcobol = "images/CGs/6.png"
 image swiftXruby = 'images/CGs/7.png'
 image prolog_entra = "images/CGs/5.png"
-image python_hotdog = 'images/CG/1.png'
-image java_winner = "image/CG/3.PNG"
-image lua_miku = "image/CG/2 V2.PNG"
-image ruby_winner = "image/CG/4.PNG"
+image python_hotdog = 'images/CGs/1.png'
+image java_winner = "images/CGs/3.PNG"
+image lua_miku = "images/CGs/2 V2.PNG"
+image ruby_winner = "images/CGs/4.PNG"
 
 # BOXs
 image battle_menu_box = "images/botoes, caixas e etc/2.png"

@@ -168,7 +168,7 @@ label python4:
 
     pyt "Mesmo que esteja, não importa."
 
-    show pyth falando 2
+    show pyth falando2
 
     pyt "O que ele quer que seja mostrado ele mostra, e esse pouco da personalidade dele já é o bastante pra saber que ele é um cara legal."
 
@@ -253,7 +253,7 @@ label python4:
 
     mc "Que tal uma festa?"
 
-    show pyth surpresa
+    show pyth
 
     pyt "Uma festa?"
 

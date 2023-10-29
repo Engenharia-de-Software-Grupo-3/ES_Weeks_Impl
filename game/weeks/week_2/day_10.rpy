@@ -1,19 +1,18 @@
-'''
-image lua_parca = "images/Sprites Lua/lua 1.png"
-image java_parca = "images/Sprites Java/java 1.png"
-image python_parca = "images/Sprites Python/python 1.png"
-image ruby_parca = "images/Sprites Ruby/ruby 1.png"
+#image lua_parca = "images/Sprites Lua/lua 1.png"
+#image java_parca = "images/Sprites Java/java 1.png"
+#image python_parca = "images/Sprites Python/python 1.png"
+#image ruby_parca = "images/Sprites Ruby/ruby 1.png"
 
 
-default falas_java = [jav, "Seria um prazer.", "Uma aspirante a detetive que resolveu inúmeros casos, contribuindo para a melhora da sociedade...", 'E então, vamos começar?', 'Seria uma boa ideia eu procurar informações do funcionamento intrínseco de tecnologias da área de computação, não apenas de computadores propriamente ditos.','Posso fazer isso com o próprio material existente aqui na biblioteca.', 'Acredito que você consegue concluir essa árdua tarefa?', ' Se você não sabia sobre, é melhor correr pra recuperar o tempo perdido. Posso ajudar se quiser.', 'Me dê 2 dias e garanto que tudo estará completo.', 'Aproveitando a deixa, vou pra biblioteca começar minha parte no trabalho. Até amanhã.']
-default falas_python = [pyt, "Claro que sim!", 'Uma garota maravilhosa que está sempre ajudando os outros... ', 'Olha eles aí', 'Eu posso entrevistar os professores da academia.', 'A maior parte deles teve muita importância sobre como a história dessa área progrediu.', 'Você vai ficar bem?', 'Ué, eu te falei sobre no primeiro dia sobre isso', 'Vou fazer as entrevistas ainda hoje, e amanhã vocês podem ir a sala de recreação pegar', 'Eu também vou indo, preciso preparar algumas coisas para amanhã. Tchau, pessoal!']
-default falas_lua = [lua, "Olha só, não é uma má ideia.", 'Uma garota cujo Deus errou na hora de fazer a ficha de personagem e de alguma forma nasceu com parafusos a mais e a menos...', 'Já era hora de aparecerem', 'Você não deve subestimar fóruns onlines alternativos. Se você for alguém habilidosa como eu e conseguir filtrar o que é útil, o que é inútil...', 'e o que é propaganda com vírus sobre mães solteiras na sua cidade, dá pra achar coisas muito impressionantes no meio desse garimpo. Vou procurar informações por ali.', 'Que deus te tenha', 'Não se preocupa, eu também ainda não comecei a estudar porque ainda falta tempo.', 'Não deve ser difícil pegar as coisas da net, então vai ser rápido.', 'Essa garota nunca para de surpreender. Bem não é da minha conta, tenho que ir pra casa começar o novo evento do Destination 2.']
-default falas_ruby = [rub, "Sim, pode contar comigo!", 'Uma mulher determinada que vai até o fim quando decide fazer algo...', 'O que você queria discutir?', 'A professora também mencionou sobre a etapa de avaliação de custos para a criação de tecnologias.', 'A parte de planilhas, planejamento e coleta de valores podem confiar em mim para fazer. Garanto que não vão se arrepender.', 'Você não pode se sobrecarregar com tantas atividades assim', 'Eu espero que eu seja capaz de acertar tudo. Sempre fico nervoso antes desse tipo de coisa.', 'Tenho que fazer algumas coisas amanhã, mas até lá termino as planilhas e podem ir pegar comigo na sala de recreação.', '- Muito obrigado pela chance de trabalhar com você! Vou para casa começar a análise de custos, então até mais.']
-default parceiro1 = []
-default parceiro2 = []
-default imagem_parceiro1 = "images/prolog  bird.png"
-default imagem_parceiro2 = "images/prolog  bird.png"
-'''
+#default falas_java = [jav, "Seria um prazer.", "Uma aspirante a detetive que resolveu inúmeros casos, contribuindo para a melhora da sociedade...", 'E então, vamos começar?', 'Seria uma boa ideia eu procurar informações do funcionamento intrínseco de tecnologias da área de computação, não apenas de computadores propriamente ditos.','Posso fazer isso com o próprio material existente aqui na biblioteca.', 'Acredito que você consegue concluir essa árdua tarefa?', ' Se você não sabia sobre, é melhor correr pra recuperar o tempo perdido. Posso ajudar se quiser.', 'Me dê 2 dias e garanto que tudo estará completo.', 'Aproveitando a deixa, vou pra biblioteca começar minha parte no trabalho. Até amanhã.']
+#default falas_python = [pyt, "Claro que sim!", 'Uma garota maravilhosa que está sempre ajudando os outros... ', 'Olha eles aí', 'Eu posso entrevistar os professores da academia.', 'A maior parte deles teve muita importância sobre como a história dessa área progrediu.', 'Você vai ficar bem?', 'Ué, eu te falei sobre no primeiro dia sobre isso', 'Vou fazer as entrevistas ainda hoje, e amanhã vocês podem ir a sala de recreação pegar', 'Eu também vou indo, preciso preparar algumas coisas para amanhã. Tchau, pessoal!']
+#default falas_lua = [lua, "Olha só, não é uma má ideia.", 'Uma garota cujo Deus errou na hora de fazer a ficha de personagem e de alguma forma nasceu com parafusos a mais e a menos...', 'Já era hora de aparecerem', 'Você não deve subestimar fóruns onlines alternativos. Se você for alguém habilidosa como eu e conseguir filtrar o que é útil, o que é inútil...', 'e o que é propaganda com vírus sobre mães solteiras na sua cidade, dá pra achar coisas muito impressionantes no meio desse garimpo. Vou procurar informações por ali.', 'Que deus te tenha', 'Não se preocupa, eu também ainda não comecei a estudar porque ainda falta tempo.', 'Não deve ser difícil pegar as coisas da net, então vai ser rápido.', 'Essa garota nunca para de surpreender. Bem não é da minha conta, tenho que ir pra casa começar o novo evento do Destination 2.']
+#default falas_ruby = [rub, "Sim, pode contar comigo!", 'Uma mulher determinada que vai até o fim quando decide fazer algo...', 'O que você queria discutir?', 'A professora também mencionou sobre a etapa de avaliação de custos para a criação de tecnologias.', 'A parte de planilhas, planejamento e coleta de valores podem confiar em mim para fazer. Garanto que não vão se arrepender.', 'Você não pode se sobrecarregar com tantas atividades assim', 'Eu espero que eu seja capaz de acertar tudo. Sempre fico nervoso antes desse tipo de coisa.', 'Tenho que fazer algumas coisas amanhã, mas até lá termino as planilhas e podem ir pegar comigo na sala de recreação.', '- Muito obrigado pela chance de trabalhar com você! Vou para casa começar a análise de custos, então até mais.']
+#default parceiro1 = []
+#default parceiro2 = []
+#default imagem_parceiro1 = "images/prolog  bird.png"
+#default imagem_parceiro2 = "images/prolog  bird.png"
+
 
 
 

@@ -2,25 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/weeks/week_2/day_9.rpy", line 273: end of line expected.
-    show futon with movein right
-                           ^
+The label _call_prepare_tutorial_battle is defined twice, at File "game/weeks/week_1/day_1.rpy", line 109:
+            call prepare_tutorial_battle from _call_prepare_tutorial_battle
+and File "game/weeks/week_3/day_19.rpy", line 287:
+    call prepare_tutorial_battle from _call_prepare_tutorial_battle
 
-File "game/weeks/week_2/day_9.rpy", line 410: expected 'image_name_component' not found.
-    show scene empty dnd with dissolve
-        ^
 
-File "game/weeks/week_2/day_9.rpy", line 532: 'with' is not a keyword argument or valid child of the screen statement.
-    screen black with dissolve
-                     ^
-
-File "game/weeks/week_2/day_9.rpy", line 535: 'with' is not a keyword argument or valid child of the screen statement.
-    screen sala_de_estar_ruby with dissolve
-                                  ^
-
-File "game/weeks/week_2/day_9.rpy", line 645: expected 'image_name_component' not found.
-    show scene emptydnd with dissolve
-        ^
-
-Ren'Py Version: Ren'Py 8.1.2.23090503
-Sun Oct 29 22:55:56 2023
+Ren'Py Version: Ren'Py 8.1.3.23091805
+Sun Oct 29 11:23:09 2023
