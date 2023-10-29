@@ -24,7 +24,7 @@ label python3:
 
     show pyth perguntando
 
-    pyt "Ei, [P-name], você tem algo que goste de fazer no seu tempo livre?"
+    pyt "Ei, [player_name], você tem algo que goste de fazer no seu tempo livre?"
 
     show pyth escutando
 
@@ -183,7 +183,7 @@ label python3:
 
     show pyth semhumor
 
-    pyt "[P-name], eu acho que começo a entender como você saiu ileso de um atropelamento."
+    pyt "[player_name], eu acho que começo a entender como você saiu ileso de um atropelamento."
 
     hide pyth with moveoutright
 

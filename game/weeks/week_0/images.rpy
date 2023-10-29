@@ -70,7 +70,19 @@ image lua 30 = "images/Sprites Lua/lua 30.png"
 image lua 31 = "images/Sprites Lua/lua 31.png"
 
 # PROLOG
-image prolog = "images/Sprites Prolog/prolog 1.png"
+image prolog 1 = "images/Sprites Prolog/prolog 1.png"
+image prolog 2 = "images/Sprites Prolog/prolog 2.png"
+image prolog 6 = "images/Sprites Prolog/prolog 6.png"
+image prolog 7 = "images/Sprites Prolog/prolog 7.png"
+image prolog 8 = "images/Sprites Prolog/prolog 8.png"
+image prolog 9 = "images/Sprites Prolog/prolog 9.png"
+image prolog 13 = "images/Sprites Prolog/prolog 13.png"
+image prolog 15 = "images/Sprites Prolog/prolog 15.png"
+image prolog 16 = "images/Sprites Prolog/prolog 16.png"
+image prolog 18 = "images/Sprites Prolog/prolog 18.png"
+image prolog 19 = "images/Sprites Prolog/prolog 19.png"
+image prolog 21 = "images/Sprites Prolog/prolog 21.png"
+image prolog 22 = "images/Sprites Prolog/prolog 22.png"
 
 # PYTHON
 image pyth = "images/Sprites Python/python 1.png"

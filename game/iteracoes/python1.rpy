@@ -29,7 +29,7 @@ label python1 :
 
     show pyth alegre2
 
-    pyt "E então, como tem sido a sua experiência aqui até agora, DAVVI?"
+    pyt "E então, como tem sido a sua experiência aqui até agora, [player_name]?"
 
     show pyth alegre1
 

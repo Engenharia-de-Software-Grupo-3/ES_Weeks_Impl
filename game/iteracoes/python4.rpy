@@ -303,7 +303,7 @@ label python4:
 
     show pyth rindo2
 
-    pyt "[P-name], muito, muito, muito obrigada! Ok, eu vou correndo lá pensar em como fazer tal festa."
+    pyt "[player_name], muito, muito, muito obrigada! Ok, eu vou correndo lá pensar em como fazer tal festa."
 
     show pyth rindo1
 
