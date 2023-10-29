@@ -14,7 +14,7 @@ label conversa_com_prolog_antes_aula:
 
     mcN "Mais uma vez, você estava na sala de aula, um pouco entediado."
     mcN "Você repara que nem Ruby nem Python chegaram ainda, o que não é muito do feitio de nenhum dos dois."
-    show prolog 1 with moveinleft
+    show prolog with moveinleft
     pro "Distraído, meu caro?"
     mcN "Diz Prolog ao se esgueirar ao lado de sua mesa."
     mc "Ah!"
