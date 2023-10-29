@@ -2,7 +2,9 @@ default love_final = 0
 default elegiveis = []
 
 label semana3_dia20:
-
+    "Hoje é dia de prova"
+    call prepare_battle_2
+    "Após a prova..."
     python:
         if pythonLoveCounter >= 6 and pythonEventsCounter >= 4:
             elegiveis.append(pythonLoveCounter)
