@@ -159,7 +159,7 @@ label semana3_dia16:
     show pyth 6
     pyt "Eu só queria...."
     "Ting!"
-    show pyth 33
+    show pyth i 33
     pyt "Oh!"
     show pyth 2
     pyt "Eu fiz chá para você."

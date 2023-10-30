@@ -4,6 +4,7 @@ label semana2_dia9:
         call conversa_com_prolog_depois_aula
         call casa_de_ruby
         call sala_de_estar_ruby
+        call evento
     return
 
 
@@ -12,6 +13,8 @@ label conversa_com_prolog_antes_aula:
     show text "Dia 1" at truecenter
     play music "audio/music.mp3" volume 0.5
     scene sala 1 with dissolve
+    scene sala 1 with dissolve
+
 
     "Mais uma vez, você estava na sala de aula, um pouco entediado."
     "Você repara que nem Ruby nem Python chegaram ainda, o que não é muito do feitio de nenhum dos dois."
@@ -64,17 +67,18 @@ label conversa_com_prolog_antes_aula:
     pro "Oh, mil desculpas!"
     show prolog 13
     pro "Vou começar a ser mais discreta!"
+    show prolog 7
     mc "O ponto não é esse..."
     "A cortina de um profundo azure é levantada, dando espaço para que o holofote que chamamos de sol privilegiar seus escolhidos sob esse palco de mogno, queimando-os ao longo de suas performances."
     hide prolog 13 with moveoutleft
-    show ada with moveinleft
+    show ada at left with moveinleft
     ada "Com lágrimas, sangue e suor, cantem e dancem, roubando o holofote um dos outros."
     "Dizia Ada que adentrara a sala e lentamente andava ao centro do quadro"
     ada "Isso é o Starlight!"
-    show prolog 2 with moveinleft
+    show prolog 2 at right with moveinright
     pro "Bom dia pra senhora também, professora Ada!"
-    hide prolog with moveoutleft
-    hide ada with moveoutright
+    hide prolog with moveoutright
+    hide ada with moveoutleft
     "E assim, o dia foi passando..."
     scene black with dissolve
     return
@@ -87,6 +91,7 @@ label conversa_com_prolog_depois_aula:
     scene black
     show text "Dia 1" at truecenter
     play music "audio/music (2).mp3" volume 0.5
+    scene sala 1 with dissolve
     scene sala 1 with dissolve
 
     show prolog 9 with moveinleft
@@ -224,9 +229,9 @@ label sala_de_estar_ruby:
     show pyth ii 43
     "Python deu uma leve risada."
     pyt "Então vou deixar ela te explicar depois, afinal, a detetive que soluciona o caso deve ser quem explica ele."
-    show pyth ii 45
+    show pyth ii 45 at right
     mc "Ah, Prolog também falou sobre adiar algum tipo de evento."
-    show ruby 6 with moveinleft
+    show ruby 6 at left with moveinleft
     rub "Oh! É sério mesmo!?"
     show pyth ii 46
     pyt "Se foi ela que disse, com certeza é sério."
@@ -269,16 +274,16 @@ label sala_de_estar_ruby:
     hide ruby with moveoutright
     pyt "Deixarei essa tarefa com você, meu querido calouro!"
     hide pyth with moveoutbottom
-    show ruby with moveinright
-    show futon with moveinright
+    show ruby at left with moveinright
+    show futon at top with moveinright
     "Ruby traz um futon pra sala e deita nele."
-    hide ruby with moveoutbottom
     hide futon with moveoutbottom
+    hide ruby with moveoutbottom
     "Enquanto isso, você vai à mesa com uma caneta e papel para escrever o discurso."
     mc "..."
     mc "..."
     "Você termina de escrever o papel do discurso e mostra a ruby, acreditando que fez um bom trabalho."
-    show ruby 16
+    show ruby 16 at center with moveinbottom
     rub "Desculpa, mas tá tangente demais."
     show ruby 2
     rub "Realmente o discurso passa a energia da Academia, mas agora parece que o lado educacional dela é inexistente."
@@ -304,7 +309,7 @@ label sala_de_estar_ruby:
     mc "2 HORAS!?"
     mc "Do que adianta adiar só duas horas se os apresentadores tão doentes?"
     mc "Pelo menos adiasse um dia!"
-    show pyth ii 46 with moveinbottom
+    show pyth ii 46 at right with moveinbottom
     pyt "Provavelmente..."
     show pyth ii 49
     pyt "*cough cough*"
@@ -315,7 +320,7 @@ label sala_de_estar_ruby:
     show ruby 2 with moveinbottom
     rub "Eu não tô tão mal."
     rub "Apenas coriza, olhos ardendo e um pouco de dor nas articulações, já Python..."
-    show pyth ii 46 with moveinbottom
+    show pyth ii 46 at right with moveinbottom
     pyt "Tá ruim até pra eu me levantar."
     hide pyth with moveoutbottom
     "Disse ela como em um gemido, enquanto Pye e Tom lançavam um olhar preocupado sob a garota."
@@ -334,7 +339,7 @@ label sala_de_estar_ruby:
     mc "O quão longe você está disposto a ir pra fazer seu trabalho?"
     show ruby 24
     rub "Disposto a muito!"
-    show pyth ii 47
+    show pyth ii 47 at right with moveinbottom
     pyt "Por que isso, [player_name]?"
     show pyth ii 45
     mc "Culinária médica experimental."
@@ -343,7 +348,6 @@ label sala_de_estar_ruby:
     pyt "Eh?"
     rub "Eh?"
     hide pyth with moveoutbottom
-    show pyth ii 45
     show ruby 7
     mc "Medicações unidas à chás farmacêuticos usando alho e limão, canja de galinha milagrosa que leva antialérgicos como ingredientes, analgésicos triturados e misturados a sucos de vitamina c, entre outros artifícios."
     show ruby 2
@@ -361,7 +365,7 @@ label sala_de_estar_ruby:
     mc "Na pior das hipóteses você pode ir parar no hospital por infecção intestinal."
     show ruby 6
     rub "Ehhhhhh!?"
-    show pyth ii 52 with moveinbottom
+    show pyth ii 52 at right with moveinbottom
     pyt "E você sugerindo uma medida dessas?!"
     "Python perguntou surpreendida."
     show pyth ii 43
@@ -380,7 +384,7 @@ label sala_de_estar_ruby:
     mc "Muito bem, nenhum de vocês se levanta até eu voltar."
     mc "Temos 2 horas, serei rápido nas compras e cozinhar tudo demorará uma meia hora dependendo do tamanho da sua cozinha."
     mc "Assim, com 40 minutos tudo estará pronto."
-    show pyth ii 47 with moveoutbottom
+    show pyth ii 47 at right with moveoutbottom
     pyt "E quanto a mim aqui? Algum remédio milagroso ensinado por sua avó?."
     show pyth ii 45
     mc "Pra você a resposta é outra, mas depois falamos sobre."
@@ -391,7 +395,7 @@ label sala_de_estar_ruby:
     scene casa_de_ruby with dissolve
     "Você nunca imaginou que as coisas malucas que você fazia com um fogão, um liquidificador e um furador de coco seriam capazes de ajudar outra pessoa."
     scene sala_de_estar_ruby with dissolve
-    show pyth 45 with moveinbottom
+    show pyth ii 45 at right with moveinbottom
     show ruby with moveinbottom
     "Após fazer as compras, você volta para a casa de Ruby e encontra o mesmo e Python ainda deitados."
     hide pyth with moveoutbottom
@@ -416,6 +420,7 @@ label sala_de_estar_ruby:
     "Não se preocupe, a história só continua após o algoritmo ser formado, no então, não há um limite de tempo nem penalidade por errar a ordem, então vá em seu próximo ritmo." 
     # Fim do tutorial.
     # Aqui é inserido o minigame de drag and drop de Ruby, e, após ele ser concluído, a história continua.
+    stop music
     $setup_ruby_bs_puzzle()
     call screen ruby_bs_puzzle    
 
@@ -457,11 +462,16 @@ label ruby_bs_complete:
     "Algo estava definitivamente errado, aquilo tinha um sabor diferente do que deveria ter."
     show ruby 14
     rub "Era doce- não..."
+    rub "Era doce- não..."
     show ruby 7
     "Agora que Ruby percebeu, na verdade era salgado. A canja estava muito fria, parecia até ter saído do frezer- não, ela na verdade estava quente."
     show ruby 9
     "Quente, quase pelando. A consistência era viscos- não, era liquida. Tão líquida que descia por sua garganta como água."
     show ruby 13
+    rub  "O que era aquilo? Aquele prato diabólico de características amórficas. Qual o sabor? Qual a textura? Qual o cheiro? Qual a cor? Qual o prato?"
+    rub "Quem sou eu?"
+    rub "Por que estou comendo isso?"
+    rub "O que é isso? O que é isso? Oqueéissoqueéissoqueéissoqueéissoqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéissooqueéissoqueéissoqueéisso...!"
     rub  "O que era aquilo? Aquele prato diabólico de características amórficas. Qual o sabor? Qual a textura? Qual o cheiro? Qual a cor? Qual o prato?"
     rub "Quem sou eu?"
     rub "Por que estou comendo isso?"
@@ -524,7 +534,7 @@ label ruby_bs_complete:
     "Disse Ruby enquanto caia no Futon novamente."
     hide ruby with moveoutbottom
     "Ruby desmaiou."
-    show pyth ii 52 with moveinbottom
+    show pyth ii 52 at right with moveinbottom
     pyt "Você acabou de desmaiar o garoto!"
     show pyth ii 49
     pyt "Por que diabos você fez isso???????"
@@ -560,7 +570,7 @@ label ruby_bs_complete:
     mc "Além disso, foi uma aposta de risco alto que poderia te deixar ainda pior, só usei porque se não não daria tempo de você participar do evento."
     mc "O melhor sempre é deixar seu corpo curar por meios convencionais."
     "Com todo o barulho feito, Python também acorda."
-    show pyth ii 49 with moveinbottom
+    show pyth ii 49 at right with moveinbottom
     pyt "*Cough cough*"
     show pyth ii 47
     pyt "Quanto tempo ainda falta pro evento?"
@@ -642,18 +652,20 @@ label ruby_bs_complete:
     show ruby 21
     rub "Ela pode de fato não estar sentido a dor agora por causa do veneno, mas uma hora que isso passar, seu corpo vai desabar de dor."
     rub "Você precisa impedir ela de usar essa Beserk Armor Reptiliana antes que haja consequências graves, mas usar a segurança dela não vai convencê-la; estava claro que Python é o tipo de pessoa que se machuca para ajudar os outros."
-    show ruby 7
+    hide pyth with moveoutbottom
+    hide ruby with moveoutbottom
     scene emptydnd with dissolve
     "Mais uma vez, você via como necessária uma análise."
     "Vamos, entenda aquela garota e descubra seus pontos fracos para criar um argumento que irá convencê-la!"
     # Aqui é inserido o minigame de drag and drop de Python, e, após ele ser concluído, a história continua.
+    stop music
     $setup_python_bs_puzzle()
     call screen python_bs_puzzle
 
 label python_bs_complete:
     scene sala_de_estar_ruby with dissolve
     play music "audio/music (3).mp3" volume 0.5
-    show pyth ii 53
+    show pyth ii 53 at right
     show ruby 7
     mc "Python, nesse exato momento você está assustadora."
     mc "Aparecer assim para os novatos não vai passar sua imagem calorosa de sempre; eles não se sentirão acolhidos, mas sim aterrorizados!"
@@ -665,220 +677,404 @@ label python_bs_complete:
     "Afirmou Ruby como quem quer convencer a si mesmo."
     pyt "... – Python permanece quieta por um tempo."
     # A partir daqui volta pros sprites de Python com cabelo solto.
-    
+    show pyth ii 49
     pyt "Tudo bem..."
     "Diz a garota, desanimada."
+    show pyth ii 47
     pyt "Desculpe por não poder ajudar."
+    show pyth ii 48
+    show ruby 25
     rub "Isso não é verdade."
+    show ruby 26
     rub "Ver você se esforçando tanto assim me deixa ainda mais decidido."
+    show ruby 23
     mc "Isso tudo é muito legal, mas a gente precisa ir rápido pro evento Ruby."
+    show ruby 24
     rub "Verdade! Até mais Python, se cuida, tá?"
+    hide ruby with moveoutright
+    show pyth ii 47
     pyt "Claro."
+    hide pyth with moveoutbottom
+    scene black with dissolve
     "E assim lá fomos nós."
-    "O evento aconteceria num local dentro da Academia e Ruby me indicou o caminho. Quando chegamos lá, faltava pouco pra ele precisar entrar em cena."
+    return
+
+label evento:
+    scene auditorio with dissolve
+    play music "audio/music (2).mp3" volume 0.5
+    "O evento aconteceria num local dentro da Academia e Ruby me indicou o caminho."
+    "Quando chegamos lá, faltava pouco pra ele precisar entrar em cena."
+    show ruby with moveinleft
     mc "Nervoso?"
+    show ruby 2
     rub "Um pouco... Mas agora não é hora pra isso."
-    mc "Vai lá, você consegue – você disse dando um tapinha nas costas dele."
-    rub "Obrigado – Ruby retribui com um sorriso."
+    show ruby
+    mc "Vai lá, você consegue."
+    "Você disse dando um tapinha nas costas dele."
+    rub "Obrigado."
+    hide ruby with moveoutleft
+    scene black with dissolve
     # Escurece a tela
     "Você decide ficar pra ver como as coisas vão se suceder e percebe que assim que ele começa a falar, toda o nervosismo de Ruby pareceu sumir."
     "Não só isso, na verdade você se surpreende com o garoto; ele passava uma impressão confiante e responsável, grandioso de certa forma."
     "Você enfim entendeu o que ele e Python queriam no discurso: algo que fizesse você pensar ̴“caramba, ̴ainda bem que ̴eu ̴estou ̴aqui”."
     "Certamente ̴era uma impressão diferente da de Python, mas sinceramente, talvez aquela fosse a impressão perfeita"
+    scene auditorio with dissolve
     # Desescurece a tela
     "O evento enfim acaba e Ruby vem até você."
+    show ruby with moveinleft
     mc "Parece que deu tudo certo com o evento, você foi incrível."
+    show ruby 3
     rub "Muito obrigado, mas isso foi graças a você."
+    show ruby 5
     rub "O primeiro agradecimento foi por cordialidade, mas esse leva meus sinceros sentimentos: muito obrigado mesmo!"
-    "Alguns estudantes parecem se aproximar de Ruby para perguntar coisas. Você acha melhor deixar ele continuar sobre holofotes, então decide ir embora pra não atrapalhar."
+    show ruby
+    "Alguns estudantes parecem se aproximar de Ruby para perguntar coisas."
+    hide ruby with moveoutright
+    "Você acha melhor deixar ele continuar sobre holofotes, então decide ir embora pra não atrapalhar."
     mc "Ah, é verdade. Minhas coisas ainda estão na sala."
+    scene black with dissolve
     "A essa altura você já havia perdido todo o resto das aulas, mas valeu a pena."
+    scene sala 1 with dissolve
     "Você caminha até a sala para pegar suas coisas, entra nela e começa a se organizar."
+    scene sala_janela with dissolve 
     "Nesse momento, uma brisa entra pela janela, fazendo você instintivamente olhar para ela."
+    scene sala 1 with dissolve
     "Ao retornar seu olhar para suas coisas, você percebe que..."
     mc "Sumiram!"
+    show prolog with moveinright
     pro "Sacrebleu! Quem poderia ter feito algo do tipo?"
+    show prolog 5
     "Questionou Prolog de forma cínica enquanto segurava suas coisas em mãos."
     mc "Desde quando você está aqui?"
+    show prolog 19
     pro "Eu disse que seria mais discreta ao te observar."
+    show prolog 5
     "A garota devolve a você suas coisas e continua."
+    show prolog 6
     mc "Ruby adoeceu?"
+    show prolog 7
     pro "Adoeceu."
+    show prolog 3
     pro "Impressionante! Não faço ideia de como ele fez pra ficar de pé no evento."
+    show prolog 4
     pro "Aposto que tem dedo seu nisso daí."
+    show prolog 5
     mc "Você também assistiu?"
-    pro "Claro que assisti, mas isso são outros quinhentos. E então, o que você fez?"
+    show prolog 3
+    pro "Claro que assisti, mas isso são outros quinhentos."
+    show prolog
+    pro "E então, o que você fez?"
+    show prolog 7
     mc "Opa, opa, opa. Você não acha que tem que me responder algumas coisas primeiro?"
+    show prolog
     pro "Hehe, acho que te devo isso, não é, meu caro assistente?"
+    show prolog 7
     mc "Eu não sou seu- Quer saber, deixa pra lá."
     mc "Vamos começar de forma cronológica:" 
     mc "Por que você foi correndo para a sala de recreação naquela hora?"
+    show prolog 6
     pro "Você se lembra da reunião de ontem sobre o projeto?"
     pro "Alguém disse que iria para sala de recreação no hoje."
+    show prolog 7
     mc "Lembro disso, mas não foram porque estavam doentes."
     pro "Você está vendo as coisas da forma errada, [player_name]."
+    show prolog 6
     pro "De fato, eles não foram hoje porque adoeceram, mas eles adoeceram porque foram para a sala de recreação."
+    show prolog 7
     mc "Do que você tá falando?"
+    show prolog 19
     pro "Elementar, [player_name]."
+    show prolog 20
     pro "Os eventos de hoje foram uma arapuca criada para prejudicar Python e Ruby."
+    show prolog 7
     mc "Mas como seria possível alguém fazer eles adoecerem assim?"
+    show prolog 21
     pro "A resposta está na sala de recreação, ela foi manipulada para causar isso."
+    show prolog 23
     pro "O culpado provavelmente ouviu a reunião do nosso grupo e sabia que seu alvo iria para a sala de recreação no dia seguinte, então ele preparou uma armadilha."
+    show prolog 20
     pro "Com isso em mente, me diga [player_name]-san:"
+    show prolog 21
     pro "Por que o culpado fez isso?"
     mc "Para impedir Ruby e Python de virem ao evento."
+    show prolog 19
     pro "Bingo!"
+    show prolog 20
     pro "Mesmo que ele soubesse que os dois iriam pra sala, não havia como garantir que eles iriam ao mesmo tempo."
+    show prolog 7
     mc "Então a armadilha, seja lá qual foi só atingiria um deles."
+    show prolog 27
     pro "Non! Um erro amador [player_name]."
+    show prolog 21
     pro "Eles iriam juntos pra sala, pois o que eles iam fazer lá envolvia ambos."
+    show prolog 7
     "Você começa a se perguntar sobre o que ela estava dizendo."
     "Então, uma lembrança cruza sua mente."
     "Em pensamento, você pondera..."
     "O que é que Python e Ruby precisavam fazer para o evento hoje pela manhã que ainda não estava pronto quando você foi à casa de Ruby?"
     mc "Preparar o discurso!"
+    show prolog 17
     pro "Magnifique!"
+    show prolog 21
     pro "Isso mesmo, Python e Ruby iriam terminar os preparos para o discurso do evento que aconteceria logo em seguida."
     pro "Mas ainda temos alguns problemas: Ruby e Python não pisaram naquela sala hoje e ainda assim adoeceram."
     pro "Além disso, você fica falando que o culpado fez uma armadilha, mas não explica que armadilha foi essa."
+    show prolog 6
     pro "Vamos por partes."
     pro "Quem é culpado, [player_name]?"
+    show prolog 7
     mc "Você pulou todas as partes do início e foi direto pra conclusão!"
-    pro "Claro, porque você já não é capaz de descobrir quem é?"
+    show prolog
+    pro "Claro!"
+    show prolog 2
+    pro "Porque você já não é capaz de descobrir quem é?"
+    show prolog 3
     pro "Assim como eu descobri o culpado antes mesmo de sair para fora da sala de aula hoje de manhã."
+    show prolog 25
     pro "Pense, o que aconteceria se Ruby e Python não pudessem comparecer ao evento?"
     pro "Ele seria cancelado?"
+    show prolog 29
     mc "Não, pois haveria um substit- !"
     "Você para por um segundo ao entender o que a garota queria dizer."
+    show prolog 26
     pro "Parece que você já percebeu."
+    show prolog 25
     pro "O culpado precisava ser alguém que soubesse que Python e Ruby seriam os responsáveis para o evento."
+    show prolog 26
     pro "Além disso, precisava ser alguém que ganharia algo com caso os dois não aparecessem no evento."
+    show prolog 21
     pro "Então foi o substituto dos dois que fez isso, mas quem ele é?"
     pro "Eu tinha um palpite, mas a certeza só veio após ver os últimos 6 registros de entrada e saída da sala de recreação ontem."
+    show prolog 22
     "Prolog lhe entregou um papel com nomes em uma ordem específica: Swift, Ruby, Python, Swift, Python e Ruby."
     "Duas das 3 pessoas foram, as vítimas o que só deixava um nome como possível culpado: "
     mc "Swift"
+    show prolog 19
     pro "Bingo."
+    show prolog 21
     pro "Você talvez não saiba, mas Swift se candidatará para o cargo de presidente que foi desocupado por Java e muito provavelmente Ruby fará o mesmo."
+    show prolog 23
     pro "O evento de hoje era uma ótima oportunidade para cair no gosto dos novatos e conseguir mais votos."
+    show prolog 21
     pro "Ruby provavelmente nem pensou nisso, mas Swift com certeza via isso como uma chance de ouro."
+    show prolog 22
     mc "Como diabos você sabia disso antes de chegar na sala de recreação?"
+    show prolog 21
     pro "Python pode parecer uma cabeça de vento às vezes, mas sempre está presente nas aulas."
+    show prolog 22
     pro "Ruby é um estudante exemplar. Os dois desaparecem, justamente no dia do evento pelo qual estavam responsáveis."
+    show prolog 21
     pro "Isso tinha que estar relacionado."
+    show prolog 22
     pro "Eles não estariam matando aula para organizar as coisas, então alguém devia estar envolvido."
+    show prolog 21
     pro "O evento seria uma boas vindas para os novatos, o culpado precisava ganhar algo com a falta de Ruby e Python."
+    show prolog 22
     mc "Se os organizadores faltam, o substituto entra."
     mc "O que o substituto teria a ganhar com a apresentação?"
     mc "Reconhecimento."
     mc "Apenas por ego?"
     mc "Não, deve ter outra coisa."
+    show prolog 21
     pro "Votos."
+    show prolog 22
     pro "Quem é que vai se candidatar e usaria técnicas baixas para conseguir?"
+    show prolog 21
     pro "Swift."
+    show prolog 22
     pro "E foi assim que eu descobri o culpado."
     "Impressionante. Aquela sucessão de deduções fazia sentido, mas é surpreendente que ela conseguisse fazer isso em tão pouco tempo."
     "Mas você sentia que havia algo de errado."
     "O registro de entrada e saída da sala é de ontem."
     "Isso significa que a armadilha foi armada e ativada ontem."
     "Swift sabia que Python e Ruby iriam para a sala no dia do evento, mas como ele sabia que eles também iriam no dia anterior?"
+    show prolog 21
     pro "Ele não sabia."
-    pro "O que?"
+    show prolog 22
+    mc "O que?"
+    show prolog 21
     pro "Como eu disse, ele não sabia. Provavelmente foi uma grande coincidência pro azar dele."
+    show prolog 22
     pro "E o motivo é..."
+    show prolog 21
     pro "Qual a ordem de entrada e saída da sala?"
+    show prolog 22
     mc "Swift entra, e um tempo depois vêm Ruby e Python. Daí Swift sai, e então saem depois Ruby e Python."
+    show prolog 21
     pro "Com isso em mente, me diga: quando a armadilha foi armada?"
+    show prolog 22
     mc "...!"
+    show prolog 21
     pro "Quando Ruby e Python entraram, Swift ainda não havia terminado a armadilha."
+    show prolog 22
     pro "Não há outro motivo pra ele ainda estar na sala."
+    show prolog 21
     pro "Mas se ele fosse embora, Ruby e Python provavelmente notariam a armadilha sendo preparada e a desarmariam."
+    show prolog 22
     mc "Então significa que essa armadilha precisava ter sido terminada e ativada ontem mesmo!"
+    show prolog 26
     pro "Exactement!"
+    show prolog 21
     pro "Swift provavelmente terminou a armadilha sorrateiramente pouco depois dos dois chegarem e fugiu de lá sem que eles percebessem."
     pro "Ao sair da sala, ele ativou a armadilha."
+    show prolog 22
     mc "Mas no fim das contas, o que era a armadilha?"
+    show prolog 21
     pro "Essencialmente era bem simples, tudo que ele usou foram TOKENS, um fio elástico, um balão, uma argola, a fonte e o ar condicionado."
+    show prolog 22
     mc "Não foram essas coisas que você encontrou na fonte?"
+    show prolog 21
     pro "Tirando o ar condicionado e os TOKENS, sim."
+    show prolog 22
     pro "Swift pôs TOKENS dentro do balão e o amarrou na argola."
+    show prolog 21
     pro "Por dentro da argola ele passou um elástico, cuja uma das pontas foi presa na fonte e outra nas pás do ar condicionado desligado."
+    show prolog 22
     pro "A argola com o balão também foi presa usando as pás do ar condicionado, dessa forma, quando o ar condicionado fosse ligado, a argola deslizaria pelo fio como numa tirolesa, fazendo o balão acertar a fonte e estourar."
+    show prolog 21
     pro "Quando o balão estourasse, TOKENS caíram na fonte, e assim, o gacha foi ativado, molhando Python e Ruby que estavam na sala."
     pro "O ar condicionado esfriou a sala e os dois, que estavam molhados, acabaram adoecendo por causa disso."
+    show prolog 22
     mc "Mas então Ruby e Python poderiam evitar de adoecer se abrissem as janelas para esquentar a sala, desligar o ar condicionado ou simplesmente sair da sala."
+    show prolog 21
     pro "Eles não podiam desligar o ar, porque Swift quebrou o botão de desligar manual deles."
+    show prolog 22
     pro "Confirmei isso quando fomos para a sala de recreação."
+    show prolog 21
     pro "Além disso, as janelas têm um mecanismo para reduzir o gasto de energia: se o ar estiver ligado, elas não podem ser abertas."
+    show prolog 22
     pro "O último ponto que você citou é fácil de explicar: Swift tinha a chave pra trancar a sala, afinal, essa era a única maneira de garantir que ninguém entraria na sala antes de Python e Ruby e acabaria estragando a armadilha."
+    show prolog 21
     pro "Ele talvez tenha pegado a chave com o diretor no dia ou tenha conseguido ela há tempo atrás, não importa."
+    show prolog 22
     pro "O que importa é que assim Swift poderia trancar as duas vítimas ensopadas dentro da sala fria, o que fez elas adoecerem."
+    show prolog 21
     pro "Provavelmente eles conseguiram eventualmente falar com alguém fora da sala pra pegar outra chave com Alan Turing para abrir a sala, mas, até lá, o estrago já havia sido feito."
+    show prolog 22
     mc "Faz sentido."
     "Isso explica as coisas estranhas que vimos na sala e a situação de Ruby e Python."
     "Swift também conseguiria ativar a armadilha depois de sair da sala caso ele levasse o controle do ar condicionado."
     mc "Mesmo assim, ir tão baixo apenas por causa de um evento pra ganhar votos é absurdo!"
     mc "É claro que o evento seria adiado quando o diretor soubesse disso."
+    show prolog 21
     pro "Na verdade não."
+    show prolog 22
     pro "Eu nem mesmo comuniquei a ele isso."
+    show prolog 21
     mc "Ué, por que não?"
+    show prolog 22
     pro "Suborno."
     mc "Ah..."
     "Você relembra os eventos de sua primeira semana."
     pro "É, você consegue ver como Swift poderia se safar com um pouco de dinheiro."
     mc "Então como é que você fez com que adiassem o evento?"
+    show prolog 21
     pro "Vandalismo."
+    show prolog 22
     mc "???????"
+    show prolog 21
     pro "Pedi a ajuda de Lua para criar uma distração e tirar todos do local utilizando o alarme de incêndio e o Gepeto."
+    show prolog 22
     pro "Aproveitando que todos saíram do local, eu baguncei todo o local e escondi parte da decoração dele, então, eles não tiveram outra escolha a não ser postergar o início do evento."
     mc "Mas isso não vai por você e Lua em problemas?"
+    show prolog 21
     pro "Não sou descuidada a ponto de ser descoberta por algo tão trivial."
+    show prolog 22
     "Aquela garota podia ser meio estranha, mas visto o que ela fez hoje, também era extremamente confiável."
     "Os elogios de seus colegas de grupo faziam total sentido."
     mc "No fim das contas, você de fato é tudo isso que as pessoas dizem não é?"
+    show prolog 26
     pro "Non! Sou apenas Prolog, uma estudante da Academia-Sem-Nome-Definido! – Disse ela com um sorriso no rosto."
     "A esse ponto você não sabia se aquilo era modéstia ou só uma piada, mas decidiu não ficar mais batendo nessa tecla."
     mc "Muito obrigado pela ajuda, mas agora se me der licença, vou ind-"
+    show prolog 28
     pro "Espere um segundo! Você ainda não respondeu minha pergunta."
+    show prolog 7
     mc "Que pergunta?"
+    show prolog 6
     pro "O que você fez para Ruby conseguir vir apresentar o evento?"
+    show prolog 7
     mc "Ah..."
     mc "Você provavelmente consegue deduzir, não?"
+    show prolog 6
     pro "Em parte."
+    show prolog 7
     pro "Imagino que tenha sido algum tipo de tratamento paliativo alternativo usando conhecimento popular, mas não consigo apontar exatamente qual."
     mc "Talvez seja melhor assim."
+    show prolog 6
     pro "Por que?"
+    show prolog 7
     mc "Você provavelmente tentaria deduzir o processo usado no tratamento, e eu não posso deixar isso acontecer."
+    show prolog 15
     pro "Que monopólio medicinal é esse seu, hein?"
+    show prolog 6
     pro "Achei que tínhamos nos tornado companheiros."
+    show prolog 7
     mc "Em resumo, foi Culinária Experimental Medicinal, CEM, pra encurtar."
     mc "Não posso falar mais, já que isso poderia ter mandado Ruby pra o hospital devido a um choque anafilático."
+    show prolog 6
     pro "O que diabos você fez com aquele garoto?"
+    show prolog 10
     mc "Pergunte a ele e terá a experiência do paciente."
     mc "Se eu falar da minha você vai acabar tentando imitar isso em algum momento e não quero ser o cara que te ensinou a mandar alguém para 7 palmos abaixo da terra."
     mc "E agora, me despeço novamente."
+    show prolog 17
     pro "... Certo. Até mais, [player_name]!"
+    hide pro with moveoutright
     pro "Foi divertido trabalhar com você."
     mc "Você não sabe se divertido era a palavra certa, mas de fato no fim das contas, trabalhar com a jovem detetive não foi algo ruim."
     mc "Você consegue ver o porque dos estudantes serem tão grato a ela, de repente todas as histórias absurdas sobre ela parecem ter embasamento."
+    scene black with dissolve
+    
+    # -------------------------------------------------------------------------------------
+    scene rua_qualquer with dissolve
     "Você volta para casa e no meio do caminho percebe que esqueceu de perguntar algo."
     mc "Ah, esqueci de perguntar sobre como ela sabia que Python está na casa de Ruby."
     "Minutos depois, seu celular toca. Ao atender, você escuta uma garota nele, quase que cantarolando as palavras que dizia."
     pro "Alô, alô, Doutor. Doutor Daminh-"
     mc "O que você quer, Prolog?"
+    
+    scene casa_prolog with dissolve
+    show prolog 6
     pro "Que frieza! Eu vim responder sua pergunta."
+    hide prolog
+    
+    scene rua_qualquer with dissolve
     mc "Que pergunta?"
+    
+    scene casa_prolog with dissolve
+    show prolog 6
     pro "O porquê de Python estar casa de Ruby."
+    hide prolog
+    
+    scene rua_qualquer with dissolve
     mc "...!"
+    
+    scene casa_prolog with dissolve
+    show prolog 6
     pro "Isso aconteceu porque provavelmente eles não conseguiram trabalhar nada na sala de recreação, então estavam meio atrasados com as atividades."
+    show prolog 7
     pro "Python deve ter ido se trocar em casa e ido para casa de Ruby, o qual mora com os seus pais."
+    show prolog 6
     pro "Ruby é tímido, então se sentiria desconfortável na casa de outra pessoa com a qual não tem muito contato."
+    show prolog 7
     pro "Python sabia disso, por isso ela que foi para a casa dele, não o contrário."
+    show prolog 6
     pro "Mesmo não se sentindo muito bem, eles continuaram trabalhando, e foi aí que provavelmente a situação de Python piorou."
+    show prolog 7
     pro "Vendo a garota naquele estado, os pais de Ruby provavelmente decidiram deixar ela dormir lá pra descansar e cuidar dela."
+    show prolog 6
     pro "Você não encontrou os pais do garoto quando foi lá porque eles passam o dia trabalhando."
+    show prolog 7
     pro "É claro, isso tudo é só uma suposição, mas provavelmente é o bastante para suprir sua curiosidade."
+    show prolog 6
     pro "Câmbio, desligo."
+    hide prolog with moveoutright
+    
+    scene rua_qualquer with dissolve
     "E assim a ligação termina."
-    pro "É, ela realmente é tudo o que dizem."
+    mc "É, ela realmente é tudo o que dizem."
+    scene black with dissolve
+
     return

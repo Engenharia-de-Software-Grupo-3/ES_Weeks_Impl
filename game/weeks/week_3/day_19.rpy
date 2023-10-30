@@ -166,11 +166,15 @@ label semana3_dia19:
     
     mc 'Como assim, onde está a JVM?'
     
+    show java 11
+
     jav 'É isso mesmo que eu disse, a JVM desapareceu.'
     
     mc 'Mas a gente estava com ela o tempo todo? Não teria uma chance para-'
     
     'Rivel' 'A menos que vocês nunca estiveram com ela!'
+
+    show java 15
     
     jav 'Rivel!'
     
@@ -209,20 +213,30 @@ label semana3_dia19:
     'Rivel' 'Ela está conosco.'
     
     'Rivel 2' 'Em cima da nossa mesa!'
+
+    show java 12
     
     jav 'Maldição!'
 
     mc 'Java, o que vamos fazer?'
+
+    show java 3
     
     jav 'Não há nada que possámos fazer....'
+
+    show java 5
     
     jav 'Eu já sinto minha força indo embora....'
+
+    show java 12
     
     jav 'Se não recuperarmos a JVM em breve, eu logo irei perder a consciência!'
     
     'Rivel & Rivel 2' 'Risada maligna, risada maligna, risada maligna. '
     
     mc 'Vocês não têm honra?'
+
+    show java 15
     
     'Rivel' 'É claro que temos!'
     
@@ -235,6 +249,8 @@ label semana3_dia19:
     'Rivel' 'Então nós devolveremos a máquina.'
     
     mc 'Tsk, eles de fato têm honra.'
+
+    show java 14
     
     jav 'Não seriam meus rivais se não tivessem....'
     
@@ -245,6 +261,8 @@ label semana3_dia19:
     'Rivel' '!'
     
     'Rivel 2' 'Gasp!'
+
+    show java 11
     
     jav 'Sacrebleu!'
     
@@ -268,10 +286,14 @@ label semana3_dia19:
     
     'Rivel 2' 'Nós podemos ter trapaceado, roubado a casa de Java enquanto ele dormia, espionado a Academia por meses, clonado o cartão de crédito dele para comprar o Battle-Pass de Fortnite 3 temporadas seguidas-'
 
+    show java 12
+
     #aqui é java com duração reduzida
     jav 'Pera, qual foi esse último?{nw}'
     
     'Rivel 2' 'Mas nós nunca lutaríamos uma batalha desonrosa'
+
+    show java
     
     'Rivel' 'Vocês merecem, no mínimo, uma chance de se defenderem....'
     
@@ -283,18 +305,22 @@ label semana3_dia19:
 
     #o roteiro diz "yu-gi-oh sounds" mas eu só coloquei a da batalha
     play music 'audio/battle.mp3' volume 0.5
+    
+    call prepare_java_battle
 
-    # call prepare_tutorial_battle from _call_prepare_tutorial_battle
-
-    if False:
+    if testeOBM_Nota < 5:
         "Vocês foram derrotados"
         $ MainMenu(confirm=False)()
     #[Cenário de Vitória:] 
     else:
 
+        scene escola entrada
+
         'Rivel' 'Não!'
         
         'Rivel 2' 'Maldição!'
+
+        show java 13
         
         jav 'Café!'
         
@@ -316,31 +342,45 @@ label semana3_dia19:
         
         jav 'Eu....'
         
+        show java 14
+        
         jav 'Eu não estou acostumado a precisar de ajuda.'
         
         jav 'Quando eu lhe chamei aqui pela primeira vez, eu realmente pensei que nada aconteceria.'
+
+        show java 16
         
         jav 'Mas eu estava enganado. Eu lhe coloquei em perigo e mesmo assim você me defendeu.'
         
         mc 'Eles não eram tão perigosos assim.'
         
         jav '[player_name], eles são procurados em 19 estados.'
+
+        show java 6
         
         mc 'Quê?'
         
         jav 'É, eles fizeram algumas coisas. Tenho quase certeza de que eles derrubaram o governo do Texas em algum momento.'
+         
+        show java 12
         
         mc 'Aqueles dois?'
         
         jav 'Tem uma bazuca nomeada em homenagem a eles.'
+
+        show java 16
         
         jav 'Mas isso não importa. O que importa é que, quando eu mais precisei, você estava aqui por mim, mesmo correndo perigo mortal.'
         
         mc 'Perigo mortal!'
+
+        show java 8
         
-        jav 'E eu nunca foi esquecer isso.'
+        jav 'E eu nunca vou esquecer isso.'
         
         jav 'Sempre serei grato por você estar aqui hoje.'
+ 
+        show java 9
         
         jav 'Agora, se me dá licença, eu preciso tomar café e ganhar uma competição.'
         

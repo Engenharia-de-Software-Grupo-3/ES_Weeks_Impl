@@ -127,7 +127,6 @@ label prepare_java_battle:
     $ battleState.current_stage = "Battle_begin"
     call check_passive_time_beforeBP
     call turn_start
-    python:
-        testeOBM_Acertos = str(battleState.getEnemysDefeated())
-        testeOBM_Nota = str(round(battleState.getTestGrade(), 2))
+    $ testeOBM_Acertos = str(battleState.getEnemysDefeated())
+    $ testeOBM_Nota = round(battleState.getTestGrade(), 2)
     return

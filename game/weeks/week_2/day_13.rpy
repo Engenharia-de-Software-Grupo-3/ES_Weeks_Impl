@@ -1,4 +1,7 @@
 label semana2_dia13:
+    "Hoje é dia de prova"
+    call prepare_battle_1
+    "Após a prova..."
     call conversa_dia13
 return
 
