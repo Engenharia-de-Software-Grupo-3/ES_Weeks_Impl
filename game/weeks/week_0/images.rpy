@@ -35,6 +35,14 @@ image sala_ruby:
     "images/Fotos/sala_de_estar_ruby.jpg"
 image cozinha_ruby:
     "images/Fotos/cozinha_ruby.jpg"
+image auditorio:
+    "images/Fotos/auditorio_evento.jpg"
+image sala_janela:
+    "images/Fotos/sala_janela.JPG"
+image rua_qualquer:
+    "images/Fotos/rua_qualquer.jpg"
+image casa_prolog:
+    "images/Fotos/casa_prolog.jpg"
 
 
 # COBOL
@@ -168,10 +176,13 @@ image pyth i 39 = "images/Sprites Python/python 39.png"
 
 image pyth ii = "images/Sprites Python/python 42.png"
 image pyth ii 43 = "images/Sprites Python/python 43.png"
+image pyth ii 44 = "images/Sprites Python/python 44.png"
 image pyth ii 45 = "images/Sprites Python/python 45.png"
 image pyth ii 46 = "images/Sprites Python/python 46.png"
+image pyth ii 47 = "images/Sprites Python/python 47.png"
 image pyth ii 48 = "images/Sprites Python/python 48.png"
 image pyth ii 49 = "images/Sprites Python/python 49.png"
+image pyth ii 51 = "images/Sprites Python/python 51.png"
 image pyth ii 52 = "images/Sprites Python/python 52.png"
 image pyth ii 53 = "images/Sprites Python/python 53.png"
 
