@@ -1,0 +1,50 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_1/week_one.rpy", line 6, in script call
+    call expression dia from _call_expression_1
+  File "game/weeks/week_1/day_1.rpy", line 109, in script call
+    call prepare_tutorial_battle from _call_prepare_tutorial_battle
+  File "game/battlesys/labels/prepare_battle.rpy", line 15, in script call
+    call turn_start from _call_turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu from _call_battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase from _call_start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 101, in script
+    $ battleState.status_condition_downgrade(battleState.playerName)
+  File "game/battlesys/labels/menu_battle.rpy", line 101, in <module>
+    $ battleState.status_condition_downgrade(battleState.playerName)
+AttributeError: 'Battle_state' object has no attribute 'playerName'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_1/week_one.rpy", line 6, in script call
+    call expression dia from _call_expression_1
+  File "game/weeks/week_1/day_1.rpy", line 109, in script call
+    call prepare_tutorial_battle from _call_prepare_tutorial_battle
+  File "game/battlesys/labels/prepare_battle.rpy", line 15, in script call
+    call turn_start from _call_turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu from _call_battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase from _call_start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 101, in script
+    $ battleState.status_condition_downgrade(battleState.playerName)
+  File "C:\Users\evald\Downloads\RenPy\projects\ES_Weeks_Impl\Projeto Novo Executável\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\evald\Downloads\RenPy\projects\ES_Weeks_Impl\Projeto Novo Executável\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/menu_battle.rpy", line 101, in <module>
+    $ battleState.status_condition_downgrade(battleState.playerName)
+AttributeError: 'Battle_state' object has no attribute 'playerName'
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.1.1.23060707
+ES_Weeks_Impl 1.0
+Mon Oct 30 00:24:38 2023

@@ -98,7 +98,7 @@ label start_battle_phase:
     if eHead_hp == 0:
         $ enemy_name = ((battleState.enemy_team_current_stats)[0]).enemy_name
         narrator "[enemy_name] fainted!"
-    $ battleState.status_condition_downgrade(battleState.playerName)
+    $ battleState.status_condition_downgrade(battleState.player_name)
     return
 
 label battle_change_menu:
