@@ -25,7 +25,7 @@ image pyth duvida =  "images/Sprites Python/python 17.png"
 label pythonEvent0 :
     play music "audio/music.mp3" volume 0.5
 
-    show escola
+    scene sala 1 with fade
 
     show pyth alegre2
 

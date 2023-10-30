@@ -3,6 +3,7 @@ label prepare_tutorial_battle:
     python:
         # Battle_state
         battleState = Battle_state(pythonTutorialPC, icEnemyTeam)
+        broughtItem = False
     scene battle_wall with dissolve
     "Battle Begin!"
     show player_box
@@ -12,8 +13,9 @@ label prepare_tutorial_battle:
     $ battleState.current_stage = "Battle_begin"
     call check_passive_time_beforeBP
     call turn_start
-    $ teste0_Acertos = str(battleState.getEnemysDefeated())
-    $ teste0_Nota = str(round(battleState.getTestGrade(), 2))
+    python:
+        teste0_Acertos = str(battleState.getEnemysDefeated())
+        teste0_Nota = str(round(battleState.getTestGrade(), 2))
     return
 
 label prepare_battle_1:
@@ -30,6 +32,9 @@ label prepare_battle_1:
         "Lua":
             $ partner = luaPC
     $ battleState = Battle_state(partner, calculusEnemyTeam)
+    $ broughtItem = True
+    $ bItem = [True, True, False, False]
+    "Your partner brought items!"
     "Battle Begin!"
     show player_box
     show enemy_box
@@ -38,8 +43,27 @@ label prepare_battle_1:
     $ battleState.current_stage = "Battle_begin"
     call check_passive_time_beforeBP
     call turn_start
-    $ teste1_Acertos = str(battleState.getEnemysDefeated())
-    $ teste1_Nota = str(round(battleState.getTestGrade(), 2))
+    python:
+        teste1_Acertos = str(battleState.getEnemysDefeated())
+        teste1_Nota = str(round(battleState.getTestGrade(), 2))
+        if battleState.getTestGrade() > 5:
+            if partner == pythonPC: 
+                pythonLoveCounter += 3
+            if partner == javaPC: 
+                javaLoveCounter += 3
+            if partner == rubyPC: 
+                rubyLoveCounter += 3
+            if partner == luaPC: 
+                luaLoveCounter += 3
+        else:
+            if partner == pythonPC: 
+                pythonLoveCounter -= 1
+            if partner == javaPC: 
+                javaLoveCounter -= 1
+            if partner == rubyPC: 
+                rubyLoveCounter -= 1
+            if partner == luaPC: 
+                luaLoveCounter -= 1
     return
 
 label prepare_battle_2:
@@ -56,6 +80,9 @@ label prepare_battle_2:
         "Lua":
             $ partner = luaPC
     $ battleState = Battle_state(partner, edaEnemyTeam)
+    $ broughtItem = True
+    $ bItem = [True, True, True, True]
+    "Your partner brought items!"
     "Battle Begin!"
     show player_box
     show enemy_box
@@ -64,14 +91,34 @@ label prepare_battle_2:
     $ battleState.current_stage = "Battle_begin"
     call check_passive_time_beforeBP
     call turn_start
-    $ teste2_Acertos = str(battleState.getEnemysDefeated())
-    $ teste2_Nota = str(round(battleState.getTestGrade(), 2))
+    python:
+        teste2_Acertos = str(battleState.getEnemysDefeated())
+        teste2_Nota = str(round(battleState.getTestGrade(), 2))
+        if battleState.getTestGrade() > 5:
+            if partner == pythonPC: 
+                pythonLoveCounter += 3
+            if partner == javaPC: 
+                javaLoveCounter += 3
+            if partner == rubyPC: 
+                rubyLoveCounter += 3
+            if partner == luaPC: 
+                luaLoveCounter += 3
+        else:
+            if partner == pythonPC: 
+                pythonLoveCounter -= 1
+            if partner == javaPC: 
+                javaLoveCounter -= 1
+            if partner == rubyPC: 
+                rubyLoveCounter -= 1
+            if partner == luaPC: 
+                luaLoveCounter -= 1
     return
 
 label prepare_java_battle:
     play music "audio/battle.mp3"
     scene battle_wall with dissolve
     $ battleState = Battle_state(javaPC, obmEnemyTeam)
+    $ broughtItem = False
     "Battle Begin!"
     show player_box
     show enemy_box
@@ -80,6 +127,7 @@ label prepare_java_battle:
     $ battleState.current_stage = "Battle_begin"
     call check_passive_time_beforeBP
     call turn_start
-    $ testeOBM_Acertos = str(battleState.getEnemysDefeated())
-    $ testeOBM_Nota = str(round(battleState.getTestGrade(), 2))
+    python:
+        testeOBM_Acertos = str(battleState.getEnemysDefeated())
+        testeOBM_Nota = str(round(battleState.getTestGrade(), 2))
     return

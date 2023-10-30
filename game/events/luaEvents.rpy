@@ -1,6 +1,6 @@
 # Lua First Interaction
 label luaEvent0:
-    scene sala 1 with fade
+    scene sala_recreacao with fade
     show lua 2 with fade
     lua 3 'Yo, P-kun, qual o seu tipo de jogo favorito?'
     show lua 2
@@ -53,7 +53,7 @@ label luaEvent0:
     return
 
 label luaEvent1:
-    scene sala 1 with fade
+    scene sala_recreacao with fade
     show lua 2 with fade
     lua 3 'Yo, [player_name]! Aqui, como eu disse.'
     'Lua segura uma TV, uma sacola cheia de cabos e uma grande caixa de papelão, equilibrando tudo com duas mãos e uma cabeça.'
@@ -99,7 +99,10 @@ label luaEvent1:
     return
 
 label luaEvent2:
-    scene sala 1 with fade
+    scene sala_recreacao with fade
+    "Como eu queria aquele Blåhaj..."
+    "Oh, [player_name]!"
+    show lua
     lua 17 'Ei, quer finalmente jogar com uma pro-player como eu mesma?'
     show lua 16
     mc 'Bora.'
@@ -146,7 +149,7 @@ label luaEvent2:
     return
 
 label luaEvent3:
-    scene sala 1
+    scene sala_recreacao with fade
     show lua 23 with moveinright
     lua 24 'Então, [player_name]!'
     lua 'Eu decidi que vou fazer Cosplay!'
@@ -180,5 +183,17 @@ label luaEvent3:
     mc 'Você que manda!'
     lua 8 'É assim que eu gosto.'
     'Você sente que se aproximou mais de Lua.'
+    if itens_estado[12] == True:
+        mc "Lua..." 
+        lua 2 "?"
+        mc "eu tenho um presente para você."
+        lua 3 "Isso é..."
+        lua 8 "UM BLAHAJ?"
+        lua "Eu queria muito um desse! Como você sabia?"
+        lua 7 "Muito obrigada!"
+        "A felicidade está no ar... Em cada sorriso. Em cada olhar!"
+        $ itens_estado[12] = False
+        $ luaLoveCounter += 3
+    $ luaLoveCounter += 3
     $ luaEventsCounter = 4
     return

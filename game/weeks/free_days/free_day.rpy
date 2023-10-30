@@ -1,6 +1,7 @@
 label free_day_start:
     scene black
     "Hoje é um dia livre. O que fazer?"
+    play music "audio/music.mp3" volume 0.5
     python:
         energy = 4
         toJava = False

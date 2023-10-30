@@ -30,6 +30,8 @@ image pyth sprite31 =  "images/Sprites Python/python 31.png"
 
 label pythonEvent1:
 
+    scene sala 1 with fade
+
     show pyth alegre1
 
     mc "Eu posso te perguntar algo? – Você pergunta"

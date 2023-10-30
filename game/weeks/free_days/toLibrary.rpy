@@ -9,6 +9,7 @@ label toLibrary:
         "Java" if not libraryJava:
             python:
                 libraryJava = True
+                javaLoveCounter += 1
                 chosen = javaPC
                 character = jav
                 sprite0 = 'java 2'
@@ -23,6 +24,7 @@ label toLibrary:
         "Lua" if not libraryLua:
             python:
                 libraryLua = True
+                luaLoveCounter += 1
                 chosen = luaPC
                 character = lua
                 sprite0 = 'lua 2'
@@ -37,6 +39,7 @@ label toLibrary:
         "Python" if not libraryPython:
             python:
                 libraryPython = True
+                pythonLoveCounter += 1
                 chosen = pythonPC
                 character = pyt
                 sprite0 = 'pyth'
@@ -51,6 +54,7 @@ label toLibrary:
         "Ruby" if not libraryRuby:
             python:
                 libraryRuby = True
+                rubyLoveCounter += 1
                 chosen = rubyPC
                 character = rub
                 sprite0 = 'ruby'

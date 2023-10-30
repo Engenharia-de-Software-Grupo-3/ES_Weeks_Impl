@@ -11,11 +11,57 @@ label battle_menu:
                 call start_battle_phase
                 return
         elif battle_choice == 'Item':
-            narrator 'You dont have any items.'
+            if (not broughtItem or (bItem[0] == False and bItem[1] == False and bItem[2] == False and bItem[3] == False)):
+                "You dont have any items."
+            else:
+                call battle_item_menu
         elif battle_choice == 'Enemies':
             call battle_change_menu
         else:
             narrator "No! There's no running from a battle!"
+
+label battle_item_menu:
+    show battle_menu_box
+    $ item_i = -1
+    call screen battle_item_menu
+    hide battle_menu_box
+    if item_i == -1:
+        pass
+    elif item_i == 0:
+        $ battleState.player_hp = min(battleState.original_player.hp, battleState.player_hp + 150)
+        "[player_name]'s HP was restored."
+        $ bItem[0] = False
+    elif item_i == 1:
+        python:
+            condition = calculating
+            keys = battleState.player_status_condition_dictionare.keys()
+            if not condition in keys:
+                renpy.say('', '[player_name] is not affected by [condition.name]!')
+            else:
+                battleState.player_status_condition_dictionare.pop(condition)
+                renpy.say('', '[player_name] is no longer affected by [condition.name]!') 
+            bItem[1] = False 
+    elif item_i == 2:
+        python:
+            condition = shocked
+            keys = battleState.player_status_condition_dictionare.keys()
+            if not condition in keys:
+                renpy.say('', '[player_name] is not affected by [condition.name]!')
+            else:
+                battleState.player_status_condition_dictionare.pop(condition)
+                renpy.say('', '[player_name] is no longer affected by [condition.name]!') 
+            bItem[2] = False 
+    elif item_i == 3:
+        python:
+            condition = confused
+            keys = battleState.player_status_condition_dictionare.keys()
+            if not condition in keys:
+                renpy.say('', '[player_name] is not affected by [condition.name]!')
+            else:
+                battleState.player_status_condition_dictionare.pop(condition)
+                renpy.say('', '[player_name] is no longer affected by [condition.name]!') 
+            bItem[3] = False 
+    return
 
 label battle_skill_menu:
     show battle_menu_box

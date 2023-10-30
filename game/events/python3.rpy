@@ -20,11 +20,15 @@ label pythonEvent2:
 
     play music "audio/music.mp3" volume 0.5
 
-    show escola
+    scene sala 1 with fade
+
+    pyt "Um Cálice Sagrado ficaria tão legal no meu quarto..."
+
+    pyt "Oh, [player_name]!"
 
     show pyth perguntando
 
-    pyt "Ei, [player_name], você tem algo que goste de fazer no seu tempo livre?"
+    pyt "Você tem algo que goste de fazer no seu tempo livre?"
 
     show pyth escutando
 

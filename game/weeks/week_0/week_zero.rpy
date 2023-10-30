@@ -1,5 +1,6 @@
 label semana_0:
     call .battle
+    call prepare_battle_2
     return
 label .battle:
     python:
@@ -45,12 +46,16 @@ init python:
             if afflicted == 'player':
                 dmg = battleState.player_hp * 0.0625
                 battleState.player_hp = max(0, battleState.player_hp - dmg)
-                renpy.say('', '[battleState.player_name] is hurt by calculation!')
+                name = battleState.player_name
+                saida = name + ' is hurt by calculation!'
+                renpy.say('', saida)
             elif afflicted == 'enemy':
                 hp = ((battleState.enemy_team_current_stats)[0]).enemy_hp
                 dmg = hp * 0.0625
                 ((battleState.enemy_team_current_stats)[0]).enemy_hp = max(0, hp - dmg)
-                renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+                name = ((battleState.enemy_team_current_stats)[0]).enemy_name
+                saida = name + ' is hurt by being calculated!'
+                renpy.say('', saida)
 
     def paralys_effect(afflicted, battleState, battlePhase):
             paralysed = (renpy.random.randint(1, 100) <= 40)
@@ -68,7 +73,8 @@ init python:
     def confusion_effect(afflicted, battleState, battlePhase):
             confused = (renpy.random.randint(1, 100) <= 40)
             if afflicted == 'player' and battlePhase.is_player_turn() and not battlePhase.player_attack_blocked:
-                renpy.say('', 'Ambiguous question leaves [battleState.player_name] confused!')
+                saida = 'Ambiguous question leaves ' + battleState.player_name + ' confused!'
+                renpy.say('', saida)
                 if confused:
                     battlePhase.player_attack_blocked = True
                     dmg = 25 * (battleState.player_atk / battleState.player_res)
@@ -95,14 +101,17 @@ init python:
 
     def javaPassiveF_(battleState, battlePhase):
         if (battleState.turn % 2) == 1:
-            renpy.say("", "[battleState.player_name]'s Coffe Compiler")
+            saida = battleState.player_name + "'s Coffe Compiler"
+            renpy.say("", saida)
             battleState.player_luck = battleState.player_luck * 1.1
-            renpy.say("", "[battleState.player_name]'s Speed rose!")
+            saida = battleState.player_name + "'s Speed rose!"
+            renpy.say("", saida)
 
     def rubyPassiveF_(battleState, battlePhase):
         if battlePhase.is_enemy_turn() and renpy.random.randint(1, 100) <= 15:
             battlePhase.enemy_attack_blocked = True
-            renpy.say("", "[battleState.player_name]'s Cute Face!")
+            saida = battleState.player_name + "'s Cute Face!"
+            renpy.say("", saida)
             saida = 'Enemy ' + ((battleState.enemy_team_current_stats)[0]).enemy_name + " used " + battlePhase.enemy_skill.name + "."
             renpy.say("", saida)
             battlePhase.enemy_attack_blockedMsg = battleState.player_name + " Cute Face made it miss."
@@ -114,7 +123,8 @@ init python:
             battleState.type_boost_dictionare[target_type] = 2
         else:
             battleState.type_boost_dictionare[target_type] += 2
-        renpy.say("", "[battleState.player_name]'s Controller is a Table!")
+        saida = "[battleState.player_name]'s Controller is a Table!"
+        renpy.say("", saida)
         saida = "[battleState.player_name]'s " + target_type.name + " efficiency increased!"
         renpy.say("", saida)
 
@@ -136,7 +146,8 @@ init python:
 
     def edaPassiveF_(battleState, _):
         if battleState.current_stage.upper() == "BATTLE_BEGIN":
-            renpy.say("", "[battleState.enemy_team_name]  is exerting its Sort Algorithm!")
+            saida = battleState.enemy_team_name + " is exerting its Sort Algorithm!"
+            renpy.say("", saida)
         if battleState.current_stage.upper() == "BEFORE_MENU" and ((battleState.turn % 3) == 0):
             random.shuffle(battleState.player_skill_set)
             # random.shuffle(battleState.player_items)

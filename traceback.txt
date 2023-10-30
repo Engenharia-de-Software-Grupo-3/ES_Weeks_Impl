@@ -1,38 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 18, in script call
-    call expression semana from _call_expression
-  File "game/weeks/week_0/week_zero.rpy", line 6, in script call
-    call prepare_java_battle
-  File "game/battlesys/labels/prepare_battle.rpy", line 74, in script
-    $ battleState = Battle_state(java, obmEnemyTeam)
-  File "game/battlesys/labels/prepare_battle.rpy", line 74, in <module>
-    $ battleState = Battle_state(java, obmEnemyTeam)
-  File "game/battlesys/classes/class_battle_state.rpy", line 41, in __init__
-    self.player_type = player.type
-AttributeError: 'ADVCharacter' object has no attribute 'type'
+  File "game/script.rpy", line 12, in script call
+    call shop
+  File "game/shop/shop.rpy", line 10, in script
+    $ energy -= 1
+  File "game/shop/shop.rpy", line 10, in <module>
+    $ energy -= 1
+NameError: name 'energy' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 18, in script call
-    call expression semana from _call_expression
-  File "game/weeks/week_0/week_zero.rpy", line 6, in script call
-    call prepare_java_battle
-  File "game/battlesys/labels/prepare_battle.rpy", line 74, in script
-    $ battleState = Battle_state(java, obmEnemyTeam)
+  File "game/script.rpy", line 12, in script call
+    call shop
+  File "game/shop/shop.rpy", line 10, in script
+    $ energy -= 1
   File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\ast.py", line 1138, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "C:\Users\evald\Downloads\RenPy\renpy-8.1.1-sdk\renpy\python.py", line 1122, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "game/battlesys/labels/prepare_battle.rpy", line 74, in <module>
-    $ battleState = Battle_state(java, obmEnemyTeam)
-  File "game/battlesys/classes/class_battle_state.rpy", line 41, in __init__
-    self.player_type = player.type
-AttributeError: 'ADVCharacter' object has no attribute 'type'
+  File "game/shop/shop.rpy", line 10, in <module>
+    $ energy -= 1
+NameError: name 'energy' is not defined
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.1.1.23060707
 ES_Weeks_Impl 1.0
-Sun Oct 29 15:19:03 2023
+Sun Oct 29 20:51:31 2023

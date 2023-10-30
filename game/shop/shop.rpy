@@ -7,7 +7,7 @@ default nenhuma_compra = True
 default confirma_compra = False
 
 label shop:
-    $ energy -= 1
+    #$ energy -= 1
     scene haskellShop with dissolve
     show haskell at left
 
@@ -23,7 +23,7 @@ label shop_1:
     $ nenhuma_compra = False
 
 menu shop_choices_1:
-
+    "O que escolher..."
     "[itens_loja[0]]":
         $ item_imagem = 0
         show item at truecenter
@@ -108,16 +108,15 @@ menu shop_choices_1:
     "Próximo" if num_itens > 5:
         jump shop_2
     
-    "Retorna":
+    "Sair":
         $ nenhuma_compra = True
         return
 
 label shop_2:
-
     $ num_itens = len(itens_loja)
 
 menu shop_choices_2:
-    
+    "O que escolher..."
     "[itens_loja[5]]" if num_itens > 5:
         $ item_var = itens_lista.index(itens_loja[5])
         $ item_imagem = item_var
@@ -214,7 +213,7 @@ label shop_3:
     $ num_itens = len(itens_loja)
 
 menu shop_choices_3:
-    
+    "O que escolher..."
     "[itens_loja[10]]" if num_itens > 10:
         $ item_var = itens_lista.index(itens_loja[10])
         $ item_imagem = item_var

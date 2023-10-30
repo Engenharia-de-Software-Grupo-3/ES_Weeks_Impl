@@ -20,6 +20,8 @@ image pyth timida =  "images/Sprites Python/python 37.png"
 
 label pythonEvent3:
 
+    scene sala 1 with fade
+
     play music "audio/music.mp3" volume 0.5
 
     show escola
@@ -307,15 +309,28 @@ label pythonEvent3:
 
     show pyth rindo1
 
-    pyt "Te vejo mais tarde, tudo bem? Tchau! – Ela fala e logo em seguida parte em disparada quase que saltitando."
+    pyt "Te vejo mais tarde, tudo bem? Tchau!"
+
+    if itens_estado[10] == True:
+        mc "Python..." 
+        pyt 34 "?"
+        mc "eu tenho um presente para você."
+        pyt 35 "Isso é..."
+        pyt 31 "Um cálice sagrado!?"
+        pyt "Eu queria muito um desse! Como você sabia?"
+        pyt 32 "Muito obrigada!"
+        "A felicidade está no ar... Em cada sorriso. Em cada olhar!"
+        $ itens_estado[10] = False
+        $ pythonLoveCounter += 3
+    $ pythonLoveCounter += 3
 
     hide pyth with moveoutright
 
-    mc "Você não sabe se realmente está no mesmo nível de Python em relações interpessoais, mas o fato dela aceitar sua ideia tão facilmente te deixa muito feliz, pois é um sinal que ela realmente acredita na sua capacidade sem nem pestanejar."
+    mcN "Você não sabe se realmente está no mesmo nível de Python em relações interpessoais, mas o fato dela aceitar sua ideia tão facilmente te deixa muito feliz, pois é um sinal que ela realmente acredita na sua capacidade sem nem pestanejar."
 
-    mc "Não é como um professor que fala “você é capaz de conseguir se por esforço nisso”, mas sim um que fala “é claro que você conseguiu, por que diabos achava que ia falhar”."
+    mcN "Não é como um professor que fala “você é capaz de conseguir se por esforço nisso”, mas sim um que fala “é claro que você conseguiu, por que diabos achava que ia falhar”."
     
-    mc "É muito bom ter alguém que confie mais em você do que você mesmo e, levado por esse sentimento quente em seu peito, você volta para a sala."
+    mcN "É muito bom ter alguém que confie mais em você do que você mesmo e, levado por esse sentimento quente em seu peito, você volta para a sala."
 
     $ pythonEventsCounter = 4
     return

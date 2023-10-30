@@ -31,7 +31,7 @@ image mercado:
     zoom 2.63
 image haskellShop:
     "images/Fotos/haskellShop.jpeg"
-    zoom 0.79
+    zoom 0.88
 image pesca: 
     "images/Fotos/pesca.jpg"
     zoom 2.71
@@ -49,6 +49,8 @@ image casaPython:
     zoom 1.5
 image doceria:
     "images/Fotos/doceria.jpg"
+image cafeteria:
+    "images/Fotos/cafeteria.png"
 
 # COBOL
 image cobol = "images/Sprites Cobol/cobol 1.png"

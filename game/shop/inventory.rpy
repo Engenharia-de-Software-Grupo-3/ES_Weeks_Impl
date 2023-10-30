@@ -2,9 +2,10 @@ image inventoryScene = "images/Fotos/chestInventory.jpg"
 
 default token = 0
 
-default itens_lista = ["Energético", "Cereal genérico", "Saco de moedas", "Kit de chá",
-    "JPEG SSS+", "Calculadora científica", "Picareta", "Óculos escuros", "Garrafa térmica",
-    "Camundongo", "Cálice sagrado", "Pedra quente", "Blåhaj", "Power glove", "Feijoada"]
+default itens_lista = [
+    "Energético", "Cereal genérico", "Saco de moedas", "Kit de chá", "JPEG SSS+", 
+    "Calculadora científica", "Picareta", "Óculos escuros", "Garrafa térmica", "Camundongo", 
+    "Cálice sagrado", "Pedra quente", "Blåhaj", "Power glove", "Feijoada"]
 default itens_estado = [0, 0, False, False, False, False, False, False, False, False,
     False, False, False, False, False]
 default items = ""

@@ -145,8 +145,10 @@ alguns para você.'
 # Java 3º Interação
 label javaEvent2:
     scene escola with fade
+    jav "Estou precisando de uma garrafa térmica..."
+    "Oh, [player_name]!"
     show java 10 with moveinleft
-    jav 8 '[player_name], ótimo momento. Eu estava pensando sobre o que você falou na nossa
+    jav 8 'Ótimo momento. Eu estava pensando sobre o que você falou na nossa
 última conversa...' 
     jav 'E acabei lembrando de algumas histórias interessantes de quando eu
 era presidente.'
@@ -161,7 +163,7 @@ outros adolescentes do que você imaginava."
 Abril do ano passado?'
     show java 10
     mc 'Vocês tiveram esse tipo de escândalo?!'
-    'Talvez seja por isso que há tanta hostilidade entre Ruby e Swift! Eles tinham um
+    'Talvez seja por isso que há tanta hostilidade entre javy e Swift! Eles tinham um
 romance malicioso no passado!'
     'Ou será que foi um romance ardente entre Alan Turing
 e Arnold Murray?'
@@ -298,5 +300,18 @@ planejando algo grande este ano. Eles sempre estão.'
     jav 'Eu tenho bastante
 experiência em lidar com as tolices deles agora, então tudo o que eu preciso é de outro
 par de olhos para me manter atualizado.'
+    if itens_estado[8] == True:
+        mc "Java..." 
+        show java i
+        jav "?"
+        mc "eu tenho um presente para você."
+        jav 19 "Isso é..."
+        jav "Uma garrafa térmica?"
+        jav 20 "Estava precisando de uma. Obrigado."
+        show java i 23
+        "A felicidade está no ar... Em cada sorriso. Em cada olhar!"
+        $ itens_estado[8] = False
+        $ javaLoveCounter += 3
+    $ javaLoveCounter += 3
     $ javaEventsCounter = 4
     return

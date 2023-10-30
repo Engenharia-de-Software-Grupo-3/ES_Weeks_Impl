@@ -147,3 +147,5 @@ default obmEnemyTeam = Enemy_team("OBM", noCalculatorP, [icMathE_, limitE_, icAn
 default battleState = None
 default battlePhase = None
 
+default bItem = None
+

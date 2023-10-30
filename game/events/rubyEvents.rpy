@@ -1,6 +1,6 @@
 #Primeira
 label rubyEvent0:
-    scene sala recreacao with fade
+    scene corredor with fade
     show ruby with dissolve
     ruby 2 '[player_name]! Como vai?'
     show ruby
@@ -48,7 +48,7 @@ label rubyEvent0:
     return
 
 label rubyEvent1:
-    scene sala recreacao with fade
+    scene corredor with fade
     ruby '[player_name]!' 
     show ruby with dissolve
     ruby 3 'Eu sabia que eu tinha em algum lugar. Aqui. '
@@ -81,7 +81,9 @@ label rubyEvent1:
 
 # Terceira
 label rubyEvent2:
-    scene sala recreacao with fade
+    scene corredor with fade
+    rub "Como eu queria aquela JPEG SSR Plus..."
+    rub "Oh, [player_name]!"
     show ruby 
     mc 'Ruby, eu estava imaginando….'
     mc 'Que outros tipos de cadernos você tem?'
@@ -137,7 +139,7 @@ label rubyEvent2:
             ruby 16 'Não tinha quem convidar, sabe?'
             ruby 18 'Mas um dia, eu sei que vou preparar uma de verdade!'
     # Junção
-    scene sala recreacao with fade
+    scene corredor with fade
     "Após certo tempo olhando a imensa coleção de cadernos..."
     mc 'E esse caderno vermelho?'
     show ruby 31
@@ -164,10 +166,9 @@ label rubyEvent2:
     $ rubyEventsCounter = 3
     return
 
-
 # Quarto (Final)
 label rubyEvent3:
-    scene sala recreacao with fade
+    scene corredor with fade
     show ruby with fade
     ruby '...'
     mc '...'
@@ -205,7 +206,17 @@ label rubyEvent3:
     mc 'Você é organizado e caridoso, e daria um excelente presidente. '
     show ruby 37
     'Foram poucas e simples palavras, mas você percebe que foram o suficiente para emocionar Ruby.'
-    ruby 36 'Obrigado, [player_name].'
     'Você e Ruby se tornam mais próximos. '
+    if itens_estado[4] == True:
+        mc "Ruby..." 
+        rub 23 "?"
+        mc "Eu tenho um presente para você."
+        rub 24 "Isso é..."
+        rub 25 "UM JPEG SSS+?!"
+        rub 37 "Pra mim?"
+        $ itens_estado[4] = False
+        $ rubyLoveCounter += 3
+    $ rubyLoveCounter += 3
     $ rubyEventsCounter = 4
+    ruby 36 'Obrigado, [player_name].'
     return
