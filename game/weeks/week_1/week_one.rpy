@@ -5,6 +5,10 @@ label semana_1:
         $ dia = 'semana1_dia' + str(d)
         call expression dia from _call_expression_1
         $ d = d + 1
+    
+    call free_day_start
+    call free_day_start
+    call free_day_start
     return
 label .intro:
     show black

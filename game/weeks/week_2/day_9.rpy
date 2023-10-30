@@ -1,14 +1,14 @@
 label semana2_dia9:
     call conversa_com_prolog_antes_aula
     if grupoPythonRuby:
-        call conversa_prolog_depois_aula
+        call conversa_com_prolog_depois_aula
         call casa_de_ruby
         call sala_de_estar_ruby
         call evento
     return
 
 
-label conversa_prolog_antes_aula:
+label conversa_com_prolog_antes_aula:
     scene black
     show text "Dia 1" at truecenter
     play music "audio/music.mp3" volume 0.5
@@ -79,7 +79,7 @@ label conversa_prolog_antes_aula:
     pro "Bom dia pra senhora também, professora Ada!"
     hide prolog with moveoutright
     hide ada with moveoutleft
-    mcN "E assim, o dia foi passando..."
+    "E assim, o dia foi passando..."
     scene black with dissolve
     return
     # Escurece a tela por alguns segundos pra dar a impressão de passagem de tempo.
@@ -276,13 +276,13 @@ label sala_de_estar_ruby:
     hide pyth with moveoutbottom
     show ruby at left with moveinright
     show futon at top with moveinright
-    mcN "Ruby traz um futon pra sala e deita nele."
+    "Ruby traz um futon pra sala e deita nele."
     hide futon with moveoutbottom
     hide ruby with moveoutbottom
-    mcN "Enquanto isso, você vai à mesa com uma caneta e papel para escrever o discurso."
+    "Enquanto isso, você vai à mesa com uma caneta e papel para escrever o discurso."
     mc "..."
     mc "..."
-    mcN "Você termina de escrever o papel do discurso e mostra a ruby, acreditando que fez um bom trabalho."
+    "Você termina de escrever o papel do discurso e mostra a ruby, acreditando que fez um bom trabalho."
     show ruby 16 at center with moveinbottom
     rub "Desculpa, mas tá tangente demais."
     show ruby 2
@@ -533,7 +533,7 @@ label ruby_bs_complete:
     rub "Um terror puramente humano"
     "Disse Ruby enquanto caia no Futon novamente."
     hide ruby with moveoutbottom
-    mcN "Ruby desmaiou."
+    "Ruby desmaiou."
     show pyth ii 52 at right with moveinbottom
     pyt "Você acabou de desmaiar o garoto!"
     show pyth ii 49
@@ -569,7 +569,7 @@ label ruby_bs_complete:
     mc "Não se preocupa, qualquer um duvidaria desse tipo de coisa."
     mc "Além disso, foi uma aposta de risco alto que poderia te deixar ainda pior, só usei porque se não não daria tempo de você participar do evento."
     mc "O melhor sempre é deixar seu corpo curar por meios convencionais."
-    mcN "Com todo o barulho feito, Python também acorda."
+    "Com todo o barulho feito, Python também acorda."
     show pyth ii 49 at right with moveinbottom
     pyt "*Cough cough*"
     show pyth ii 47
@@ -679,7 +679,7 @@ label python_bs_complete:
     # A partir daqui volta pros sprites de Python com cabelo solto.
     show pyth ii 49
     pyt "Tudo bem..."
-    mcN "Diz a garota, desanimada."
+    "Diz a garota, desanimada."
     show pyth ii 47
     pyt "Desculpe por não poder ajudar."
     show pyth ii 48
@@ -696,32 +696,32 @@ label python_bs_complete:
     pyt "Claro."
     hide pyth with moveoutbottom
     scene black with dissolve
-    mcN "E assim lá fomos nós."
+    "E assim lá fomos nós."
     return
 
 label evento:
     scene auditorio with dissolve
     play music "audio/music (2).mp3" volume 0.5
-    mcN "O evento aconteceria num local dentro da Academia e Ruby me indicou o caminho."
-    mcN "Quando chegamos lá, faltava pouco pra ele precisar entrar em cena."
+    "O evento aconteceria num local dentro da Academia e Ruby me indicou o caminho."
+    "Quando chegamos lá, faltava pouco pra ele precisar entrar em cena."
     show ruby with moveinleft
     mc "Nervoso?"
     show ruby 2
     rub "Um pouco... Mas agora não é hora pra isso."
     show ruby
     mc "Vai lá, você consegue."
-    mcN "Você disse dando um tapinha nas costas dele."
+    "Você disse dando um tapinha nas costas dele."
     rub "Obrigado."
     hide ruby with moveoutleft
     scene black with dissolve
     # Escurece a tela
-    mcN "Você decide ficar pra ver como as coisas vão se suceder e percebe que assim que ele começa a falar, toda o nervosismo de Ruby pareceu sumir."
-    mcN "Não só isso, na verdade você se surpreende com o garoto; ele passava uma impressão confiante e responsável, grandioso de certa forma."
-    mcN "Você enfim entendeu o que ele e Python queriam no discurso: algo que fizesse você pensar ̴“caramba, ̴ainda bem que ̴eu ̴estou ̴aqui”."
-    mcN "Certamente ̴era uma impressão diferente da de Python, mas sinceramente, talvez aquela fosse a impressão perfeita"
+    "Você decide ficar pra ver como as coisas vão se suceder e percebe que assim que ele começa a falar, toda o nervosismo de Ruby pareceu sumir."
+    "Não só isso, na verdade você se surpreende com o garoto; ele passava uma impressão confiante e responsável, grandioso de certa forma."
+    "Você enfim entendeu o que ele e Python queriam no discurso: algo que fizesse você pensar ̴“caramba, ̴ainda bem que ̴eu ̴estou ̴aqui”."
+    "Certamente ̴era uma impressão diferente da de Python, mas sinceramente, talvez aquela fosse a impressão perfeita"
     scene auditorio with dissolve
     # Desescurece a tela
-    mcN "O evento enfim acaba e Ruby vem até você."
+    "O evento enfim acaba e Ruby vem até você."
     show ruby with moveinleft
     mc "Parece que deu tudo certo com o evento, você foi incrível."
     show ruby 3
@@ -729,28 +729,28 @@ label evento:
     show ruby 5
     rub "O primeiro agradecimento foi por cordialidade, mas esse leva meus sinceros sentimentos: muito obrigado mesmo!"
     show ruby
-    mcN "Alguns estudantes parecem se aproximar de Ruby para perguntar coisas."
+    "Alguns estudantes parecem se aproximar de Ruby para perguntar coisas."
     hide ruby with moveoutright
-    mcN "Você acha melhor deixar ele continuar sobre holofotes, então decide ir embora pra não atrapalhar."
+    "Você acha melhor deixar ele continuar sobre holofotes, então decide ir embora pra não atrapalhar."
     mc "Ah, é verdade. Minhas coisas ainda estão na sala."
     scene black with dissolve
-    mcN "A essa altura você já havia perdido todo o resto das aulas, mas valeu a pena."
+    "A essa altura você já havia perdido todo o resto das aulas, mas valeu a pena."
     scene sala 1 with dissolve
-    mcN "Você caminha até a sala para pegar suas coisas, entra nela e começa a se organizar."
+    "Você caminha até a sala para pegar suas coisas, entra nela e começa a se organizar."
     scene sala_janela with dissolve 
-    mcN "Nesse momento, uma brisa entra pela janela, fazendo você instintivamente olhar para ela."
+    "Nesse momento, uma brisa entra pela janela, fazendo você instintivamente olhar para ela."
     scene sala 1 with dissolve
-    mcN "Ao retornar seu olhar para suas coisas, você percebe que..."
+    "Ao retornar seu olhar para suas coisas, você percebe que..."
     mc "Sumiram!"
     show prolog with moveinright
     pro "Sacrebleu! Quem poderia ter feito algo do tipo?"
     show prolog 5
-    mcN "Questionou Prolog de forma cínica enquanto segurava suas coisas em mãos."
+    "Questionou Prolog de forma cínica enquanto segurava suas coisas em mãos."
     mc "Desde quando você está aqui?"
     show prolog 19
     pro "Eu disse que seria mais discreta ao te observar."
     show prolog 5
-    mcN "A garota devolve a você suas coisas e continua."
+    "A garota devolve a você suas coisas e continua."
     show prolog 6
     mc "Ruby adoeceu?"
     show prolog 7
@@ -809,10 +809,10 @@ label evento:
     show prolog 21
     pro "Eles iriam juntos pra sala, pois o que eles iam fazer lá envolvia ambos."
     show prolog 7
-    mcN "Você começa a se perguntar sobre o que ela estava dizendo."
-    mcN "Então, uma lembrança cruza sua mente."
-    mcN "Em pensamento, você pondera..."
-    mcN "O que é que Python e Ruby precisavam fazer para o evento hoje pela manhã que ainda não estava pronto quando você foi à casa de Ruby?"
+    "Você começa a se perguntar sobre o que ela estava dizendo."
+    "Então, uma lembrança cruza sua mente."
+    "Em pensamento, você pondera..."
+    "O que é que Python e Ruby precisavam fazer para o evento hoje pela manhã que ainda não estava pronto quando você foi à casa de Ruby?"
     mc "Preparar o discurso!"
     show prolog 17
     pro "Magnifique!"
@@ -836,7 +836,7 @@ label evento:
     pro "Ele seria cancelado?"
     show prolog 29
     mc "Não, pois haveria um substit- !"
-    mcN "Você para por um segundo ao entender o que a garota queria dizer."
+    "Você para por um segundo ao entender o que a garota queria dizer."
     show prolog 26
     pro "Parece que você já percebeu."
     show prolog 25
@@ -847,8 +847,8 @@ label evento:
     pro "Então foi o substituto dos dois que fez isso, mas quem ele é?"
     pro "Eu tinha um palpite, mas a certeza só veio após ver os últimos 6 registros de entrada e saída da sala de recreação ontem."
     show prolog 22
-    mcN "Prolog lhe entregou um papel com nomes em uma ordem específica: Swift, Ruby, Python, Swift, Python e Ruby."
-    mcN "Duas das 3 pessoas foram, as vítimas o que só deixava um nome como possível culpado: "
+    "Prolog lhe entregou um papel com nomes em uma ordem específica: Swift, Ruby, Python, Swift, Python e Ruby."
+    "Duas das 3 pessoas foram, as vítimas o que só deixava um nome como possível culpado: "
     mc "Swift"
     show prolog 19
     pro "Bingo."
@@ -884,11 +884,11 @@ label evento:
     pro "Swift."
     show prolog 22
     pro "E foi assim que eu descobri o culpado."
-    mcN "Impressionante. Aquela sucessão de deduções fazia sentido, mas é surpreendente que ela conseguisse fazer isso em tão pouco tempo."
-    mcN "Mas você sentia que havia algo de errado."
-    mcN "O registro de entrada e saída da sala é de ontem."
-    mcN "Isso significa que a armadilha foi armada e ativada ontem."
-    mcN "Swift sabia que Python e Ruby iriam para a sala no dia do evento, mas como ele sabia que eles também iriam no dia anterior?"
+    "Impressionante. Aquela sucessão de deduções fazia sentido, mas é surpreendente que ela conseguisse fazer isso em tão pouco tempo."
+    "Mas você sentia que havia algo de errado."
+    "O registro de entrada e saída da sala é de ontem."
+    "Isso significa que a armadilha foi armada e ativada ontem."
+    "Swift sabia que Python e Ruby iriam para a sala no dia do evento, mas como ele sabia que eles também iriam no dia anterior?"
     show prolog 21
     pro "Ele não sabia."
     show prolog 22
@@ -981,8 +981,8 @@ label evento:
     show prolog 21
     pro "Não sou descuidada a ponto de ser descoberta por algo tão trivial."
     show prolog 22
-    mcN "Aquela garota podia ser meio estranha, mas visto o que ela fez hoje, também era extremamente confiável."
-    mcN "Os elogios de seus colegas de grupo faziam total sentido."
+    "Aquela garota podia ser meio estranha, mas visto o que ela fez hoje, também era extremamente confiável."
+    "Os elogios de seus colegas de grupo faziam total sentido."
     mc "No fim das contas, você de fato é tudo isso que as pessoas dizem não é?"
     show prolog 26
     pro "Non! Sou apenas Prolog, uma estudante da Academia-Sem-Nome-Definido! – Disse ela com um sorriso no rosto."
@@ -1029,10 +1029,10 @@ label evento:
     
     # -------------------------------------------------------------------------------------
     scene rua_qualquer with dissolve
-    mcN "Você volta para casa e no meio do caminho percebe que esqueceu de perguntar algo."
+    "Você volta para casa e no meio do caminho percebe que esqueceu de perguntar algo."
     mc "Ah, esqueci de perguntar sobre como ela sabia que Python está na casa de Ruby."
-    mcN "Minutos depois, seu celular toca. Ao atender, você escuta uma garota nele, quase que cantarolando as palavras que dizia."
-    prolog "Alô, alô, Doutor. Doutor Daminh-"
+    "Minutos depois, seu celular toca. Ao atender, você escuta uma garota nele, quase que cantarolando as palavras que dizia."
+    pro "Alô, alô, Doutor. Doutor Daminh-"
     mc "O que você quer, Prolog?"
     
     scene casa_prolog with dissolve
@@ -1073,7 +1073,7 @@ label evento:
     hide prolog with moveoutright
     
     scene rua_qualquer with dissolve
-    mcN "E assim a ligação termina."
+    "E assim a ligação termina."
     mc "É, ela realmente é tudo o que dizem."
     scene black with dissolve
 

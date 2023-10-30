@@ -1,48 +1,953 @@
-Mon Oct 30 19:09:48 2023
+Sun Oct 29 21:10:42 2023
 Windows-10-10.0.19041
-Ren'Py 8.1.2.23090503
+Ren'Py 8.1.3.23091805
  
 
-Bootstrap to the start of init.init. took 0.04s
-Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.04s
-Loading script. took 0.32s
-Loading save slot metadata. took 0.06s
-Loading persistent. took 0.00s
-Running init code. took 0.06s
-Loading analysis data. took 0.02s
+Bootstrap to the start of init.init. took 0.12s
+Early init. took 0.04s
+Loader init. took 0.38s
+Loading error handling. took 0.17s
+Loading script. took 3.22s
+Loading save slot metadata. took 0.73s
+Loading persistent. took 0.01s
+Running init code. took 0.62s
+Loading analysis data. took 0.06s
 Analyze and compile ATL. took 0.01s
-Reloading save slot metadata. took 0.03s
+Reloading save slot metadata. took 0.17s
 Index archives took 0.00s
-Dump and make backups. took 0.06s
+Backing up script files to 'C:\\Users\\Filho\\AppData\\Roaming/RenPy/backups\\ES_Weeks_Impl':
+Dump and make backups. took 0.27s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
-Initial gc. took 0.04s
+Initial gc. took 0.14s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
+Creating interface object. took 0.02s
 Cleaning stores took 0.00s
-Init translation took 0.09s
+Init translation took 0.30s
 Build styles took 0.01s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.16s
+Load screen analysis took 0.03s
+Analyze screens took 0.04s
+Save screen analysis took 0.07s
+Prepare screens took 0.32s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.13s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.09s
+Interface start. took 0.79s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1366, 768)
 swap interval: 1 frames
 Windowed mode.
 Vendor: "b'Intel'"
-Renderer: b'Intel(R) UHD Graphics 620'
-Version: b'4.6.0 - Build 27.20.100.7988'
+Renderer: b'Intel(R) HD Graphics 4600'
+Version: b'4.3.0 - Build 20.19.15.5058'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1366, 705) drawable=(1366, 705)
 Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\exports.py", line 1472, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\defaultstore.py", line 418, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: '((battleState'
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+KeyError: '((battleState'
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\exports.py", line 1472, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\defaultstore.py", line 418, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: '((battleState'
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+KeyError: '((battleState'
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\exports.py", line 1472, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\defaultstore.py", line 418, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: '((battleState'
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+KeyError: '((battleState'
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\exports.py", line 1472, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\defaultstore.py", line 418, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: '((battleState'
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+KeyError: '((battleState'
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\exports.py", line 1472, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\defaultstore.py", line 418, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: '((battleState'
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+KeyError: '((battleState'
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 53, in script call
+    call player_hit_manager
+  File "game/battlesys/labels/player_turn.rpy", line 118, in script call
+    python:
+  File "game/battlesys/labels/effect_scenes.rpy", line 198, in script
+    narrator "[enemy_name] was affected by [condition.name]!"
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\core.py", line 4543, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\screen.py", line 770, in event
+    rv = self.child.event(ev, x, y, st)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 1142, in event
+    return handle_click(self.clicked)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 1075, in handle_click
+    rv = run(action)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 372, in run
+    new_rv = run(i, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 379, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 397, in __call__
+    renpy.save(fn, extra_info=save_name)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\loadsave.py", line 432, in save
+    reraise(t, e, tb)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\loadsave.py", line 413, in save
+    dump((roots, renpy.game.log), logf)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\compat\pickle.py", line 103, in dump
+    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
+TypeError: cannot pickle 'dict_keys' object (perhaps store.keys = dict_keys([<store.Type object at 0x000000000558ae50>]))
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 53, in script call
+    call player_hit_manager
+  File "game/battlesys/labels/player_turn.rpy", line 118, in script call
+    python:
+  File "game/battlesys/labels/effect_scenes.rpy", line 198, in script
+    narrator "[enemy_name] was affected by [condition.name]!"
+  File "renpy/common/00action_file.rpy", line 397, in __call__
+    renpy.save(fn, extra_info=save_name)
+TypeError: cannot pickle 'dict_keys' object (perhaps store.keys = dict_keys([<store.Type object at 0x000000000558ae50>]))
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 5, in script call
+    call conversa_dia13
+  File "game/weeks/week_2/day_13.rpy", line 15, in script
+    "Você se encontra com Prolog na biblioteca para enfim terminar o trabalho passado por Ada."
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\core.py", line 4543, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\screen.py", line 770, in event
+    rv = self.child.event(ev, x, y, st)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 1142, in event
+    return handle_click(self.clicked)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 1075, in handle_click
+    rv = run(action)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 372, in run
+    new_rv = run(i, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 379, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 397, in __call__
+    renpy.save(fn, extra_info=save_name)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\loadsave.py", line 432, in save
+    reraise(t, e, tb)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\loadsave.py", line 413, in save
+    dump((roots, renpy.game.log), logf)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\compat\pickle.py", line 103, in dump
+    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
+TypeError: cannot pickle 'dict_keys' object (perhaps store.keys = dict_keys([<store.Type object at 0x000000000558ae50>]))
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 5, in script call
+    call conversa_dia13
+  File "game/weeks/week_2/day_13.rpy", line 15, in script
+    "Você se encontra com Prolog na biblioteca para enfim terminar o trabalho passado por Ada."
+  File "renpy/common/00action_file.rpy", line 397, in __call__
+    renpy.save(fn, extra_info=save_name)
+TypeError: cannot pickle 'dict_keys' object (perhaps store.keys = dict_keys([<store.Type object at 0x000000000558ae50>]))
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 5, in script call
+    call conversa_dia13
+  File "game/weeks/week_2/day_13.rpy", line 18, in script
+    mc "E então, o resto do grupo já entregou o que precisava?"
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\exports.py", line 1474, in say
+    who(what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 693, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\core.py", line 4543, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\screen.py", line 770, in event
+    rv = self.child.event(ev, x, y, st)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 1142, in event
+    return handle_click(self.clicked)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 1075, in handle_click
+    rv = run(action)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 372, in run
+    new_rv = run(i, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 379, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 397, in __call__
+    renpy.save(fn, extra_info=save_name)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\loadsave.py", line 432, in save
+    reraise(t, e, tb)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\loadsave.py", line 413, in save
+    dump((roots, renpy.game.log), logf)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\compat\pickle.py", line 103, in dump
+    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
+TypeError: cannot pickle 'dict_keys' object (perhaps store.keys = dict_keys([<store.Type object at 0x000000000558ae50>]))
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 5, in script call
+    call conversa_dia13
+  File "game/weeks/week_2/day_13.rpy", line 18, in script
+    mc "E então, o resto do grupo já entregou o que precisava?"
+  File "renpy/common/00action_file.rpy", line 397, in __call__
+    renpy.save(fn, extra_info=save_name)
+TypeError: cannot pickle 'dict_keys' object (perhaps store.keys = dict_keys([<store.Type object at 0x000000000558ae50>]))
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_3/week_three.rpy", line 11, in script call
+    call semana3_dia20
+  File "game/weeks/week_3/day_20.rpy", line 6, in script call
+    call prepare_battle_2
+  File "game/battlesys/labels/prepare_battle.rpy", line 66, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 5, in script
+    call screen battle_main_menu
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 2259, in execute
+    self.call("execute")
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 2241, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\statements.py", line 342, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\exports.py", line 3347, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\core.py", line 3582, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\core.py", line 4543, in interact_core
+    rv = root_widget.event(ev, x, y, 0)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\screen.py", line 770, in event
+    rv = self.child.event(ev, x, y, st)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\layout.py", line 1179, in event
+    rv = i.event(ev, x - xo, y - yo, cst)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 1142, in event
+    return handle_click(self.clicked)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 1075, in handle_click
+    rv = run(action)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 372, in run
+    new_rv = run(i, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\display\behavior.py", line 379, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 397, in __call__
+    renpy.save(fn, extra_info=save_name)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\loadsave.py", line 432, in save
+    reraise(t, e, tb)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 444, in raise_
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\loadsave.py", line 413, in save
+    dump((roots, renpy.game.log), logf)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\compat\pickle.py", line 103, in dump
+    pickle.dump(o, f, pickle.HIGHEST_PROTOCOL if highest else PROTOCOL)
+TypeError: cannot pickle 'dict_keys' object (perhaps store.keys = dict_keys([<store.Type object at 0x000000000558ae50>]))
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_3/week_three.rpy", line 11, in script call
+    call semana3_dia20
+  File "game/weeks/week_3/day_20.rpy", line 6, in script call
+    call prepare_battle_2
+  File "game/battlesys/labels/prepare_battle.rpy", line 66, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 5, in script
+    call screen battle_main_menu
+  File "renpy/common/000statements.rpy", line 670, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/common/00action_file.rpy", line 397, in __call__
+    renpy.save(fn, extra_info=save_name)
+TypeError: cannot pickle 'dict_keys' object (perhaps store.keys = dict_keys([<store.Type object at 0x000000000558ae50>]))
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_3/week_three.rpy", line 11, in script call
+    call semana3_dia20
+  File "game/weeks/week_3/day_20.rpy", line 6, in script call
+    call prepare_battle_2
+  File "game/battlesys/labels/prepare_battle.rpy", line 66, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\exports.py", line 1472, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\defaultstore.py", line 418, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: '((battleState'
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_3/week_three.rpy", line 11, in script call
+    call semana3_dia20
+  File "game/weeks/week_3/day_20.rpy", line 6, in script call
+    call prepare_battle_2
+  File "game/battlesys/labels/prepare_battle.rpy", line 66, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+KeyError: '((battleState'
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_3/week_three.rpy", line 11, in script call
+    call semana3_dia20
+  File "game/weeks/week_3/day_20.rpy", line 6, in script call
+    call prepare_battle_2
+  File "game/battlesys/labels/prepare_battle.rpy", line 66, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\exports.py", line 1472, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\defaultstore.py", line 418, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1337, in __call__
+    what = self.prefix_suffix("what", self.what_prefix, what, self.what_suffix)
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1251, in prefix_suffix
+    return (sub(prefix) + sub(body) + sub(suffix))
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\character.py", line 1231, in sub
+    return renpy.substitutions.substitute(s, scope=scope, force=force, translate=translate)[0]
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 278, in substitute
+    s = formatter.vformat(s, (), kwargs) # type: ignore
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 165, in vformat
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 205, in _vformat
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\substitutions.py", line 168, in get_field
+    obj, arg_used = super(Formatter, self).get_field(field_name, args, kwargs)
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 270, in get_field
+  File "/home/tom/ab/renpy-build-fix/tmp/install.linux-x86_64/lib/python3.9/string.py", line 227, in get_value
+KeyError: '((battleState'
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_3/week_three.rpy", line 11, in script call
+    call semana3_dia20
+  File "game/weeks/week_3/day_20.rpy", line 6, in script call
+    call prepare_battle_2
+  File "game/battlesys/labels/prepare_battle.rpy", line 66, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 79, in script call
+    call bp_enemy_turn
+  File "game/battlesys/labels/enemy_turn.rpy", line 77, in script call
+    call check_status_condition
+  File "game/battlesys/labels/player_turn.rpy", line 145, in script
+    python:
+  File "game/battlesys/labels/player_turn.rpy", line 152, in <module>
+    se.effect('enemy', battleState, battlePhase)
+  File "game/weeks/week_0/week_zero.rpy", line 53, in poison_effect
+    renpy.say('', '[((battleState.enemy_team_current_stats)[0]).enemy_name] is hurt by being calculated!')
+KeyError: '((battleState'
+Cleaning stores took 0.01s
+Init translation took 0.43s
+Build styles took 0.04s
+Load screen analysis took 0.22s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.02s
+
+Full traceback:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 17, in script
+    if battlePhase.player_attack_blockedMsg /= "":
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\ast.py", line 2133, in execute
+    if renpy.python.py_eval(condition):
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\python.py", line 1151, in py_eval
+    code = py_compile(code, 'eval')
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\python.py", line 1088, in py_compile
+    raise e
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\python.py", line 1034, in py_compile
+    raise orig_e
+  File "D:\Users\Luiz Sergio\Documents\GitHub\renpy\python.py", line 1027, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/battlesys/labels/player_turn.rpy, line 17)
+
+While running game code:
+  File "game/script.rpy", line 18, in script call
+    call expression semana from _call_expression
+  File "game/weeks/week_2/week_two.rpy", line 8, in script call
+    call semana2_dia13
+  File "game/weeks/week_2/day_13.rpy", line 3, in script call
+    call prepare_battle_1
+  File "game/battlesys/labels/prepare_battle.rpy", line 40, in script call
+    call turn_start
+  File "game/battlesys/labels/turn_start.rpy", line 11, in script call
+    call battle_menu
+  File "game/battlesys/labels/menu_battle.rpy", line 11, in script call
+    call start_battle_phase
+  File "game/battlesys/labels/menu_battle.rpy", line 47, in script call
+    call bp_player_turn
+  File "game/battlesys/labels/player_turn.rpy", line 17, in script
+    if battlePhase.player_attack_blockedMsg /= "":
+SyntaxError: invalid syntax (game/battlesys/labels/player_turn.rpy, line 17)
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.02s
+Load screen analysis took 0.30s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.02s
