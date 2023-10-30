@@ -26,6 +26,13 @@ image corredor:
 image mercado: 
     "images/Fotos/mercado.jpeg"
     zoom 2.63
+image casa_ruby:
+    "images/Fotos/casa_de_ruby.jpg"
+image sala_ruby:
+    "images/Fotos/sala_de_estar_ruby.jpg"
+image cozinha_ruby:
+    "images/Fotos/cozinha_ruby.jpg"
+
 
 # COBOL
 image cobol = "images/Sprites Cobol/cobol 1.png"
@@ -116,6 +123,12 @@ image pyth i 34 = "images/Sprites Python/python 34.png"
 image pyth i 35 = "images/Sprites Python/python 35.png"
 
 image pyth ii = "images/Sprites Python/python 42.png"
+image pyth ii 43 = "images/Sprites Python/python 43.png"
+image pyth ii 45 = "images/Sprites Python/python 45.png"
+image pyth ii 46 = "images/Sprites Python/python 46.png"
+image pyth ii 48 = "images/Sprites Python/python 48.png"
+image pyth ii 49 = "images/Sprites Python/python 49.png"
+image pyth ii 52 = "images/Sprites Python/python 52.png"
 image pyth ii 53 = "images/Sprites Python/python 53.png"
 
 # RUBY
@@ -123,10 +136,21 @@ image ruby = "images/Sprites Ruby/ruby 1.png"
 image ruby 2 = "images/Sprites Ruby/ruby 2.png"
 image ruby 3 = "images/Sprites Ruby/ruby 3.png"
 image ruby 4 = "images/Sprites Ruby/ruby 4.png"
+image ruby 6 = "images/Sprites Ruby/ruby 6.png"
 image ruby 8 = "images/Sprites Ruby/ruby 8.png"
+image ruby 9 = "images/Sprites Ruby/ruby 9.png"
+image ruby 11 = "images/Sprites Ruby/ruby 11.png"
+image ruby 13 = "images/Sprites Ruby/ruby 13.png"
+image ruby 14 = "images/Sprites Ruby/ruby 14.png"
+image ruby 15 = "images/Sprites Ruby/ruby 15.png"
 image ruby 16 = "images/Sprites Ruby/ruby 16.png"
+image ruby 20 = "images/Sprites Ruby/ruby 20.png"
+image ruby 21 = "images/Sprites Ruby/ruby 21.png"
+image ruby 23 = "images/Sprites Ruby/ruby 23.png"
+image ruby 24 = "images/Sprites Ruby/ruby 24.png"
 image ruby 26 = "images/Sprites Ruby/ruby 26.png"
 image ruby 28 = "images/Sprites Ruby/ruby 28.png"
+image ruby 30 = "images/Sprites Ruby/ruby 30.png"
 image ruby 30 = "images/Sprites Ruby/ruby 30.png"
 
 # SWIFT
@@ -213,3 +237,5 @@ image ada ballin:
     zoom 1.3
 image pro_owl = "images/prolog  bird.png"
 image bola = "images/basketball.png"
+image emptydnd = "images/DragNDrop/dragndrop_empty.jpeg"
+image futon = "images/futon.png"

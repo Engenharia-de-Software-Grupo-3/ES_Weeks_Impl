@@ -2,9 +2,25 @@
 errors listed below, and try again.
 
 
-File "game/weeks/week_2/day_9.rpy", line 291: end of line expected.
-    mcN "Quem sou eu?" "Por que estou comendo isso?"
-                       ^
+File "game/weeks/week_2/day_9.rpy", line 273: end of line expected.
+    show futon with movein right
+                           ^
+
+File "game/weeks/week_2/day_9.rpy", line 410: expected 'image_name_component' not found.
+    show scene empty dnd with dissolve
+        ^
+
+File "game/weeks/week_2/day_9.rpy", line 532: 'with' is not a keyword argument or valid child of the screen statement.
+    screen black with dissolve
+                     ^
+
+File "game/weeks/week_2/day_9.rpy", line 535: 'with' is not a keyword argument or valid child of the screen statement.
+    screen sala_de_estar_ruby with dissolve
+                                  ^
+
+File "game/weeks/week_2/day_9.rpy", line 645: expected 'image_name_component' not found.
+    show scene emptydnd with dissolve
+        ^
 
 Ren'Py Version: Ren'Py 8.1.2.23090503
-Sun Oct 29 00:03:42 2023
+Sun Oct 29 22:55:56 2023
