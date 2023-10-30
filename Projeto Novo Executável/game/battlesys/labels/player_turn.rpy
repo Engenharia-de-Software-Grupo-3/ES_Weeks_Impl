@@ -14,8 +14,9 @@ label bp_player_turn:
     $ skill = battlePhase.player_skill
     if battlePhase.player_attack_blocked:
         $ inLoop = False
-        if battlePhase.player_attack_blockedMsg /= "":
-            "[battlePhase.player_attack_blockedMsg]"
+        if not (battlePhase.player_attack_blockedMsg is None or battlePhase.player_attack_blockedMsg == ""):
+            $ saida = battlePhase.player_attack_blockedMsg
+            $ renpy.say("", saida)
     else:
         python:
             enemy = (battleState.enemy_team_current_stats)[0]

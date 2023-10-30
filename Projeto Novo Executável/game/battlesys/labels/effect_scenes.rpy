@@ -195,13 +195,16 @@ label status_condition_effect_scene:
     elif effect.target == 'enemy':
         if effect.operator == '+':
             $ ((battleState.enemy_team_current_stats)[0]).status_condition_dictionare[condition] = condition.duration
-            narrator "[enemy_name] was affected by [condition.name]!"        
+            $ saida = enemy_name + ' was affected by ' + condition.name + "!"
+            $ renpy.say('', saida)       
         elif effect.operator == '-':
             python:
                 keys = ((battleState.enemy_team_current_stats)[0]).status_condition_dictionare.keys()
                 if not condition in keys:
-                    renpy.say('', '[enemy_name] is not affected by [condition.name]!')
+                    saida = enemy_name + ' is not affected by ' + condition.name + "!"
+                    renpy.say('', saida)  
                 else:
+                    saida = enemy_name + ' is no longer affected by ' + condition.name + "!"
                     ((battleState.enemy_team_current_stats)[0]).status_condition_dictionare.pop(condition)
-                    renpy.say('', '[enemy_name] is no longer affected by [condition.name]!') 
+                    renpy.say('', saida)
     return

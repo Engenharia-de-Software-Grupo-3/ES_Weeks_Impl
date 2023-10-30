@@ -16,7 +16,8 @@ label bp_enemy_turn:
     if battlePhase.enemy_attack_blocked:
         $ inLoop = False
         if not (battlePhase.enemy_attack_blockedMsg is None or battlePhase.enemy_attack_blockedMsg == ""):
-            "[battlePhase.enemy_attack_blockedMsg]"
+            $ saida = battlePhase.enemy_attack_blockedMsg
+            $ renpy.say("", saida)
     else:
         python:
             player_type = battleState.player_type
