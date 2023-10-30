@@ -113,9 +113,12 @@ label enemy_calculate_manager:
 
 label enemy_hit_manager:
     if (not hit):
-        narrator "It missed."
+        if (not battlePhase.enemy_attack_hitOnce):
+            narrator "It missed."
     else: 
         python:
+            battlePhase.enemy_attack_hitOnce = True
+
             effect = battlePhase.enemy_last_effect_used
             player_name = battleState.player_name
             enemy_name = ((battleState.enemy_team_current_stats)[0]).enemy_name

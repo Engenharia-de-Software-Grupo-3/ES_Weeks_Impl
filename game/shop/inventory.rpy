@@ -1,10 +1,13 @@
+image inventoryScene = "images/Fotos/chestInventory.jpg"
+
 default itens_lista = ["Energético", "Cereal genérico", "Saco de moedas", "Kit de chá",
     "JPEG SSS+", "Calculadora científica", "Picareta", "Óculos escuros", "Garrafa térmica",
-    "Camundongo", "Cálice sagrado", "Pedra quente", "Blåhaj", "Power glove", "Feijoada",
-    "Sorvete de pistache"]
+    "Camundongo", "Cálice sagrado", "Pedra quente", "Blåhaj", "Power glove", "Feijoada"]
 default itens_estado = [0, 0, False, False, False, False, False, False, False, False,
-    False, False, False, False, False, False]
+    False, False, False, False, False]
 default items = ""
+default item_imagem = 0
+default token = 0
 
 label inventory:
     
@@ -52,9 +55,6 @@ label inventory:
     
     if itens_estado[14]:
         $ items = items + "Feijoada, "
-    
-    if itens_estado[15]:
-        $ items = items + "Sorvete de pistache, "
 
     $ items = items[:-2]
 
@@ -69,4 +69,4 @@ label inventory:
     
     $ items = ""
 
-    jump common
+    return

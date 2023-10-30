@@ -2,7 +2,7 @@ label prepare_tutorial_battle:
     play music "audio/battle.mp3"
     python:
         # Battle_state
-        battleState = Battle_state(rubyPC, calculusEnemyTeam)
+        battleState = Battle_state(pythonTutorialPC, icEnemyTeam)
     scene battle_wall with dissolve
     "Battle Begin!"
     show player_box

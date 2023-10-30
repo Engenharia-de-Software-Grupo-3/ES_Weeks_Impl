@@ -26,3 +26,8 @@ init python:
             self.passive = passive
             self.skill_set = skill_set
             self.sprite_info = sprite_info
+
+        def levelUp(self):
+            self.hp += 20
+            self.atk += 3
+            self.res += 3
