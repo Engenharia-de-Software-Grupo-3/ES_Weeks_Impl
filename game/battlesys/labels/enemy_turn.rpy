@@ -3,11 +3,11 @@ label bp_enemy_turn:
     $ battlePhase.current_stage = 'Turn_start'
     $ battlePhase.phase += 1
     # CHECK PASSIVES, HP = 0, ENEMY_HP = 0
-    call check_passive_time
+    call check_passive_time from _call_check_passive_time
     if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
         return
     # CHECK NEG_STATS 
-    call check_status_condition
+    call check_status_condition from _call_check_status_condition
     if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
         return
     # Effect_calculator
@@ -40,24 +40,24 @@ label bp_enemy_turn:
         $ battlePhase.enemy_attack_hit = False
         # Effect_calculate------------------------------------------------------------
         $ battlePhase.current_stage = 'Effect_calculate'
-        call enemy_calculate_manager
+        call enemy_calculate_manager from _call_enemy_calculate_manager
         # CHECK PASSIVES, HP = 0, ENEMY_HP = 0
-        call check_passive_time
+        call check_passive_time from _call_check_passive_time_1
         if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
             return
         # CHECK NEG_STATS
-        call check_status_condition
+        call check_status_condition from _call_check_status_condition_1
         if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
             return
         # Effect_hit-----------------------------------------------------------------
         $ battlePhase.current_stage = 'Effect_hit'
-        call enemy_hit_manager
+        call enemy_hit_manager from _call_enemy_hit_manager
         # CHECK PASSIVES, HP = 0, ENEMY_HP = 0
-        call check_passive_time
+        call check_passive_time from _call_check_passive_time_2
         if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
             return
         # CHECK NEG_STATS
-        call check_status_condition
+        call check_status_condition from _call_check_status_condition_2
         if (battleState.player_hp == 0 or ((battleState.enemy_team_current_stats)[0]).enemy_hp == 0):
             return
         # Check in loop
@@ -72,12 +72,12 @@ label bp_enemy_turn:
     if battlePhase.phase == 2:
         $ battlePhase.current_stage = 'Battle_end'
         # CHECK PASSIVES
-        call check_passive_time
+        call check_passive_time from _call_check_passive_time_3
         # CHECK NEG_STATS
-        call check_status_condition
+        call check_status_condition from _call_check_status_condition_3
         return
     else:
-        call bp_player_turn
+        call bp_player_turn from _call_bp_player_turn
 
     return
         

@@ -97,7 +97,7 @@ label semana2_dia8:
     hide ada
     "Um trio, não é? Alguns nomes vêm à sua mente: Java, Lua, Ruby e Python."
     "Nenhum deles provavelmente se incomodaria de formar um grupo com você."
-    call escolhendo_grupo
+    call escolhendo_grupo from _call_escolhendo_grupo
     
     #Definição dos sprites dos parceiros
     if parceiro1[0].name == "Python":

@@ -1,17 +1,17 @@
 label damage_scene:
     if effect.target == 'player':
         $ battleState.player_hp = max(0, battleState.player_hp - effect.value)
-        call show_enemy_atk
+        call show_enemy_atk from _call_show_enemy_atk
         show text "" with vpunch
         pause 0.25
-        call hide_enemy_atk
+        call hide_enemy_atk from _call_hide_enemy_atk
         pause 0.1
     elif effect.target == 'enemy':
         $ ((battleState.enemy_team_current_stats)[0]).enemy_hp =  max(0, ((battleState.enemy_team_current_stats)[0]).enemy_hp - effect.value)
-        call show_player_atk
+        call show_player_atk from _call_show_player_atk
         show text "" with vpunch
         pause 0.25
-        call hide_player_atk
+        call hide_player_atk from _call_hide_player_atk
         pause 0.1
     if crit:
         narrator "A critical hit!"
