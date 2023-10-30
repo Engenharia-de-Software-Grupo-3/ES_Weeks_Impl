@@ -1,31 +1,31 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Image object ('images\\Fotos\\sala_janela.JPG') at 0x00000000058cf1f0>:
-  File "game/script.rpy", line 19, in script call
+While loading <renpy.display.im.Image object ('images/Fotos/casa_prolog.jpg') at 0x0000000005d3d340>:
+  File "game/script.rpy", line 18, in script call
     call expression semana from _call_expression
   File "game/weeks/week_1/week_one.rpy", line 6, in script call
     call expression dia from _call_expression_1
-  File "game/weeks/week_1/day_1.rpy", line 28, in script call
-    call semana2_dia4
+  File "game/weeks/week_1/day_1.rpy", line 27, in script call
+    call semana2_dia9
   File "game/weeks/week_2/day_9.rpy", line 7, in script call
     call evento
-  File "game/weeks/week_2/day_9.rpy", line 731, in script
-    scene sala_janela with dissolve
-Exception: Backslash in filename, use '/' instead: 'images\\Fotos\\sala_janela.JPG'
+  File "game/weeks/week_2/day_9.rpy", line 1036, in script
+    scene casa_prolog with dissolve
+OSError: Couldn't find file 'images/Fotos/casa_prolog.jpg'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 19, in script call
+  File "game/script.rpy", line 18, in script call
     call expression semana from _call_expression
   File "game/weeks/week_1/week_one.rpy", line 6, in script call
     call expression dia from _call_expression_1
-  File "game/weeks/week_1/day_1.rpy", line 28, in script call
-    call semana2_dia4
+  File "game/weeks/week_1/day_1.rpy", line 27, in script call
+    call semana2_dia9
   File "game/weeks/week_2/day_9.rpy", line 7, in script call
     call evento
-  File "game/weeks/week_2/day_9.rpy", line 731, in script
-    scene sala_janela with dissolve
+  File "game/weeks/week_2/day_9.rpy", line 1036, in script
+    scene casa_prolog with dissolve
   File "C:\Users\User\Desktop\renpy-8.1.2-sdk\renpy\ast.py", line 1678, in execute
     renpy.exports.with_statement(trans, paired=paired)
   File "C:\Users\User\Desktop\renpy-8.1.2-sdk\renpy\exports.py", line 1758, in with_statement
@@ -80,11 +80,11 @@ Full traceback:
     raise e
   File "C:\Users\User\Desktop\renpy-8.1.2-sdk\renpy\display\im.py", line 757, in load
     filelike = renpy.loader.load(self.filename, directory="images")
-  File "C:\Users\User\Desktop\renpy-8.1.2-sdk\renpy\loader.py", line 824, in load
-    raise Exception("Backslash in filename, use '/' instead: %r" % name)
-Exception: Backslash in filename, use '/' instead: 'images\\Fotos\\sala_janela.JPG'
+  File "C:\Users\User\Desktop\renpy-8.1.2-sdk\renpy\loader.py", line 833, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'images/Fotos/casa_prolog.jpg'.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.1.2.23090503
 ES_Weeks_Impl 1.0
-Mon Oct 30 18:03:54 2023
+Mon Oct 30 19:04:26 2023

@@ -4,9 +4,9 @@ init python:
                 Args:
                     • Name
                     • activation_time { 
-                         1. Battle_begin | Before_menu | Battle_phase | Enemy_change | Battle_conclusion
-                         2. Battle_Start | Turn_start | Effect_calculate | Effect_hit | Battle_End
-                         3. Always
+                        1. Battle_begin | Before_menu | Battle_phase | Enemy_change | Battle_conclusion
+                        2. Battle_Start | Turn_start | Effect_calculate | Effect_hit | Battle_End
+                        3. Always
                     }
                     • Trigger
                     • Effect

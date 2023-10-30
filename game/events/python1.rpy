@@ -1,28 +1,28 @@
-label python1 :
-    image pyth perguntandoP = "images/Sprites Python/python 6.png"
+image pyth perguntandoP = "images/Sprites Python/python 6.png"
 
-    image pyth perguntando = "images/Sprites Python/python 7.png"
+image pyth perguntando = "images/Sprites Python/python 7.png"
 
-    image pyth escutando = "images/Sprites Python/python 8.png"
+image pyth escutando = "images/Sprites Python/python 8.png"
 
-    image pyth alegre1 = "images/Sprites Python/python 11.png"
+image pyth alegre1 = "images/Sprites Python/python 11.png"
 
-    image pyth alegre2 = "images/Sprites Python/python 13.png"
+image pyth alegre2 = "images/Sprites Python/python 13.png"
 
-    image pyth perguntaalegre2 = "images/Sprites Python/python 14.png"
+image pyth perguntaalegre2 = "images/Sprites Python/python 14.png"
 
-    image pyth impressionada =  "images/Sprites Python/python 23.png"
+image pyth impressionada =  "images/Sprites Python/python 23.png"
 
-    image pyth pesames1 =  "images/Sprites Python/python 36.png"
+image pyth pesames1 =  "images/Sprites Python/python 36.png"
 
-    image pyth pesames2 =  "images/Sprites Python/python 37.png"
+image pyth pesames2 =  "images/Sprites Python/python 37.png"
 
-    image pyth confusa = "images/Sprites Python/python 34.png"
+image pyth confusa = "images/Sprites Python/python 34.png"
 
-    image pyth semhumor =  "images/Sprites Python/python 35.png"
+image pyth semhumor =  "images/Sprites Python/python 35.png"
     
-    image pyth duvida =  "images/Sprites Python/python 17.png"
+image pyth duvida =  "images/Sprites Python/python 17.png"
 
+label pythonEvent0 :
     play music "audio/music.mp3" volume 0.5
 
     show escola
@@ -171,5 +171,6 @@ label python1 :
     hide pyth with moveoutright
 
     mc "(A garota sai correndo em disparada e você fica estático com o fato de que a segurança de nossa sociedade está pautada na existência de duas únicas jovens garotas)."
-
-return
+    
+    $ pythonEventsCounter = 1
+    return

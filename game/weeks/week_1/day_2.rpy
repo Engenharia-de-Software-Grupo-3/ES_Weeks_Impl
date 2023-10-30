@@ -528,6 +528,7 @@ label .mercado:
     lua 7 'Não tem de quê'
     hide lua with moveoutleft
     'Lua vai embora e você é deixado lá em frente à loja de Haskell'
+    scene haskellShop with dissolve
     mc 'Olá? Tem alguém aí?'
     'Nada...'
     'Você começa a se perguntar se você foi largado ali sem ninguém pra ajudar'

@@ -1,35 +1,34 @@
-label python2:
+image pyth perguntandoP = "images/Sprites Python/python 6.png"
 
-    image pyth perguntandoP = "images/Sprites Python/python 6.png"
+image pyth perguntando = "images/Sprites Python/python 7.png"
 
-    image pyth perguntando = "images/Sprites Python/python 7.png"
+image pyth escutando = "images/Sprites Python/python 8.png"
 
-    image pyth escutando = "images/Sprites Python/python 8.png"
+image pyth alegre1 = "images/Sprites Python/python 11.png"
 
-    image pyth alegre1 = "images/Sprites Python/python 11.png"
+image pyth alegre2 = "images/Sprites Python/python 13.png"
 
-    image pyth alegre2 = "images/Sprites Python/python 13.png"
+image pyth perguntaalegre2 = "images/Sprites Python/python 14.png"
 
-    image pyth perguntaalegre2 = "images/Sprites Python/python 14.png"
+image pyth impressionada =  "images/Sprites Python/python 23.png"
 
-    image pyth impressionada =  "images/Sprites Python/python 23.png"
+image pyth pesames1 =  "images/Sprites Python/python 36.png"
 
-    image pyth pesames1 =  "images/Sprites Python/python 36.png"
+image pyth pesames2 =  "images/Sprites Python/python 37.png"
 
-    image pyth pesames2 =  "images/Sprites Python/python 37.png"
+image pyth confusa = "images/Sprites Python/python 34.png"
 
-    image pyth confusa = "images/Sprites Python/python 34.png"
+image pyth sorrifrente = "images/Sprites Python/python 32.png"
 
-    image pyth sorrifrente = "images/Sprites Python/python 32.png"
-
-    image pyth semhumor =  "images/Sprites Python/python 35.png"
+image pyth semhumor =  "images/Sprites Python/python 35.png"
     
-    image pyth sprite28 =  "images/Sprites Python/python 28.png"
+image pyth sprite28 =  "images/Sprites Python/python 28.png"
 
-    image pyth sprite12 =  "images/Sprites Python/python 12.png"
-    image pyth sprite31 =  "images/Sprites Python/python 31.png"
+image pyth sprite12 =  "images/Sprites Python/python 12.png"
+    
+image pyth sprite31 =  "images/Sprites Python/python 31.png"
 
-
+label pythonEvent1:
 
     show pyth alegre1
 
@@ -183,5 +182,5 @@ label python2:
 
     mc "Digamos apenas que as Rainhas da Selva pintaram Guernica novamente, dessa vez usando como tinta os estilhaços da sua esperança de vitória. É... Desafiar as duas de uma vez não foi uma boa ideia."
 
-
-return
+    $ pythonEventsCounter = 2
+    return

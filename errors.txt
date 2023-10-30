@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/weeks/week_2/day_9.rpy", line 283: end of line expected.
-    show ruby 16 with moveinbuttom at center
-                                   ^
+File "game/weeks/week_1/day_1.rpy", line 26: expected statement.
+    grupoRubyPython = True
+                    ^
 
 Ren'Py Version: Ren'Py 8.1.2.23090503
-Mon Oct 30 17:36:21 2023
+Mon Oct 30 18:39:18 2023

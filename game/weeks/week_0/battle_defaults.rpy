@@ -140,6 +140,9 @@ default icEnemyTeam = Enemy_team("Introduction to Computing", introP, [icMathE_,
 default calculusEnemyTeam = Enemy_team("Calculus II", noCalculatorP, [limitE_, derivE_, integE_, None, None, None], None)
 default edaEnemyTeam = Enemy_team("Data Structure", sortP, [stackE_, listE_, treeE_, None, None, None], None)
 
+default obmEnemyTeam = Enemy_team("OBM", noCalculatorP, [icMathE_, limitE_, icAnalyE_, derivE_, icTheoE_, integE_], None)
+
+
 # Battle_state
 default battleState = None
 default battlePhase = None

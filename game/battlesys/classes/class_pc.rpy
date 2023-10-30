@@ -2,19 +2,19 @@ init python:
     class Pc(object):
         """
                 Args:
-                      • Name
-                      • Class (Analitica, Matematica, Teorica, Neutro)
+                    • Name
+                    • Class (Analitica, Matematica, Teorica, Neutro)
                         ----------------------
-                      • HP (vida)
-                      • Expressivity  (ataque)
-                      • Typed (defesa)
-                      • Level (velocidade + critico)
+                    • HP (vida)
+                    • Expressivity  (ataque)
+                    • Typed (defesa)
+                    • Level (velocidade + critico)
                         ----------------------
-                      • Passive
-                      • Skills (1-4)
+                    • Passive
+                    • Skills (1-4)
                         ----------------------
-                      • Sprite
-                      • Posicion                           
+                    • Sprite
+                    • Posicion                           
         """
         def __init__(self, name, type, hp, atk, res, luck, passive, sprite_info, skill_set = [None, None, None, None]) :
             self.name = name

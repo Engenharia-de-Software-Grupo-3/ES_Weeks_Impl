@@ -14,3 +14,4 @@ define swi = Character('Swift', who_color = '#929292', image = "swift")
 define alan = Character('?', who_color = '#494848')
 define ada = Character('?', who_color = '#494848', image = 'ada')
 define java = jav
+define ruby = rub

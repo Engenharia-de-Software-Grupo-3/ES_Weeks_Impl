@@ -1,22 +1,22 @@
-label python3:
+image pyth perguntando = "images/Sprites Python/python 7.png"
 
-    image pyth perguntando = "images/Sprites Python/python 7.png"
+image pyth escutando = "images/Sprites Python/python 8.png"
 
-    image pyth escutando = "images/Sprites Python/python 8.png"
+image pyth alegre1 = "images/Sprites Python/python 11.png"
 
-    image pyth alegre1 = "images/Sprites Python/python 11.png"
+image pyth alegre2 = "images/Sprites Python/python 13.png"
 
-    image pyth alegre2 = "images/Sprites Python/python 13.png"
+image pyth impressionada =  "images/Sprites Python/python 23.png"
 
-    image pyth impressionada =  "images/Sprites Python/python 23.png"
+image pyth pesames1 =  "images/Sprites Python/python 36.png"
 
-    image pyth pesames1 =  "images/Sprites Python/python 36.png"
+image pyth pesames2 =  "images/Sprites Python/python 37.png"
 
-    image pyth pesames2 =  "images/Sprites Python/python 37.png"
+image pyth confusa = "images/Sprites Python/python 34.png"
 
-    image pyth confusa = "images/Sprites Python/python 34.png"
+image pyth semhumor =  "images/Sprites Python/python 35.png"
 
-    image pyth semhumor =  "images/Sprites Python/python 35.png"
+label pythonEvent2:
 
     play music "audio/music.mp3" volume 0.5
 
@@ -191,4 +191,5 @@ label python3:
 
     mc "O que será que ela quis dizer com isso?"
 
-return
+    $ pythonEventsCounter = 3
+    return
