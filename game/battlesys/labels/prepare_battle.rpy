@@ -81,5 +81,5 @@ label prepare_java_battle:
     call check_passive_time_beforeBP
     call turn_start
     $ testeOBM_Acertos = str(battleState.getEnemysDefeated())
-    $ testeOBM_Nota = str(round(battleState.getTestGrade(), 2))
+    $ testeOBM_Nota = round(battleState.getTestGrade(), 2)
     return

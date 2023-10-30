@@ -305,14 +305,16 @@ label semana3_dia19:
 
     #o roteiro diz "yu-gi-oh sounds" mas eu só coloquei a da batalha
     play music 'audio/battle.mp3' volume 0.5
+    
+    call prepare_java_battle
 
-    # call prepare_tutorial_battle from _call_prepare_tutorial_battle
-
-    if False:
+    if testeOBM_Nota < 5:
         "Vocês foram derrotados"
         $ MainMenu(confirm=False)()
     #[Cenário de Vitória:] 
     else:
+
+        scene escola entrada
 
         'Rivel' 'Não!'
         
